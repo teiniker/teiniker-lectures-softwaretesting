@@ -104,7 +104,7 @@ if __name__ == '__main__':
 ```
 
 ```
-$ python3 -m unittest -v tests/SimpleTest.py 
+$ python3 -m unittest -v SimpleTest.py 
 
 setUpModule()
 setUpClass()
@@ -217,6 +217,7 @@ mechanism for this: the **test suite**, represented by unittest’s TestSuite
 class.
 
 
-
 ## References
 [Unit testing framework](https://docs.python.org/3/library/unittest.html)
+
+*Egon Teiniker, 2020, GPL v3.0*
