@@ -1,12 +1,12 @@
 import unittest
 
-from unit-tests.basics.ElectronicParts import Resistor
-
+from unittests.basics.ElectronicParts import Resistor
 
 class ResistorTest(unittest.TestCase):
 
     def testClassVariable(self):
         self.assertEqual('Conrad', Resistor.vendor)
+
 
     def testResistor(self):
         r = Resistor(470)
