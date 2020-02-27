@@ -180,7 +180,7 @@ the error message on failure.
 Test that first and second are equal. 
 If the values do not compare equal, the test will fail.
 
-* **assertNotEqual(first, second, msg=None)*
+* **assertNotEqual(first, second, msg=None)**
 Test that first and second are not equal. 
 If the values do compare equal, the test will fail.
 
