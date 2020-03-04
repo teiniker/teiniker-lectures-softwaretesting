@@ -47,7 +47,12 @@ class ListTest(unittest.TestCase):
 
     # len() returns the length of a list
     def testListSize(self):
-        self.assertEqual(3, len(self.list))
+        # exercise
+        actual = len(self.list)
+
+        # verify
+        expected = 3;
+        self.assertEqual(expected, actual)
 
     # To change an element, use the name of the list followed by the index of
     # the element you want to change, and then provide the new value you want
