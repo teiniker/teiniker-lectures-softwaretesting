@@ -1,6 +1,7 @@
 import unittest
 from unittest.mock import Mock
 
+
 class MockTest(unittest.TestCase):
 
     def setUp(self):
