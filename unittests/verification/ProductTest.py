@@ -16,8 +16,8 @@ class ProductTest(unittest.TestCase):
     # Custom assert method
 
     def assertEqualProduct(self,expected,actual):
-        self.assertEqual(expected.description, actual.description)
-        self.assertEqual(expected.price, actual.price)
+        self.assertEqual(expected.description, actual.description, 'different description')
+        self.assertEqual(expected.price, actual.price, 'different price')
 
 
 if __name__ == '__main__':
