@@ -1,0 +1,17 @@
+Raspberry Pi Desktop VM
+-------------------------------------------------------------------------------
+$ pip3 install coverage
+
+$ vi .bashrc
+export COVERAGE_HOME=/home/pi/.local/bin/
+export PATH=$COVERAGE_HOME/bin:$PATH
+
+$ coverage run --branch unittest unittests/fixture/OrderTest.py
+
+
+Fedora 30 VM
+-------------------------------------------------------------------------------
+$ python3 -m pip install coverage
+Requirement already satisfied: coverage in /usr/lib64/python3.7/site-packages (4.5.1)
+
+$ coverage3 --version
