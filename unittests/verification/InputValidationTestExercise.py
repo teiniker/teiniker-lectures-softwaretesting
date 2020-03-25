@@ -8,7 +8,7 @@ class ValidationError(Exception):
 class User:
     def __init__(self, id, username, password):
         if not isinstance(id, int):
-                raise TypeError('Invalid id: wrong type!');
+            raise TypeError('Invalid id: wrong type!');
         if id < 0:
             raise ValueError('Invalid id: should be a positive number!')
         if len(username) < 5:
