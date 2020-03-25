@@ -2,12 +2,12 @@ import unittest
 
 class FileTest(unittest.TestCase):
 
-
     def setUp(self):
         self.file = open('Sympathy.txt')
 
     def tearDown(self):
         self.file.close();
+
 
     def testReadFile(self):
         text = self.file.read()
@@ -27,3 +27,9 @@ class FileTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+# References:
+# https://docs.python.org/3/tutorial/inputoutput.html
+
+
+
