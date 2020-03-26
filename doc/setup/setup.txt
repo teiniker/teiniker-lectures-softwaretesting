@@ -1,17 +1,35 @@
-Raspberry Pi Desktop VM
+Python 3 and IDE
 -------------------------------------------------------------------------------
-$ pip3 install coverage
-
-$ vi .bashrc
-export COVERAGE_HOME=/home/pi/.local/bin/
-export PATH=$COVERAGE_HOME/bin:$PATH
-
-$ coverage run --branch unittest unittests/fixture/OrderTest.py
+o) Python 3 (incuding pip3)
+o) PyCharm
 
 
-Fedora 30 VM
+Code Coverage Analysis Tool
 -------------------------------------------------------------------------------
-$ python3 -m pip install coverage
-Requirement already satisfied: coverage in /usr/lib64/python3.7/site-packages (4.5.1)
+o) Raspberry Pi Desktop VM
+    $ pip3 install coverage
 
-$ coverage3 --version
+    $ vi .bashrc
+    export COVERAGE_HOME=/home/pi/.local/bin/
+    export PATH=$COVERAGE_HOME/bin:$PATH
+
+    $ coverage run --branch unittest unittests/fixture/OrderTest.py
+
+o) Fedora 30 VM
+    $ python3 -m pip install coverage
+    Requirement already satisfied: coverage in /usr/lib64/python3.7/site-packages (4.5.1)
+
+    $ coverage3 --version
+
+
+SQLite3 Database (and SQLite Browser)
+-------------------------------------------------------------------------------
+o) SQLite3 Setup Fedora 30
+    # yum install sqlite  // already installed
+    # yum install sqlitebrowser
+    $ sqlite3 test.db
+    sqlite> .quit
+
+o)  SQLite3 Setup Raspberry Desktop
+    # apt-get install sqlite3
+    # apt-get install sqlitebrowser
