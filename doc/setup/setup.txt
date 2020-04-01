@@ -25,8 +25,8 @@ o) Fedora 30 VM
 SQLite3 Database (and SQLite Browser)
 -------------------------------------------------------------------------------
 o) SQLite3 Setup Fedora 30
-    # yum install sqlite  // already installed
-    # yum install sqlitebrowser
+    $ sudo yum install sqlite  // already installed
+    $ sudo yum install sqlitebrowser
     $ sqlite3 test.db
     sqlite> .quit
 
