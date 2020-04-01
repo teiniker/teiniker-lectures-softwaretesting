@@ -1,8 +1,0 @@
-Exercise: Boundary Value Analysis - Binary Numbers
--------------------------------------------------------------------------------
-
-Determine the test cases which are necessary to test the following set of
-strings: [01]{1,8}
-
-Make a sketch and create a table of the valid and invalid test cases.
-

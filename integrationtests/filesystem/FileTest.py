@@ -3,9 +3,11 @@ import unittest
 class FileTest(unittest.TestCase):
 
     def setUp(self):
+        # Setup
         self.file = open('Sympathy.txt')
 
     def tearDown(self):
+        # Teardown
         self.file.close();
 
 

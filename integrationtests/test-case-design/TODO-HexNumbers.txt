@@ -1,8 +1,0 @@
-Exercise: Boundary Value Analysis - Hex Numbers
--------------------------------------------------------------------------------
-
-Determine the test cases which are necessary to test the following set of
-strings: [A-F0-9]{2,4}
-
-Make a sketch and create a table of the valid and invalid test cases.
-
