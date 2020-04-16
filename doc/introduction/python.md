@@ -1,7 +1,7 @@
 # Python Tutorial
 
 In this repository, we use the Python programming language to learn about different testing techniques.
-For this reason, it is important to understand the basics of the Python programming language.
+For this reason, it is important to understand the basics of Python.
 Fortunately, Python is a very common language and there are numerous freely available resources on the Internet.
 
 If you need help on individual topics related to Python programming, first check the official
@@ -16,12 +16,20 @@ Each of these short videos repeats a specific language construct of the Python p
 
 * Python Language Features
   * [Interactive Help](https://youtu.be/BVXv0-1Rcc8)
-  * [Strings](https://youtu.be/iAzShkKzpJo)
+  * [Booleans](https://youtu.be/9OK32jb_TdI)
   * [Numbers](https://youtu.be/_87ASgggEg0)
   * [Arithmetic](https://youtu.be/Aj8FQRIHJSc)
+  * [Strings](https://youtu.be/iAzShkKzpJo)
+  *
 
+  * [Sets](https://youtu.be/sBvaPopWOmQ)
+  * [Lists](https://youtu.be/ohCDWZgNIU0)
+  * [Dictionaries](https://youtu.be/XCcpzWs-CI4)
+
+  * [Classes and Objects](https://youtu.be/apACNr7DC_s)
 
 * Python Standard Library
+    * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
     * [CSV Files](https://youtu.be/Xi52tx6phRU)
 
 
