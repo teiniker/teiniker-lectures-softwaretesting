@@ -33,3 +33,22 @@ o) SQLite3 Setup Fedora 30
 o)  SQLite3 Setup Raspberry Desktop
     # apt-get install sqlite3
     # apt-get install sqlitebrowser
+
+
+PyAutoGUI
+-------------------------------------------------------------------------------
+o) Setup for Fedora 30
+
+    $ sudo yum install scrot
+    $ sudo yum install python3-tkinter      # already installed
+    $ sudo yum install python3-devel.x86_64 # already installed
+
+    $ sudo python3 -m pip install python3-xlib
+    $ python3 -m pip install pyautogui
+
+
+Selenium Webdriver
+-------------------------------------------------------------------------------
+o) Setup for Fedora 30
+
+    $ sudo python3 -m pip install selenium

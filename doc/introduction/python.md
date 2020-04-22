@@ -20,7 +20,7 @@ Each of these short videos repeats a specific language construct of the Python p
   * [Numbers](https://youtu.be/_87ASgggEg0)
   * [Arithmetic](https://youtu.be/Aj8FQRIHJSc)
   * [Strings](https://youtu.be/iAzShkKzpJo)
-  *
+  * [If, Then, Else](https://youtu.be/f4KOjWS_KZs)
 
   * [Sets](https://youtu.be/sBvaPopWOmQ)
   * [Lists](https://youtu.be/ohCDWZgNIU0)
