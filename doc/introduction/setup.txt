@@ -50,5 +50,11 @@ o) Setup for Fedora 30
 Selenium Webdriver
 -------------------------------------------------------------------------------
 o) Setup for Fedora 30
-
     $ sudo python3 -m pip install selenium
+
+	URL: https://pypi.org/project/selenium/4.0.0a5/
+	=> /home/student/local/webdriver/geckodriver
+	$ vi .bashrc		
+		export WEBDRIVER=/home/student/local/webdriver
+		export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$ANT_HOME/bin:$SONAR_SCANNER/bin:$WEBDRIVER:$PATH
+    $ /opt/pycharm-community-2019.2.2/bin/pycharm.sh    
