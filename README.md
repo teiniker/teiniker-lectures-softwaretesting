@@ -9,13 +9,13 @@ in Python. The following topics will be covered:
     * [Debugging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging)
 
 2. Software Testing
-    1. Unit Tests
+    * Unit Tests
 
-    2. Integration Tests
+    * Integration Tests
 
-    3. System Tests
+    * System Tests
 
-    4. Non-Functional Tests
+    * Non-Functional Tests
 
 2. Software Inspection
 
