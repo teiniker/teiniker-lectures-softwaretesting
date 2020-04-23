@@ -64,5 +64,9 @@ o) Setup for Fedora 30
 	$ vi .bashrc		
 		export WEBDRIVER=/home/student/local/webdriver
 		export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$ANT_HOME/bin:$SONAR_SCANNER/bin:$WEBDRIVER:$PATH
-		
+	
+	$ source .bashrc
+	$ echo $WEBDRIVER
+	$ echo $PATH
+	
     $ /opt/pycharm-community-2019.2.2/bin/pycharm.sh    
