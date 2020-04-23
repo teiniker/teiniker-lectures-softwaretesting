@@ -46,9 +46,16 @@ o) Setup for Fedora 30
     $ sudo python3 -m pip install python3-xlib
     $ python3 -m pip install pyautogui
 
+o) Automate the Boring Stuff with Python
+    https://automatetheboringstuff.com/
+    https://automatetheboringstuff.com/2e/chapter20/
+
 
 Selenium Webdriver
 -------------------------------------------------------------------------------
+o) Selenium
+    https://www.selenium.dev
+    
 o) Setup for Fedora 30
     $ sudo python3 -m pip install selenium
 
@@ -57,4 +64,5 @@ o) Setup for Fedora 30
 	$ vi .bashrc		
 		export WEBDRIVER=/home/student/local/webdriver
 		export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$ANT_HOME/bin:$SONAR_SCANNER/bin:$WEBDRIVER:$PATH
+		
     $ /opt/pycharm-community-2019.2.2/bin/pycharm.sh    
