@@ -4,7 +4,7 @@ This repository collects examples, exercises and model solutions needed to under
 in Python. The following topics will be covered:
 
 1. Introduction
-    * [Environment Setup]()
+    * [Environment Setup](https://github.com/teiniker/teiniker-lectures-softwaretesting/blob/master/doc/introduction/setup.txt)
     * [Python Tutorial](https://github.com/teiniker/teiniker-lectures-softwaretesting/blob/master/doc/introduction/python.md)
     * [Debugging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging)
 
