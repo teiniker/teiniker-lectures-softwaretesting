@@ -8,10 +8,10 @@ class SQLiteMemoryTest(unittest.TestCase):
     # database connections each with the filename ":memory:" will create two
     # independent in-memory databases.
 
-    DATABALE_NAME = ':memory:'
+    DATABASE_NAME = ':memory:'
 
     def setUp(self):
-        self.conn = sqlite3.connect(SQLiteMemoryTest.DATABALE_NAME)
+        self.conn = sqlite3.connect(SQLiteMemoryTest.DATABASE_NAME)
         self.cur = self.conn.cursor()
         self.cur.execute("CREATE TABLE user (id INTEGER, username TEXT, password TEXT, PRIMARY KEY(id))")
         self.cur.execute("INSERT INTO user (id,username, password) VALUES (1, 'homer', '2aaab795b3836904f82efc6ca2285d927aed75206214e1da383418eb90c9052f')")
@@ -24,7 +24,7 @@ class SQLiteMemoryTest(unittest.TestCase):
         self.conn.close();
 
     def testSelectAllUsers(self):
-        self.cur.execute('SELECT * from user')
+        self.cur.execute('SELECT* from user')
         table = self.cur.fetchall()
         # Verify
         self.assertEqual(5, len(table))
@@ -36,7 +36,7 @@ class SQLiteMemoryTest(unittest.TestCase):
         table = self.cur.fetchall()
         # Verify
         self.assertEqual(5, len(table))
-        self.assertEqual('marge', table[0][1])
+        self.assertEqual('bart', table[0][1])
         self.assertEqual('homer', table[1][1])
         self.assertEqual('lisa', table[2][1])
         self.assertEqual('maggie', table[3][1])

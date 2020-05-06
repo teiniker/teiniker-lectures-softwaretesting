@@ -105,6 +105,7 @@ class SQLiteTest(unittest.TestCase):
         self.conn = sqlite3.connect(SQLiteTest.DATABASE_NAME)
         self.cur = self.conn.cursor()
         self.dao = ArticleDao(self.conn)
+        # begin()  start a database transaction
 
     def tearDown(self):
         # The underlying sqlite3 library operates in autocommit mode by default,
