@@ -52,3 +52,21 @@ Selenium Webdriver
 o) Setup for Fedora 30
 
     $ sudo python3 -m pip install selenium
+
+
+WebGoat
+-------------------------------------------------------------------------------
+o) Download
+    https://github.com/WebGoat/WebGoat/releases
+    => webgoat-server-8.0.0.M26.jar
+
+o) Setup
+    $ mkdir local/WebGoat
+    $ mv Downloads/webgoat-server-8.0.0.M26.jar local/WebGoat
+
+o) Run WebGoat
+    $ cd local/WebGoat
+    $ java -jar webgoat-server-8.0.0.M26.jar
+
+    Browser: http://localhost:8080/WebGoat/login
+    => Register as new user: student/student
