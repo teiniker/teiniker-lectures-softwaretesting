@@ -32,9 +32,7 @@ class StundenplanTest(unittest.TestCase):
         lectures = schedule_page.get_lectures()
         schedule_page.logout()
         self.assertEqual("08:00-09:30\nVO - SWT - G.AP147.119\nTeiniker", lectures[0])
-        self.assertEqual("09:45-10:30\nVO - SWT - G.AP147.119\nTeiniker", lectures[1])
-        self.assertEqual("10:30-11:15\nUEB - SWT - G.AP147.221\nTeiniker", lectures[2])
-        self.assertEqual("11:30-13:00\nUEB - SWT - G.AP147.221\nTeiniker", lectures[3])
+
 
 
 if __name__ == '__main__':

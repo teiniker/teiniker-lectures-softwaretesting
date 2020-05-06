@@ -3,3 +3,5 @@
 /htmlcov/
 .coverage
 
+/systemtests/web/geckodriver.log
+/geckodriver.log
