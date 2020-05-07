@@ -58,10 +58,12 @@ o) Selenium
     
 o) Setup for Fedora 30
     $ sudo python3 -m pip install selenium
+
 	URL: https://pypi.org/project/selenium/4.0.0a5/
+	download: geckodriver-v0.26.0-linux64.tar.gz
 	=> /home/student/local/webdriver/geckodriver
 
-	$ vi .bashrc
+	$ geany .bashrc
 		export WEBDRIVER=/home/student/local/webdriver
 		export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$ANT_HOME/bin:$SONAR_SCANNER/bin:$WEBDRIVER:$PATH
 
@@ -69,7 +71,20 @@ o) Setup for Fedora 30
 	$ echo $WEBDRIVER
 	$ echo $PATH
 
-    $ /opt/pycharm-community-2019.2.2/bin/pycharm.sh   # to start the IDE from the command line
+    Test the Webdriver from Python:
+    $ python3
+    >>> from selenium import webdriver
+    >>> from selenium import webdriver
+    >>> driver = webdriver.Firefox()
+    >>> driver.quit()
+    >>> exit()
+
+    Start the PyCharm IDE from the command line to use the new settings:
+    $ /opt/pycharm-community-2019.2.2/bin/pycharm.sh
+    Python Console:
+       >>> from selenium import webdriver
+       >>> driver = webdriver.Firefox()
+       >>> driver.quit()
 
 
 WebGoat
