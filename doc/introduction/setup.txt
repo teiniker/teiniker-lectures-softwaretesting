@@ -67,7 +67,7 @@ o) Setup for Fedora 30
 		export WEBDRIVER=/home/student/local/webdriver
 		export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$ANT_HOME/bin:$SONAR_SCANNER/bin:$WEBDRIVER:$PATH
 
-	$ source .bashrc
+	$ source .bashrc  # or open a new terminal
 	$ echo $WEBDRIVER
 	$ echo $PATH
 
@@ -103,3 +103,15 @@ o) Run WebGoat
 
     Browser: http://localhost:8080/WebGoat/login
     => Register as new user: student/student
+
+
+Radon 4.1.0
+-------------------------------------------------------------------------------
+https://pypi.org/project/radon/
+
+o) Setup
+    $ sudo python3 -m pip install radon
+
+o) Documentation
+    https://radon.readthedocs.io/en/latest/index.html
+

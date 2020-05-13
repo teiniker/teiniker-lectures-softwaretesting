@@ -17,8 +17,8 @@ class LoginPage:
         self.password = password
 
     def login(self):
-        self.driver.find_element(By.ID, "exampleInputEmail1").send_keys("student")
-        self.driver.find_element(By.ID, "exampleInputPassword1").send_keys("student")
+        self.driver.find_element(By.ID, "exampleInputEmail1").send_keys(self.username)
+        self.driver.find_element(By.ID, "exampleInputPassword1").send_keys(self.password)
         self.driver.find_element(By.CSS_SELECTOR, ".btn").click()
         return MainPage(self.driver)
 

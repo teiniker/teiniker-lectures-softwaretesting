@@ -1,4 +1,5 @@
 import unittest
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -19,6 +20,7 @@ class SeleniumTest(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR, ".btn").click()
 
         #...
+        time.sleep(1)
 
         self.driver.get("http://localhost:8080/WebGoat/logout")
 
