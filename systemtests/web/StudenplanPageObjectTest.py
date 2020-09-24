@@ -46,8 +46,10 @@ class SeleniumTest(unittest.TestCase):
         login_page.username('ste')
         login_page.password('ste')
         schedule_page = login_page.login()
+
         lectures = schedule_page.get_lectures()
         schedule_page.logout()
+        
         self.assertEqual("08:00-09:30\nVO - SWT - G.AP147.119\nTeiniker", lectures[0])
 
 

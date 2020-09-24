@@ -45,7 +45,7 @@ class SeleniumTest(unittest.TestCase):
         login_page.password('student')
         main_page = login_page.login()
         #...
-        time.sleep(5) # just to show that we are logged in
+        time.sleep(1) # just to show that we are logged in
         main_page.logout()
 
 
