@@ -13,7 +13,7 @@ The following topics will be covered:
     
 2. [**Debugging**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging)
 
-2. [Software Testing](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing)
+2. [**Software Testing**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing)
     * [Unit Tests](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/unittests)
 
     * [Integration Tests](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/integrationtests)
@@ -22,7 +22,7 @@ The following topics will be covered:
 
     * Non-Functional Tests
 
-2. [Software Inspection](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/inspection)
+2. [**Software Inspection**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/inspection)
 
 ## References
 * Glenford J. Myers, Corey Sandler, Tom Badgett.**The Art of Software Testing**. Wiley, 3rd edition 2012
