@@ -1,23 +1,33 @@
 # Software Testing by Example
 
-This repository collects examples, exercises and model solutions needed to understand the concepts of software testing
-in Python. The following topics will be covered:
+This repository collects examples, exercises and model solutions needed to understand 
+the concepts of software testing and code inspection in the software development lifycycle. 
 
-1. Introduction
-    * [Environment Setup](https://github.com/teiniker/teiniker-lectures-softwaretesting/blob/master/doc/introduction/setup.txt)
-    * [Python Tutorial](https://github.com/teiniker/teiniker-lectures-softwaretesting/blob/master/doc/introduction/python.md)
-    * [Debugging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging)
+![Testing in the SDL](figures/TestingInTheSDLC.png)
 
-2. Software Testing
-    * Unit Tests
+The following topics will be covered:
 
-    * Integration Tests
+1. [**Introduction**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction)
+    * [Environment Setup](https://github.com/teiniker/teiniker-lectures-softwaretesting/blob/master/introduction/setup/README.md)
+    * [Python Tutorial](https://github.com/teiniker/teiniker-lectures-softwaretesting/blob/master/introduction/python/README.md)
+    
+2. [**Debugging**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging)
 
-    * System Tests
+2. [Software Testing](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing)
+    * [Unit Tests](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/unittests)
+
+    * [Integration Tests](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/integrationtests)
+
+    * [System Tests](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/systemtests)
 
     * Non-Functional Tests
 
-2. Software Inspection
+2. [Software Inspection](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/inspection)
 
+## References
+* Glenford J. Myers, Corey Sandler, Tom Badgett.**The Art of Software Testing**. Wiley, 3rd edition 2012
+* Lisa Crispin, Janet Gregory. **Agile Testing**. Addison Wesley, 2009
+* Andreas Zeller. **Why Programs Fail - A Guide to Systematic Debugging**. dpunkt.verlag, 2009
 
-*Egon Teiniker, 2020, GPL v3.0*
+ 
+*Egon Teiniker, 2020-2021, GPL v3.0*

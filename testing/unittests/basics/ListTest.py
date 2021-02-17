@@ -1,7 +1,6 @@
 import unittest
 
 # A list is a collection of items in a particular order.
-# You can put anything you want into a list, and the items in your list don’t
 # have to be related in any particular way.
 # Square brackets ([]) indicate a list, and individual elements in the list are
 # separated by commas.
@@ -29,7 +28,7 @@ class ListTest(unittest.TestCase):
         self.assertListEqual(expected, self.list)
 
 
-    # assertCountEqual(first, second, msg=None)¶
+    # assertCountEqual(first, second, msg=None)
     # First and second have the same elements in the same number, regardless of their order.
     def testCountEqual(self):
         expected = ['homer', 'marge', 'bart']
@@ -51,7 +50,7 @@ class ListTest(unittest.TestCase):
         actual = len(self.list)
 
         # verify
-        expected = 3;
+        expected = 3
         self.assertEqual(expected, actual)
 
     # To change an element, use the name of the list followed by the index of
@@ -113,8 +112,8 @@ class ListTest(unittest.TestCase):
     # If you only know the value of the item you want to remove, you can use
     # the remove() method.
     # The remove() method deletes only the first occurrence of the value you
-    # specify. If there’s a possibility the value appears more than once in
-    # the list, you’ll need to use a loop to determine if all occurrences of
+    # specify. If there is a possibility the value appears more than once in
+    # the list, you will need to use a loop to determine if all occurrences of
     # the value have been removed.
     def testListRemove(self):
         self.list.remove('homer')

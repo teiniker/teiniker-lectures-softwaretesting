@@ -1,12 +1,16 @@
-Python 3 and IDE
--------------------------------------------------------------------------------
-o) Python 3 (incuding pip3)
-o) PyCharm
+# Python Setup
+
+This document describes how we setup a Python environment, the
+libraries, and tools we need to run the examples stored in this repository.
+
+## Python 3 
+(incuding pip3)
 
 
-Code Coverage Analysis Tool
--------------------------------------------------------------------------------
-o) Raspberry Pi Desktop VM
+## Code Coverage Analysis Tool
+
+* Raspberry Pi Desktop VM
+```
     $ pip3 install coverage
 
     $ vi .bashrc
@@ -14,49 +18,59 @@ o) Raspberry Pi Desktop VM
     export PATH=$COVERAGE_HOME/bin:$PATH
 
     $ coverage run --branch unittest unittests/fixture/OrderTest.py
+```
 
-o) Fedora 30 VM
+* Fedora 30 VM
+```
     $ python3 -m pip install coverage
     Requirement already satisfied: coverage in /usr/lib64/python3.7/site-packages (4.5.1)
 
     $ coverage3 --version
+```
 
+## SQLite3 Database (and SQLite Browser)
 
-SQLite3 Database (and SQLite Browser)
--------------------------------------------------------------------------------
-o) SQLite3 Setup Fedora 30
+* SQLite3 Setup Fedora 30
+ ```
     $ sudo yum install sqlite  // already installed
     $ sudo yum install sqlitebrowser
     $ sqlite3 test.db
     sqlite> .quit
+```
 
-o)  SQLite3 Setup Raspberry Desktop
+*  SQLite3 Setup Raspberry Desktop
+``` 
     # apt-get install sqlite3
     # apt-get install sqlitebrowser
+```
 
+## PyAutoGUI
 
-PyAutoGUI
--------------------------------------------------------------------------------
-o) Setup for Fedora 30
-
+* Setup for Fedora 30
+```
     $ sudo yum install scrot
     $ sudo yum install python3-tkinter      # already installed
     $ sudo yum install python3-devel.x86_64 # already installed
 
     $ sudo python3 -m pip install python3-xlib
     $ python3 -m pip install pyautogui
+```
 
-o) Automate the Boring Stuff with Python
+* Automate the Boring Stuff with Python
+```
     https://automatetheboringstuff.com/
     https://automatetheboringstuff.com/2e/chapter20/
+```
 
+## Selenium Webdriver
 
-Selenium Webdriver
--------------------------------------------------------------------------------
-o) Selenium
+* Selenium
+ ```
     https://www.selenium.dev
+```
     
-o) Setup for Fedora 30
+* Setup for Fedora 30
+```
     $ sudo python3 -m pip install selenium
 
 	URL: https://pypi.org/project/selenium/4.0.0a5/
@@ -85,33 +99,19 @@ o) Setup for Fedora 30
        >>> from selenium import webdriver
        >>> driver = webdriver.Firefox()
        >>> driver.quit()
+```
 
 
-WebGoat
--------------------------------------------------------------------------------
-o) Download
-    https://github.com/WebGoat/WebGoat/releases
-    => webgoat-server-8.0.0.M26.jar
-
-o) Setup
-    $ mkdir local/WebGoat
-    $ mv Downloads/webgoat-server-8.0.0.M26.jar local/WebGoat
-
-o) Run WebGoat
-    $ cd local/WebGoat
-    $ java -jar webgoat-server-8.0.0.M26.jar
-
-    Browser: http://localhost:8080/WebGoat/login
-    => Register as new user: student/student
-
-
-Radon 4.1.0
--------------------------------------------------------------------------------
+## Radon 4.1.0
+```
 https://pypi.org/project/radon/
-
-o) Setup
+```
+* Setup
+ ```
     $ sudo python3 -m pip install radon
+```
 
-o) Documentation
+* Documentation
+``` 
     https://radon.readthedocs.io/en/latest/index.html
-
+```

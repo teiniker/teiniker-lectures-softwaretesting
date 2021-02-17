@@ -33,4 +33,4 @@ Each of these short videos repeats a specific language construct of the Python p
     * [CSV Files](https://youtu.be/Xi52tx6phRU)
 
 
-*Egon Teiniker, 2020, GPL v3.0*
+*Egon Teiniker, 2020-2021, GPL v3.0*
