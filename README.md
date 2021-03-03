@@ -9,7 +9,7 @@ The following topics will be covered:
 
 1. [**Introduction**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction)
     * [Environment Setup](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/setup)
-    * [Python Tutorial](https://github.com/teiniker/teiniker-lectures-softwaretesting/blob/master/introduction/python/README.md)
+    * [Python Tutorial](https://github.com/teiniker/teiniker-lectures-softwaretesting/blob/master/introduction/python)
     
 2. [**Debugging**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging)
 
