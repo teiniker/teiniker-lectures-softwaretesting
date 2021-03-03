@@ -1,5 +1,11 @@
 # Debugging
 
+* [Logging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/logging)
+
+* [Interactive Debugging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/list_operations)
+
+* [Assertions](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/assertions)
+
 
 
 ## References
