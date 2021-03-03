@@ -17,20 +17,21 @@ the following commands should work out of the box:
     $ python3 --version 
     Python 3.7.3
 
-	$ sudo apt update
+    $ sudo apt update
     $ sudo apt install python3-pip
-	$ pip3 --version
-	pip 18.1 from /usr/lib/python3/dist-packages/pip (python 3.7)
+    $ pip3 --version
+    pip 18.1 from /usr/lib/python3/dist-packages/pip (python 3.7)
 ```
 
 Basically, we could work directly with the command line Python interpreter like:
 ```    
-$ python3
-Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
-[GCC 8.3.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> print('Hello world!')
-Hello world!
+    $ python3
+    Python 3.7.3 (default, Jul 25 2020, 13:03:44) 
+    [GCC 8.3.0] on linux 
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> print('Hello world!')
+    Hello world!
+    >>> exit()
 ```    
 But for more sophisticated examples we use a more comfortable editor ...
  
