@@ -52,3 +52,6 @@ Identifiers used in the standard library must be ASCII compatible as described i
 
 ## References
 * [PEP 8 - Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
+
+
+*Egon Teiniker, 2020-2021, GPL v3.0*
