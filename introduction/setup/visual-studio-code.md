@@ -18,7 +18,7 @@ the following commands should work out of the box:
     Python 3.7.3
 
 	$ sudo apt update
-    $ sudo apt install python3-pip
+    	$ sudo apt install python3-pip
 	$ pip3 --version
 	pip 18.1 from /usr/lib/python3/dist-packages/pip (python 3.7)
 ```
