@@ -1,4 +1,4 @@
-# Linux Shell Bash
+# Linux Shell: Bash
 
 Before we can start with our examples, make sure that you have opened a **Terminal Window** on 
 your Linux machine.
