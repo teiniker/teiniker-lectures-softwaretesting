@@ -1,10 +1,8 @@
-# TODO: Data Classes
+# Exercises: Classes, Dunder Methods
+# 
 # A) Implement the class Mail which holds an email address.
 # B) Implement the class User which stores: id, username, password 
 #    and a Mail instance.
-#
-# Make sure that the given assert statements hold.
-
 
 class Mail():
     """Model of an email address."""
