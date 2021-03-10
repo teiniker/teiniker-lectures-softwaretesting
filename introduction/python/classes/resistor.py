@@ -1,11 +1,10 @@
 
 class Resistor():
-    """Simulates a resistor with a given tolerance."""
+    """Model of a resistor with a given tolerance."""
 
     def __init__(self, value, tolerance=2):
         self._value = value              
         self._tolerance = tolerance       
-        # self.tolerance = 2
 
     def get_value(self):
         return self._value
@@ -13,14 +12,21 @@ class Resistor():
     def get_tolerance(self):
         return self._tolerance
 
-    def serial(self, resistor):
-        self._value += resistor.get_value()
+    def __repr__(self):
+        return 'Resistor({}, {})'.format(self.get_value(), self.get_tolerance())
 
-    def parallel(self, resistor):
-        r1 = self._value
-        r2 = resistor.get_value()
-        self._value = r1 * r2 / float(r1 + r2)
-         
+    def __str__(self):
+        return 'Resistor: value={}, tolerance={}'.format(self.get_value(), self.get_tolerance())    
+
+    def __eq__(self, other):
+        if self._value == other._value and self._tolerance == other._tolerance:
+            return True
+        else:
+            return False
+
+    def __add__(self, other):
+        return Resistor(self._value + other._value)
+
 
 # Verify implementation
 
@@ -32,11 +38,16 @@ r2 = Resistor(470,5)
 assert 470 == r2.get_value()
 assert 5 == r2.get_tolerance()
 
-r1.serial(r2)
-assert 1000+470 == r1.get_value()
+r = Resistor(330, 2)
+assert 'Resistor(330, 2)' == repr(r)
 
-r1 = Resistor(1200)
-r2 = Resistor(150)
-r1.parallel(r2)
-expected = 1200*150 / float(1200+150)
-assert abs(expected - r1.get_value()) <= 1E-6
+r = Resistor(330, 2)
+assert 'Resistor: value=330, tolerance=2' == str(r)
+
+r = r1 + r2
+assert 1000+470 == r.get_value()
+
+r1 = Resistor(2700,2)
+r2 = Resistor(2700,2)
+assert r1 is r1
+assert r1 == r2

@@ -23,24 +23,15 @@ class Resistor():
     def __init__(self, value, tolerance=2):
         self._value = value              
         self._tolerance = tolerance       
-        # self.tolerance = 2
 
     def get_value(self):
         return self._value
 
     def get_tolerance(self):
         return self._tolerance
-
-    def serial(self, resistor):
-        self._value += resistor.get_value()
-
-    def parallel(self, resistor):
-        r1 = self._value
-        r2 = resistor.get_value()
-        self._value = r1 * r2 / float(r1 + r2)
 ``` 
 
-### __init__() 
+### The `__init__()` Method 
 This method Python runs automatically whenever we create a **new instance of a class**.
 
 The **self parameter** is required in the method definition, and it must come first before 
@@ -76,15 +67,17 @@ We can **change an attribute’s value** in three ways:
 ### Methods
 Instance methods are functions that are defined inside a class and can only be called from an instance 
 of that class. 
-Just like `__init__()`, an instance method’s first parameter is always self.
-
+An instance method’s first parameter is always `self`.
 
 ## Making an Class Instance
 
 When Python reads the following line, it calls the `__init__()` method:
+
+_Example_: 
 ```Python
-r1 = Resistor(1000)
-```
+r1 = Resistor(2700,2)
+r2 = Resistor(2700,2)
+``` 
 
 The `__init__()` method has no explicit return statement, but Python automatically returns an instance.
 We can create as many instances from a class as we need.
@@ -95,6 +88,91 @@ We can create as many instances from a class as we need.
 To **access the attribute** of an instance, we use the **dot notation**.
 
 To **call a method**, give the name of the instance and the method we want to call, separated by a dot.
+
+_Example_: 
+```Python
+r2.get_value()
+r2.get_tolerance()
+``` 
+
+
+## Magic (Dunder) Methods
+
+Python does all operations (`+`, `*`, `==`, etc.) using magic methods. 
+These special methods have a naming convention, where the name starts with two underscores, followed 
+by an identifier and ends with another pair of underscores.
+
+Essentially, each built-in function or operator has a special method corresponding to it. 
+For example, there’s `__eq__()`, corresponding to `==`, and `__add__()`, corresponding to the `+` operator.
+
+By default, most of the built-ins and operators will not work with objects of our classes. 
+We must add the corresponding special methods in our class definition to make our object compatible with 
+built-ins and operators.
+
+Due to the naming convention used for these methods, they are also called **dunder methods** which is a shorthand 
+for **d**ouble **under**score methods. Sometimes they’re also referred to as special methods or **magic methods**. 
+
+
+### The `__repr__()` Method
+Python `__repr__()` function returns the object representation in string format. 
+This method is called when `repr()` function is invoked on the object. 
+If possible, the string returned should be **a valid Python expression that can be used to reconstruct the object again**.
+
+_Example_: 
+```Python
+    def __repr__(self):
+        return 'Resistor({}, {})'.format(self.get_value(), self.get_tolerance())
+``` 
+
+
+### The `__str__()` Method
+This method returns the **string representation of the object**. 
+This method is called when `print()` or `str()` function is invoked on an object.
+
+This method must return the String object. 
+If we don’t implement `__str__()` function for a class, then built-in object 
+implementation is used that actually calls `__repr__()` function.
+
+We should always use `str()` function, which will call the underlying `__str__()` function. 
+It’s not a good idea to use the `__str__()` function directly.
+
+_Example_: 
+```Python
+    def __str__(self):
+        return 'Resistor: value={}, tolerance={}'.format(self.get_value(), self.get_tolerance())    
+``` 
+
+
+### The `__eq__()` Method
+There are various ways using which the objects of any type in Python can be compared. 
+The `==` operator compares the value or equality of two objects, whereas the Python `is` operator checks 
+whether two variables point to the same object in memory.
+
+Python automatically calls the `__eq__()` method of a class when you use the `==` operator 
+to compare the instances of the class. 
+By default, Python uses the `is` operator if you don’t provide a specific implementation for 
+the `__eq__()` method.
+
+_Example_: 
+```Python
+    def __eq__(self, other):
+        if self._value == other._value and self._tolerance == other._tolerance:
+            return True
+        else:
+            return False
+``` 
+
+### The `__add__()` Method
+The special method corresponding to the `+` operator is the `__add__()` method. 
+Adding a custom definition of `__add__()` changes the behavior of the operator. 
+It is recommended that `__add__()` returns a new instance of the class instead of modifying the 
+calling instance itself. 
+
+_Example_: 
+```Python
+    def __add__(self, other):
+        return Resistor(self._value + other._value)
+``` 
 
 
 ## Inheritance
@@ -123,7 +201,17 @@ Python will disregard the parent class method and only pay attention to the meth
 
 
 ## References
+
 * [Object-Oriented Programming (OOP) in Python 3](https://realpython.com/python3-object-oriented-programming/)
 * Eric Matthes. Python Crash Course. No Starch Press, 2016. Chapter 9: Classes
+
+* [YouTube: Python OOP Tutorial 5: Special (Magic/Dunder) Methods](https://youtu.be/3ohzBxoFHAY)
+* [YouTube: Python OOP Tutorial 4: Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
+
+* [Operator and Function Overloading in Custom Python Classes](https://realpython.com/operator-function-overloading/)
+* [Python __str__() and __repr__() functions](https://www.journaldev.com/22460/python-str-repr-functions)
+* [Python __eq__](https://www.pythontutorial.net/python-oop/python-__eq__)
+
+
 
 *Egon Teiniker, 2020-2021, GPL v3.0*
