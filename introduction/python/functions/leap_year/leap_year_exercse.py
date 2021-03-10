@@ -1,4 +1,5 @@
-# TODO: Conditional Statements, Functions
+# Exercise: Conditional Statements, Functions
+#
 # Implement the function "is_leap_year()":
 # Note that: year % 4   is     a leap year: e.g. 2020
 #            year % 100 is not a leap year: e.g. 2100 
