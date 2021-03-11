@@ -4,8 +4,6 @@ Visual Studio Code is a **source code editor** with support for development oper
 task running, and version control. 
 It aims to provide just the tools a developer needs for a quick code-build-debug cycle.
 
-![Visual Studio Code](figures/VS-Code.png)
-
 ## Python 
 
 Make sure that you have installed Python on your machine. If you use the Virtual Lab,
@@ -36,6 +34,8 @@ Basically, we could work directly with the command line Python interpreter like:
 But for more sophisticated examples we use a more comfortable editor ...
  
 ## Setup VS Code for Python
+
+![Visual Studio Code](figures/VS-Code.png)
 
 * Install the **Python Extension** from Microsoft (**ms-python.python**) including 
   the **pylint** package.
