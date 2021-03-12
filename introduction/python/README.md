@@ -14,19 +14,26 @@ To get access to all the facts about Python you can follow these two sources:
 The following list references numerous **videos** which are created by by engaged authors and freely accessible on YouTube.
 Each of these short videos repeats a specific language construct of the Python programming language.
 
-* Python Language Features
-  * [Interactive Help](https://youtu.be/BVXv0-1Rcc8)
-  * [Booleans](https://youtu.be/9OK32jb_TdI)
-  * [Numbers](https://youtu.be/_87ASgggEg0)
-  * [Arithmetic](https://youtu.be/Aj8FQRIHJSc)
-  * [Strings](https://youtu.be/iAzShkKzpJo)
-  * [If, Then, Else](https://youtu.be/f4KOjWS_KZs)
+## Python Language Features
 
-  * [Sets](https://youtu.be/sBvaPopWOmQ)
-  * [Lists](https://youtu.be/ohCDWZgNIU0)
-  * [Dictionaries](https://youtu.be/XCcpzWs-CI4)
+  * Getting Started
+      * [Youtube (Socratica):  Python Tutorial | Interactive Help](https://youtu.be/BVXv0-1Rcc8)
+  * Simple Data Types 
+      * [Youtube (Socratica): Python Tutorial | Python Booleans](https://youtu.be/9OK32jb_TdI)
+      * [Youtube (Socratica): Python Tutorial | Numbers in Python Version 3](https://youtu.be/_87ASgggEg0)
+      * [Arithmetic](https://youtu.be/Aj8FQRIHJSc)
+      * [Strings](https://youtu.be/iAzShkKzpJo)
+  * Conditional Statements 
+      * [If, Then, Else](https://youtu.be/f4KOjWS_KZs)
+  * Loops 
+  
+  * Data Structures 
+      * [Sets](https://youtu.be/sBvaPopWOmQ)
+      * [Lists](https://youtu.be/ohCDWZgNIU0)
+      * [Dictionaries](https://youtu.be/XCcpzWs-CI4)
 
-  * [Classes and Objects](https://youtu.be/apACNr7DC_s)
+  * Classes
+      * [Classes and Objects](https://youtu.be/apACNr7DC_s)
 
 * Python Standard Library
     * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
