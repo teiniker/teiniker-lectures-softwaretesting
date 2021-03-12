@@ -14,23 +14,54 @@ To get access to all the facts about Python you can follow these two sources:
 The following list references numerous **videos** which are created by by engaged authors and freely accessible on YouTube.
 Each of these short videos repeats a specific language construct of the Python programming language.
 
-* Python Language Features
-  * [Interactive Help](https://youtu.be/BVXv0-1Rcc8)
-  * [Booleans](https://youtu.be/9OK32jb_TdI)
-  * [Numbers](https://youtu.be/_87ASgggEg0)
-  * [Arithmetic](https://youtu.be/Aj8FQRIHJSc)
-  * [Strings](https://youtu.be/iAzShkKzpJo)
-  * [If, Then, Else](https://youtu.be/f4KOjWS_KZs)
+## Python Language Features
 
-  * [Sets](https://youtu.be/sBvaPopWOmQ)
-  * [Lists](https://youtu.be/ohCDWZgNIU0)
-  * [Dictionaries](https://youtu.be/XCcpzWs-CI4)
+  * **Getting Started**
+      * [Youtube (Socratica):  Python Tutorial - Interactive Help](https://youtu.be/BVXv0-1Rcc8)
+      
+  * **Data Types** 
+      * [Youtube (Socratica): Python Tutorial - Numbers in Python Version 3](https://youtu.be/_87ASgggEg0)
+      * [Youtube (Socratica): Python Tutorial - Arithmetic in Python Version 3](https://youtu.be/Aj8FQRIHJSc)
+      * [Youtube (Socratica): Python Tutorial - Python Strings](https://youtu.be/iAzShkKzpJo)
+  
+  * **Conditional Statements** 
+      * [Youtube (Socratica): Python Tutorial - Python Booleans](https://youtu.be/9OK32jb_TdI)
+      * [Youtube (Socratica): Python Tutorial - If, Then, Else in Python](https://youtu.be/f4KOjWS_KZs)
+      * [Youtube (Corey Schafer): Python Tutorial for Beginners 6 - Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
+  
+  * **Loops** 
+  
+  * **Data Structures** 
+      * [Youtube (Socratica): Python Tutorial - Sets in Python](https://youtu.be/sBvaPopWOmQ)
+      
+      * [Youtube (Socratica): Python Tutorial - Python Lists](https://youtu.be/ohCDWZgNIU0)
+      * [Youtube (Corey Schafer): Python Tutorial for Beginners 4: Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc) 
 
-  * [Classes and Objects](https://youtu.be/apACNr7DC_s)
+      * [Youtube (Socratica): Python Tutorial - Python Dictionaries](https://youtu.be/XCcpzWs-CI4)
+      * [Youtube (Corey Schafer): Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
 
-* Python Standard Library
-    * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
-    * [CSV Files](https://youtu.be/Xi52tx6phRU)
+  * [**Functions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/functions) 
+      * [Youtube (Corey Schafer): Python Tutorial for Beginners 8: Functions](https://youtu.be/9Os0o3wzS_I)
+  
+  * [**Classes**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/classes)
+      * [Youtube (Socratica): Python Tutorial - Python Classes and Objects](https://youtu.be/apACNr7DC_s)
+      * [Youtube (Corey Schafer): Python OOP Tutorial 5: Special (Magic/Dunder) Methods](https://youtu.be/3ohzBxoFHAY)
+      * [Youtube (Corey Schafer): Python OOP Tutorial 4: Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
+      
+  * **Exceptions**
+  
+  * [**Modules**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python)
+  
+  
+## Python Standard Library
+  
+  * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
+   
+  * [CSV Files](https://youtu.be/Xi52tx6phRU)
+
+## References
+* Eric Matthes. **Python Crash Course**. No Starch Press, 2016. 
+* Slatkin Brett. **Effective Python**. Pearson Education, 2nd Edition, 2020
 
 
 *Egon Teiniker, 2020-2021, GPL v3.0*
