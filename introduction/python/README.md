@@ -22,23 +22,23 @@ Each of these short videos repeats a specific language construct of the Python p
   * **Data Types** 
       * [Youtube (Socratica): Python Tutorial | Python Booleans](https://youtu.be/9OK32jb_TdI)
       * [Youtube (Socratica): Python Tutorial | Numbers in Python Version 3](https://youtu.be/_87ASgggEg0)
-      * [Arithmetic](https://youtu.be/Aj8FQRIHJSc)
-      * [Strings](https://youtu.be/iAzShkKzpJo)
+      * [Youtube (Socratica): Python Tutorial | Arithmetic in Python Version 3](https://youtu.be/Aj8FQRIHJSc)
+      * [Youtube (Socratica): Python Tutorial | Python Strings](https://youtu.be/iAzShkKzpJo)
   
   * **Conditional Statements** 
-      * [If, Then, Else](https://youtu.be/f4KOjWS_KZs)
+      * [Youtube (Socratica): Python Tutorial | If, Then, Else in Python](https://youtu.be/f4KOjWS_KZs)
   
   * **Loops** 
   
   * **Data Structures** 
-      * [Sets](https://youtu.be/sBvaPopWOmQ)
-      * [Lists](https://youtu.be/ohCDWZgNIU0)
-      * [Dictionaries](https://youtu.be/XCcpzWs-CI4)
+      * [Youtube (Socratica): Python Tutorial | Sets in Python](https://youtu.be/sBvaPopWOmQ)
+      * [Youtube (Socratica): Python Tutorial | Python Lists](https://youtu.be/ohCDWZgNIU0)
+      * [Youtube (Socratica): Python Tutorial | Python Dictionaries](https://youtu.be/XCcpzWs-CI4)
 
   * **Functions** 
   
   * **Classes**
-      * [Classes and Objects](https://youtu.be/apACNr7DC_s)
+      * [Youtube (Socratica): Python Tutorial | Python Classes and Objects](https://youtu.be/apACNr7DC_s)
 
   * **Exceptions**
   
