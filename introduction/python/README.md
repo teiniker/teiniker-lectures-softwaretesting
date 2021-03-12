@@ -56,5 +56,9 @@ Each of these short videos repeats a specific language construct of the Python p
    
   * [CSV Files](https://youtu.be/Xi52tx6phRU)
 
+## References
+* Eric Matthes. **Python Crash Course**. No Starch Press, 2016. 
+* Slatkin Brett. **Effective Python**. Pearson Education, 2nd Edition, 2020
+
 
 *Egon Teiniker, 2020-2021, GPL v3.0*
