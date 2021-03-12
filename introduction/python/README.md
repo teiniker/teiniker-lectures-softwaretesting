@@ -47,6 +47,8 @@ Each of these short videos repeats a specific language construct of the Python p
 
   * **Exceptions**
   
+  * [**Modules**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python)
+  
   
 ## Python Standard Library
   
