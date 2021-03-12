@@ -16,28 +16,38 @@ Each of these short videos repeats a specific language construct of the Python p
 
 ## Python Language Features
 
-  * Getting Started
+  * **Getting Started**
       * [Youtube (Socratica):  Python Tutorial | Interactive Help](https://youtu.be/BVXv0-1Rcc8)
-  * Simple Data Types 
+      
+  * **Data Types** 
       * [Youtube (Socratica): Python Tutorial | Python Booleans](https://youtu.be/9OK32jb_TdI)
       * [Youtube (Socratica): Python Tutorial | Numbers in Python Version 3](https://youtu.be/_87ASgggEg0)
       * [Arithmetic](https://youtu.be/Aj8FQRIHJSc)
       * [Strings](https://youtu.be/iAzShkKzpJo)
-  * Conditional Statements 
-      * [If, Then, Else](https://youtu.be/f4KOjWS_KZs)
-  * Loops 
   
-  * Data Structures 
+  * **Conditional Statements** 
+      * [If, Then, Else](https://youtu.be/f4KOjWS_KZs)
+  
+  * **Loops** 
+  
+  * **Data Structures** 
       * [Sets](https://youtu.be/sBvaPopWOmQ)
       * [Lists](https://youtu.be/ohCDWZgNIU0)
       * [Dictionaries](https://youtu.be/XCcpzWs-CI4)
 
-  * Classes
+  * **Functions** 
+  
+  * **Classes**
       * [Classes and Objects](https://youtu.be/apACNr7DC_s)
 
-* Python Standard Library
-    * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
-    * [CSV Files](https://youtu.be/Xi52tx6phRU)
+  * **Exceptions**
+  
+  
+## Python Standard Library
+  
+  * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
+   
+  * [CSV Files](https://youtu.be/Xi52tx6phRU)
 
 
 *Egon Teiniker, 2020-2021, GPL v3.0*
