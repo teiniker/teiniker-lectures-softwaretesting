@@ -40,9 +40,9 @@ Each of these short videos repeats a specific language construct of the Python p
       * [Youtube (Socratica): Python Tutorial - Python Dictionaries](https://youtu.be/XCcpzWs-CI4)
       * [Youtube (Corey Schafer): Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
 
-  * **Functions** 
+  * [**Functions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/functions) 
   
-  * **Classes**
+  * [**Classes**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/classes)
       * [Youtube (Socratica): Python Tutorial - Python Classes and Objects](https://youtu.be/apACNr7DC_s)
 
   * **Exceptions**
