@@ -109,8 +109,6 @@ A function can return any kind of value we need it to, including more complicate
 ## References
 * Eric Matthes. Python Crash Course. No Starch Press, 2016. Chapter 8: Functions
 
-* [YouTube: Python Tutorial for Beginners 8: Functions](https://youtu.be/9Os0o3wzS_I)
-
 * [Docstrings in Python](https://www.datacamp.com/community/tutorials/docstrings-python)
 
 *Egon Teiniker, 2020-2021, GPL v3.0*
