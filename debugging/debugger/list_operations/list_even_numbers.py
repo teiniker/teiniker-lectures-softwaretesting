@@ -9,6 +9,6 @@ def list_even_numbers(nums):
 
 numbers = [5, 2, 1, 8, 4]
 even = list_even_numbers(numbers)
-print('Sum of elements = {}'.format(even))
+print('Even elements = {}'.format(even))
 
 
