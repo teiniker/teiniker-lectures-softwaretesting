@@ -32,6 +32,7 @@ Each of these short videos repeats a specific language construct of the Python p
   * **Loops** 
   
   * **Data Structures** 
+        
         * [Youtube (Socratica): Python Tutorial - Sets in Python](https://youtu.be/sBvaPopWOmQ)
       
         * [Youtube (Socratica): Python Tutorial - Python Lists](https://youtu.be/ohCDWZgNIU0)
@@ -41,9 +42,11 @@ Each of these short videos repeats a specific language construct of the Python p
         * [Youtube (Corey Schafer): Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
 
   * [**Functions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/functions) 
+        
         * [Youtube (Corey Schafer): Python Tutorial for Beginners 8: Functions](https://youtu.be/9Os0o3wzS_I)
   
   * [**Classes**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/classes)
+        
         * [Youtube (Socratica): Python Tutorial - Python Classes and Objects](https://youtu.be/apACNr7DC_s)
         * [Youtube (Corey Schafer): Python OOP Tutorial 1: Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
         * [Youtube (Corey Schafer): Python OOP Tutorial 5: Special (Magic/Dunder) Methods](https://youtu.be/3ohzBxoFHAY)
