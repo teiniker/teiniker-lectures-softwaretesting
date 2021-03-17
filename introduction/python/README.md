@@ -16,30 +16,29 @@ Each of these short videos repeats a specific language construct of the Python p
 
 ## Python Language Features
 
-  * **Getting Started**
-        * [Youtube (Socratica):  Python Tutorial - Interactive Help](https://youtu.be/BVXv0-1Rcc8)
+  * **Getting Started** \
+    * [Youtube (Socratica):  Python Tutorial - Interactive Help](https://youtu.be/BVXv0-1Rcc8)
       
-  * **Data Types** 
-        * [Youtube (Socratica): Python Tutorial - Numbers in Python Version 3](https://youtu.be/_87ASgggEg0)
-        * [Youtube (Socratica): Python Tutorial - Arithmetic in Python Version 3](https://youtu.be/Aj8FQRIHJSc)
-        * [Youtube (Socratica): Python Tutorial - Python Strings](https://youtu.be/iAzShkKzpJo)
+  * **Data Types** \
+    * [Youtube (Socratica): Python Tutorial - Numbers in Python Version 3](https://youtu.be/_87ASgggEg0)
+    * [Youtube (Socratica): Python Tutorial - Arithmetic in Python Version 3](https://youtu.be/Aj8FQRIHJSc)
+    * [Youtube (Socratica): Python Tutorial - Python Strings](https://youtu.be/iAzShkKzpJo)
   
-  * **Conditional Statements** 
-        * [Youtube (Socratica): Python Tutorial - Python Booleans](https://youtu.be/9OK32jb_TdI)
-        * [Youtube (Socratica): Python Tutorial - If, Then, Else in Python](https://youtu.be/f4KOjWS_KZs)
-        * [Youtube (Corey Schafer): Python Tutorial for Beginners 6 - Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
+  * **Conditional Statements** \ 
+    * [Youtube (Socratica): Python Tutorial - Python Booleans](https://youtu.be/9OK32jb_TdI)
+    * [Youtube (Socratica): Python Tutorial - If, Then, Else in Python](https://youtu.be/f4KOjWS_KZs)
+    * [Youtube (Corey Schafer): Python Tutorial for Beginners 6 - Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
   
   * **Loops** 
   
-  * **Data Structures** 
-        
-        * [Youtube (Socratica): Python Tutorial - Sets in Python](https://youtu.be/sBvaPopWOmQ)
+  * **Data Structures** \
+    * [Youtube (Socratica): Python Tutorial - Sets in Python](https://youtu.be/sBvaPopWOmQ)
       
-        * [Youtube (Socratica): Python Tutorial - Python Lists](https://youtu.be/ohCDWZgNIU0)
-        * [Youtube (Corey Schafer): Python Tutorial for Beginners 4: Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc) 
+    * [Youtube (Socratica): Python Tutorial - Python Lists](https://youtu.be/ohCDWZgNIU0)
+    * [Youtube (Corey Schafer): Python Tutorial for Beginners 4: Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc) 
 
-        * [Youtube (Socratica): Python Tutorial - Python Dictionaries](https://youtu.be/XCcpzWs-CI4)
-        * [Youtube (Corey Schafer): Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
+    * [Youtube (Socratica): Python Tutorial - Python Dictionaries](https://youtu.be/XCcpzWs-CI4)
+    * [Youtube (Corey Schafer): Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
 
   * [**Functions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/functions) 
         
