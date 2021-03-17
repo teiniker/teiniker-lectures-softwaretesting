@@ -7,8 +7,6 @@ import unittest
 
 class ListTest(unittest.TestCase):
 
-    list = []
-
     # We can factor out set-up code by implementing a method called setUp(),
     # which the testing framework will automatically call for every single
     # test we run:

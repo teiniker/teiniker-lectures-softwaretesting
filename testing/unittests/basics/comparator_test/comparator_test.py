@@ -8,6 +8,7 @@ def compare(a, b):
     else:
         return 0
 
+
 # There are three paths through that compare() function, thus we need
 # three test cases to cover all the code.
 

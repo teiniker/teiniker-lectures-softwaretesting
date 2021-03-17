@@ -6,6 +6,7 @@ def setUpModule():
 def tearDownModule():
     print('tearDownModule()')
 
+
 class SimpleTest(unittest.TestCase):
 
     @classmethod
@@ -22,15 +23,15 @@ class SimpleTest(unittest.TestCase):
     def tearDown(self):
         print('tearDown()')
 
-    def testA(self):
-        print('testA()')
+    def test_a(self):
+        print('test_a()')
 
-    def testB(self):
-        print('testB()')
+    def test_b(self):
+        print('test_b()')
 
     @unittest.skip("demonstrating skipping")
-    def testC(self):
-        print('testC()')
+    def test_c(self):
+        print('test_c()')
         self.fail()
 
 
