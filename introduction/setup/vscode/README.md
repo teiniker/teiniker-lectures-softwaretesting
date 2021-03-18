@@ -42,21 +42,35 @@ But for more sophisticated examples we use a more comfortable editor ...
 * Select your **Python interpreter** by clicking on the VS Code **status bar**: `/bin/python3`
 * Configure the **debugger** through the **Debug Activity Bar**: create a `launch.json` file: 
  ```      
-    launch.json 
-    {
-        "version": "0.2.0",
-        "configurations": [
-            {
-                "name": "Python: Current File",
-                "type": "python",
-                "request": "launch",
-                "program": "${file}",
-                "console": "integratedTerminal",
-                "cwd": "${fileDirname}"
-            }
-        ]
-    }	
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}"
+        }
+    ]
+}	
 ```       
+
+To set the right **Python version** (python3) for the **Code Runner** as well, we have to add a
+`settings.json` file to the `.vscode` directory:
+```   
+{
+    "python.pythonPath": "python3",
+    "python.terminal.executeInFileDir" : true,
+    "code-runner.executorMap": {
+        "python": "python3 -u",
+    },
+    "code-runner.fileDirectoryAsCwd": true
+}
+```   
+
+_Tip_: You can find both JSON files in this documentation directory.
 
 ## References
 * [Visual Studio Code](https://code.visualstudio.com/)
