@@ -17,38 +17,40 @@ Each of these short videos repeats a specific language construct of the Python p
 ## Python Language Features
 
   * **Getting Started** 
-    * [Youtube (Socratica):  Python Tutorial - Interactive Help](https://youtu.be/BVXv0-1Rcc8)
+    * [Youtube (Socratica): Interactive Help](https://youtu.be/BVXv0-1Rcc8)
       
   * **Data Types** 
-    * [Youtube (Socratica): Python Tutorial - Numbers in Python Version 3](https://youtu.be/_87ASgggEg0)
-    * [Youtube (Socratica): Python Tutorial - Arithmetic in Python Version 3](https://youtu.be/Aj8FQRIHJSc)
-    * [Youtube (Socratica): Python Tutorial - Python Strings](https://youtu.be/iAzShkKzpJo)
+    * [Youtube (Socratica): Numbers in Python Version 3](https://youtu.be/_87ASgggEg0)
+    * [Youtube (Socratica): Arithmetic in Python Version 3](https://youtu.be/Aj8FQRIHJSc)
+    * [Youtube (Socratica): Python Strings](https://youtu.be/iAzShkKzpJo)
   
   * **Conditional Statements**  
-    * [Youtube (Socratica): Python Tutorial - Python Booleans](https://youtu.be/9OK32jb_TdI)
-    * [Youtube (Socratica): Python Tutorial - If, Then, Else in Python](https://youtu.be/f4KOjWS_KZs)
-    * [Youtube (Corey Schafer): Python Tutorial for Beginners 6 - Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
+    * [Youtube (Socratica): Python Booleans](https://youtu.be/9OK32jb_TdI)
+    * [Youtube (Socratica): If, Then, Else in Python](https://youtu.be/f4KOjWS_KZs)
+    * [Youtube (Corey Schafer): Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
   
   * **Loops** 
-    * [Youtube (Corey Schafer): Python Tutorial for Beginners 7: Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ) 
+    * [Youtube (Corey Schafer): Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ) 
   
   * **Data Structures** 
-    * [Youtube (Socratica): Python Tutorial - Sets in Python](https://youtu.be/sBvaPopWOmQ)
+    * [Youtube (Socratica): Sets in Python](https://youtu.be/sBvaPopWOmQ)
       
-    * [Youtube (Socratica): Python Tutorial - Python Lists](https://youtu.be/ohCDWZgNIU0)
-    * [Youtube (Corey Schafer): Python Tutorial for Beginners 4: Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc) 
+    * [Youtube (Socratica): Python Lists](https://youtu.be/ohCDWZgNIU0)
+    * [Youtube (Corey Schafer): Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc) 
 
-    * [Youtube (Socratica): Python Tutorial - Python Dictionaries](https://youtu.be/XCcpzWs-CI4)
-    * [Youtube (Corey Schafer): Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
+    * [Youtube (Socratica): Python Dictionaries](https://youtu.be/XCcpzWs-CI4)
+    * [Youtube (Corey Schafer): Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
 
   * [**Functions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/functions) 
-      * [Youtube (Corey Schafer): Python Tutorial for Beginners 8: Functions](https://youtu.be/9Os0o3wzS_I)
+      * [Youtube (Corey Schafer): Functions](https://youtu.be/9Os0o3wzS_I)
   
   * [**Classes**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/classes)
-      * [Youtube (Socratica): Python Tutorial - Python Classes and Objects](https://youtu.be/apACNr7DC_s)
-      * [Youtube (Corey Schafer): Python OOP Tutorial 1: Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
-      * [Youtube (Corey Schafer): Python OOP Tutorial 5: Special (Magic/Dunder) Methods](https://youtu.be/3ohzBxoFHAY)
-      * [Youtube (Corey Schafer): Python OOP Tutorial 4: Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
+      * [Youtube (Socratica): Python Classes and Objects](https://youtu.be/apACNr7DC_s)
+      * [Youtube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
+      * [Youtube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/rq8cL2XMM5M)
+      * [Youtube (Corey Schafer): Class Variables](https://youtu.be/BJ-VvGyQxho)
+      * [Youtube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/ZDa-Z5JzLYM)
+      * [Youtube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
       
   * **Exceptions**
   
