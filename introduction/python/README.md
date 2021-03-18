@@ -30,6 +30,7 @@ Each of these short videos repeats a specific language construct of the Python p
     * [Youtube (Corey Schafer): Python Tutorial for Beginners 6 - Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
   
   * **Loops** 
+    * [Youtube (Corey Schafer): Python Tutorial for Beginners 7: Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ) 
   
   * **Data Structures** 
     * [Youtube (Socratica): Python Tutorial - Sets in Python](https://youtu.be/sBvaPopWOmQ)
