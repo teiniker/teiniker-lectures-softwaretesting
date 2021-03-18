@@ -220,4 +220,4 @@ class.
 ## References
 [Unit testing framework](https://docs.python.org/3/library/unittest.html)
 
-*Egon Teiniker, 2020, GPL v3.0*
+*Egon Teiniker, 2020-2021, GPL v3.0*
