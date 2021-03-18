@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "python3",
+    "python.terminal.executeInFileDir" : true,
+    "code-runner.executorMap": {
+        "python": "python3 -u",
+    },
+    "code-runner.fileDirectoryAsCwd": true
+}
