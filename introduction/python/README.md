@@ -55,7 +55,7 @@ Each of these short videos repeats a specific language construct of the Python p
   * **Exceptions**
   
   * [**Modules**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python)
-      * [Youtube (Corey Schafer): if __name__ == '__main__'](https://youtu.be/sugvnHA7ElY)   
+      * [Youtube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
   
 ## Python Standard Library
   
