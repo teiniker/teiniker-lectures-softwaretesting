@@ -1,22 +1,15 @@
 import unittest
 
-class Product:
-    def __init__(self, description, price):
-        self.description = description
-        self.price = price
+from order import Order, OrderLine, Product
 
-
-class OrderLine:
-    def __init__(self, product, quantity):
-        self.product = product
-        self.quantity = quantity
-
-
-class Order:
-    def __init__(self, id):
-        self.id = id;
-        self.lines = []
-
+# Exercise: Result Verification / Custom Asserts - Order
+#
+# Implement the following custom assert methods
+#   assertEqualProduct()
+#   assertEqualOrderLine()
+#   assertEqualsOrder()
+# which can be used to compare two Order object trees attribute by 
+# attribute.
 
 class OrderTest(unittest.TestCase):
 

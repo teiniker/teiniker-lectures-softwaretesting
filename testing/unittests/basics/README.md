@@ -104,7 +104,7 @@ if __name__ == '__main__':
 ```
 
 ```
-$ python3 -m unittest -v SimpleTest.py 
+$ python3 -m unittest -v simple_test.py 
 
 setUpModule()
 setUpClass()

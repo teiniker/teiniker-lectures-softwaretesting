@@ -1,20 +1,11 @@
 import unittest
+from order import Order, OrderLine, Product
 
-class Product:
-    def __init__(self, description, price):
-        self.description = description
-        self.price = price
-
-class OrderLine:
-    def __init__(self, product, quantity):
-        self.product = product
-        self.quantity = quantity
-
-class Order:
-    def __init__(self, id):
-        self.id = id;
-        self.lines = []
-
+# Exercise: Fixture Setup - Order 
+# 
+# Implement a custom creation method called "createOrder()" which 
+# sets up the [Order] --[*]-> [OrderLine] --[1]-> [Product] objects
+# used in the given test case.  
 
 class OrderTest(unittest.TestCase):
 
@@ -34,7 +25,6 @@ class OrderTest(unittest.TestCase):
         self.assertEqual('cd', order.lines[1].product.description)
         self.assertEqual(1299, order.lines[1].product.price)
 
-    # TODO: create a custom creation method
 
 
 if __name__ == '__main__':

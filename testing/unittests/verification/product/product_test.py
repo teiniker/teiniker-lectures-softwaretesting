@@ -1,10 +1,6 @@
 import unittest
 
-class Product:
-    def __init__(self, description, price):
-        self.description = description
-        self.price = price
-
+from product import Product
 
 class ProductTest(unittest.TestCase):
 
