@@ -218,6 +218,7 @@ class.
 
 
 ## References
-[Unit testing framework](https://docs.python.org/3/library/unittest.html)
+* [Unit testing framework](https://docs.python.org/3/library/unittest.html)
+* [Youtube: Python Tutorial: Unit Testing Your Code with the unittest Module](https://youtu.be/6tNS--WetLI)
 
 *Egon Teiniker, 2020-2021, GPL v3.0*
