@@ -22,8 +22,13 @@ class ListTest(unittest.TestCase):
     # These methods are used by default when comparing lists or tuples with
     # assertEqual().
     def testListEqual(self):
+        # Setup: see setUp()
+        # Exercise
+        
+        # Verify
         expected = ['homer', 'marge', 'bart']
         self.assertListEqual(expected, self.list)
+        # Teardown (not needed)
 
 
     # assertCountEqual(first, second, msg=None)

@@ -1,5 +1,10 @@
 import unittest
 
+# Exercise: Function Test - Comparator
+#
+# Implement all test cases to completely test the compare()
+# function (test all paths through the given function)
+
 def compare(a, b):
     if a > b:
         return 1
@@ -8,10 +13,6 @@ def compare(a, b):
     else:
         return 0
 
-# Exercise: Function Test
-#
-# Implement all test cases to completely test the compare()
-# function (test all paths through the given function)
 
 
 
