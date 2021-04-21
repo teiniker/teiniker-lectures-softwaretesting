@@ -1,0 +1,53 @@
+Exercise: Test Case Design based on Code Coverage
+-------------------------------------------------------------------------------
+
+To tests the classes stored in "data_analysis.py", implement as many test
+cases as needed to realize a code coverage of 100%.
+
+Put all tests in a file called "data_analysis_test.py".
+
+
+How to run the test cases?
+--------------------------
+$ pwd
+data_analysis_exercise
+
+$ python3 -m unittest data_analysis_test.py
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+OK
+
+
+How to run the code coverage analysis?
+--------------------------------------
+$ pwd
+data_analysis_exercise
+
+$ coverage3 run -m unittest data_analysis_test.py
+
+$ coverage3 report 
+Name                      Stmts   Miss  Cover   Missing
+-------------------------------------------------------
+tdd/DataAnalysis.py          36      0   100%
+tdd/DataAnalysisTest.py      31      0   100%
+-------------------------------------------------------
+TOTAL                        67      0   100%
+
+$ coverage3 html
+=> Browser: htmlcov/index.html
+
+
+References:
+-----------
+> Errors and Exceptions
+	https://docs.python.org/3/tutorial/errors.html
+
+> Python Custom Exceptions
+	https://www.programiz.com/python-programming/user-defined-exception
+
+> Python Exception Handling - Try, Except and Finally
+	https://www.programiz.com/python-programming/exception-handling
+
+> csv — CSV File Reading and Writing
+	https://docs.python.org/3/library/csv.html

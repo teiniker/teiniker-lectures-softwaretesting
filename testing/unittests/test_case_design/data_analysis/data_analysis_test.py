@@ -1,11 +1,11 @@
 import unittest
-from tdd.analysis.DataAnalysis import *
+from data_analysis import DataAccessObject, DataAnalysisService, DataAccessError, ServiceError
 
 
 class AnalysisServiceTest(unittest.TestCase):
 
     def setUp(self):
-        self.dao = DataAccessObject('tdd/analysis/data.csv')
+        self.dao = DataAccessObject('data.csv')
         self.service = DataAnalysisService(self.dao)
 
     def testReadData(self):
@@ -47,3 +47,6 @@ class AnalysisServiceTest(unittest.TestCase):
             dao = DataAccessObject('vales.csv')
             service = DataAnalysisService(dao)
             service.maxValue()
+
+if __name__ == '__main__':
+    unittest.main()
