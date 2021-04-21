@@ -17,9 +17,12 @@ class DataAccessObject:
                 values.append(float(value[1]))
             return values
         except FileNotFoundError:
-            raise DataAccessError('File not found: ' + self.filename)
+            raise DataAccessError('File not found: ' + self.filename) 
 
 # Verify Implementation
+
+#dao = DataAccessObject('datx.csv')
+#values = dao.readData()
 
 try:
     dao = DataAccessObject('datx.csv')
