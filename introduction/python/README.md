@@ -52,16 +52,21 @@ Each of these short videos repeats a specific language construct of the Python p
       * [Youtube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/ZDa-Z5JzLYM)
       * [Youtube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
       
-  * **Exceptions**
+  * [**Exceptions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/exceptions)
+      * [Youtube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
+      
   
   * [**Modules**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python)
       * [Youtube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
   
 ## Python Standard Library
   
-  * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
-   
-  * [CSV Files](https://youtu.be/Xi52tx6phRU)
+    * ** Date and Time **
+        * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
+    
+    * **File Handling**
+        * [Youtube (Corey Schafer): File Objects - Reading and Writing to Files](https://youtu.be/Uh2ebFW8OYM)   
+        * [Youtube (Corey Schafer): CSV Module - How to Read, Parse, and Write CSV Files](https://youtu.be/q5uM4VKywbA)
 
 ## References
 * Eric Matthes. **Python Crash Course**. No Starch Press, 2016. 

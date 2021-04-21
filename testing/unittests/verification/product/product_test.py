@@ -6,15 +6,16 @@ class ProductTest(unittest.TestCase):
 
     def testProduct(self):
         product = Product('dvd', 1799)
-        expected = Product('dvd', 1799)
-        self.assertEqualProduct(expected, product)
+        self.assertEqual('dvd', product.description)
+        self.assertEqual(1799, product.price)
 
-    # Custom assert method
+    def testProduct_InvalidPrice(self):
+        with self.assertRaises(ValueError):
+            Product('dvd', -1790)
 
-    def assertEqualProduct(self,expected,actual):
-        self.assertEqual(expected.description, actual.description, 'different description')
-        self.assertEqual(expected.price, actual.price, 'different price')
-
+    def testProduct_InvalidDescription(self):
+        with self.assertRaises(ValueError):
+            Product('', 1799)
 
 if __name__ == '__main__':
     unittest.main()

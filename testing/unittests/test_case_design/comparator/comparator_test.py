@@ -29,7 +29,7 @@ if __name__ == '__main__':
     unittest.main()
 
 # How to run the code coverage analysis?
-# $ coverage3 run - m unittest unittests/basics/ComparatorTest.py
-# $ coverage3 report - m
+# $ coverage3 run -m unittest comparator_test.py
+# $ coverage3 report 
 # $ coverage3 html
-# Browser: file: ///home/student/github/teiniker-lectures-softwaretesting/htmlcov/index.html
+# Browser: htmlcov/index.html
