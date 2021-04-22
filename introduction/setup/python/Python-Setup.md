@@ -20,7 +20,7 @@ $ vi .bashrc
 
     [ESC] [:] [w]
 ```
-
+Now, start a new terminal (to activate your settings) and type:
 ```
 $ coverage --version
 Coverage.py, version 5.5 with C extension
