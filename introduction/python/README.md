@@ -53,6 +53,7 @@ Each of these short videos repeats a specific language construct of the Python p
       * [Youtube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
       
   * [**Exceptions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/exceptions)
+      * [Youtube (Socratica):  Exceptions in Python](https://youtu.be/nlCKrKGHSSk)
       * [Youtube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
       
   
