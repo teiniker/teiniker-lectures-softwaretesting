@@ -62,7 +62,7 @@ Each of these short videos repeats a specific language construct of the Python p
   
 ## Python Standard Library
   
-    * ** Date and Time **
+    * **Date and Time**
         * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
     
     * **File Handling**
