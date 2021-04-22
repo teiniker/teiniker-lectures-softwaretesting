@@ -13,8 +13,12 @@ $ pip3 install coverage
 
 ```
 $ vi .bashrc
+    [i]
+    
     export COVERAGE=/home/student/.local
     export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:$M2_HOME/bin:$COVERAGE/bin:/opt/bin:$PATH
+
+    [ESC] [:] [w]
 ```
 
 ```
