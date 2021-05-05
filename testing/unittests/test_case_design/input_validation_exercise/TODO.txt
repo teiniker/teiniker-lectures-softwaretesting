@@ -4,7 +4,7 @@ Exercise: Test Case Design based on Code Coverage - Input Validation
 To tests the "User" class stored in "user.py", implement as many test
 cases as needed to realize a code coverage of 100%.
 
-Put all tests in a file called "input_validation_test_exercise.py".
+Put all tests in a file called "input_validation_test.py".
 
 
 How to run the test cases?
