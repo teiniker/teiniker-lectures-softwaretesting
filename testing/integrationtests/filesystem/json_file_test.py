@@ -49,7 +49,7 @@ class JsonFileTest(unittest.TestCase):
         # Exercise
         data = json.loads(json_string)
         # Verify
-        expected = {'person': {'name': 'John', 'age': 50, 'city': 'New York'}}
+        expected = {'person': {'name': 'John', 'age': 30, 'city': 'New York'}}
         self.assertEqual(expected, data)
 
 if __name__ == '__main__':
