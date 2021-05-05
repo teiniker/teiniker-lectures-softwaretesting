@@ -1,6 +1,6 @@
-# Mock Object
+# Test Doubles
 
-A mock object substitutes and imitates a real object within a testing environment.
+A test double like a mock object substitutes and imitates a real object within a testing environment.
 
 One reason to use Python mock objects is to control your code’s behavior during testing.
 Replacing the actual request with a mock object would allow you to simulate external service outages 
