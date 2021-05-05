@@ -6,7 +6,7 @@ testing activities in a development iteration into four quadrants:
 ![Agile Testing](figures/AgileTesting.png)
 
 ## Q1: Unit Tests
-* **Unit Tests** verify functionality of a small subset of the system (methods and 
+**Unit Tests** verify functionality of a small subset of the system (methods and 
 objects).
 **Component Tests** verify the behaviour of a larger part of the system (group of 
 classes).

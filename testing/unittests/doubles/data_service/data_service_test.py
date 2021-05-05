@@ -1,30 +1,7 @@
 import unittest
 from unittest.mock import Mock
+from data_service import DataService, DataAccessError, ServiceError
 
-# System Under Test
-
-class ServiceError(Exception):
-    pass
-
-
-class DataAccessError(Exception):
-    pass
-
-
-class DataService:
-    def __init__(self, dao):
-        self.dao = dao
-
-    def csvData(self):
-        try:
-            values = self.dao.readData()
-            csv = ','.join(str(value) for value in values)
-            return csv
-        except DataAccessError:
-            raise ServiceError('Can not read data!')
-
-
-# Test cases
 class DataServiceTest(unittest.TestCase):
 
     def testCsvData(self):
@@ -41,7 +18,7 @@ class DataServiceTest(unittest.TestCase):
         self.assertEqual(expected, values)
         # Behavioral verification
         self.dao.readData.assert_called_once()
-
+        self.assertEqual(1, self.dao.readData.call_count)    
 
     def testDataAccessError(self):
         with self.assertRaises(ServiceError):
@@ -52,8 +29,7 @@ class DataServiceTest(unittest.TestCase):
             # Exercise
             self.service.csvData()
 
-# $ coverage3 run -m unittest unittests/doubles/DataService.py
-# $ coverage3 report -m
-# $ coverage3 html
-# Browser: file:///home/student/github/teiniker-lectures-softwaretesting/htmlcov/index.html
+if __name__ == '__main__':
+    unittest.main()
+
 
