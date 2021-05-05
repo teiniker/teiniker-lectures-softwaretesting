@@ -29,7 +29,7 @@ objects in your code with Mock instances.
 ### The Mock Object 
 _unittest.mock_ offers a base class for mocking objects called `Mock`. 
 
-`Example`: Mock substitutes a DAO instance
+_Example_: Mock substitutes a DAO instance
 ```Python
     self.dao = Mock()  
     self.service = DataService(self.dao)
@@ -42,7 +42,7 @@ replacing - **a Mock must simulate any object that it replaces**.
 
 A Mock object creates its attributes when we access them.
 
-`Example`: Configure a MOck's method
+_Example_: Configure a MOck's method
 ```Python
     self.dao.readData()
 ```
@@ -76,7 +76,7 @@ There are two main ways to use this information:
 #### Return Values (Test Stub)
 Mock objects can specify a function’s return value. 
 
-Example: Specify the return value of a Mock's method 
+_Example_: Specify the return value of a Mock's method 
 ```Python
     self.dao.readData.return_value = [0.8273, 0.7822, 0.9731, 0.1239, 0.9898]
 ```
