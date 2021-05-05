@@ -37,8 +37,10 @@ class MockTest(unittest.TestCase):
         self.assertEqual(2, self.json.loads.call_count)
 
 
-# When writing tests, it is important to ensure that the results are predictable.
-# You can use Mock to eliminate uncertainty from your code during testing.
+    # When writing tests, it is important to ensure that the results 
+    # are predictable.
+    # You can use Mock to eliminate uncertainty from your code 
+    # during testing.
 
     def testReturnValue(self):
         # setup
