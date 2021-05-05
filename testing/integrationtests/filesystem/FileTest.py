@@ -8,7 +8,7 @@ class FileTest(unittest.TestCase):
 
     def tearDown(self):
         # Teardown
-        self.file.close();
+        self.file.close()
 
 
     def testReadFile(self):

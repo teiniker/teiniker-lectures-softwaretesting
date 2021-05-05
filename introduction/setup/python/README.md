@@ -1,5 +1,8 @@
 # Setup Python, Tools & Libraries 
 
+The following setup steps are described from the perspective of the [Debian VM](). 
+For other platforms, the respective manuals must be used as an aid.
+
 ## Python 
 
 Make sure that you have installed Python on your machine. If you use the Virtual Lab,
@@ -59,3 +62,5 @@ Full documentation is at https://coverage.readthedocs.io
 ## References
 * [https://www.python.org/](https://www.python.org/)
 * [Coverage.py](https://coverage.readthedocs.io/en/coverage-5.5/)
+
+*Egon Teiniker, 2020-2021, GPL v3.0*
