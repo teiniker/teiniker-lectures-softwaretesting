@@ -60,8 +60,8 @@ Each of these short videos repeats a specific language construct of the Python p
   
   * [**Modules**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python)
       * [Youtube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
-  
-  
+
+
 ## Python Standard Library
   
   * **Date and Time**
@@ -70,6 +70,12 @@ Each of these short videos repeats a specific language construct of the Python p
   * **File Handling**
      * [Youtube (Corey Schafer): File Objects - Reading and Writing to Files](https://youtu.be/Uh2ebFW8OYM)   
      * [Youtube (Corey Schafer): CSV Module - How to Read, Parse, and Write CSV Files](https://youtu.be/q5uM4VKywbA)
+
+  
+  * **Test Automation**
+    * [Youtube (Corey Schafer): Unit Testing Your Code with the unittest Module](https://youtu.be/6tNS--WetLI)   
+      
+
 
 ## References
 * Eric Matthes. **Python Crash Course**. No Starch Press, 2016. 
