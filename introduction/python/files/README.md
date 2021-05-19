@@ -233,7 +233,7 @@ We can use the `indent` keyword argument to specify the indentation size for nes
 
 
 ## References
-** File Handling**
+**File Handling**
 * Eric Matthes. **Python Crash Course**. No Starch Press,
     Chapter 10: Files and Exceptions
     
@@ -241,12 +241,12 @@ We can use the `indent` keyword argument to specify the indentation size for nes
 * [Reading and Writing Files in Python](https://realpython.com/read-write-files-python/)
 * [The Python Tutorial: Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 
-** CSV Files**
+**CSV Files**
 * [Youtube (Corey Schafer): CSV Module - How to Read, Parse, and Write CSV Files](https://youtu.be/q5uM4VKywbA)
 * [Reading and Writing CSV Files in Python](https://realpython.com/python-csv/)
 * [The Python Standard Library: CSV File Reading and Writing](https://docs.python.org/3/library/csv.html)
 
-** JSON Files**
+**JSON Files**
 * [Youtube (Corey Schafer): Working with JSON Data using the json Module](https://youtu.be/9N6a-VLBa2I)
 * [Working With JSON Data in Python](https://realpython.com/python-json/)
 * [The Python Standard Library: JSON Encoder and Decoder](https://docs.python.org/3/library/json.html)
