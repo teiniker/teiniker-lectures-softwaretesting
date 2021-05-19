@@ -67,7 +67,7 @@ Each of these short videos repeats a specific language construct of the Python p
   * **Date and Time**
      * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
     
-  * **File Handling**
+  * [**File Handling**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/files)
      * [Youtube (Corey Schafer): File Objects - Reading and Writing to Files](https://youtu.be/Uh2ebFW8OYM)   
      * [Youtube (Corey Schafer): CSV Module - How to Read, Parse, and Write CSV Files](https://youtu.be/q5uM4VKywbA)
 
