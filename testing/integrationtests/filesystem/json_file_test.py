@@ -13,6 +13,7 @@ class JsonFileTest(unittest.TestCase):
     def tearDown(self):
         os.remove(self.FILE_PATH)
 
+
     def testDeserializationFromFile(self):
         # Exercise
         with open(self.FILE_PATH, "r") as read_file:
@@ -54,7 +55,3 @@ class JsonFileTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-# References:
-# https://docs.python.org/3/library/json.html#module-json
-# https://realpython.com/python-json/

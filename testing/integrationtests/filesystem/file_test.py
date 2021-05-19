@@ -30,8 +30,4 @@ class FileTest(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-# References:
-# https://docs.python.org/3/tutorial/inputoutput.html
-
-
 
