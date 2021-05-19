@@ -5,11 +5,10 @@ $ pwd
 measurement
 
 $ python3 -m unittest multimeter_test.py
-......
+....
 ----------------------------------------------------------------------
-Ran 6 tests in 0.002s
+Ran 4 tests in 0.001s
 OK
-
 
 How to run the code coverage analysis?
 -------------------------------------------------------------------------------
