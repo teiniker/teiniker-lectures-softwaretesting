@@ -16,7 +16,7 @@ A Python mock object contains data about its usage that you can inspect such as:
 * How you called the method
 * How often you called the method
 
-## The Python Mock Library 
+# The Python Mock Library 
 The Python mock object library is `unittest.mock`. 
 It provides an easy way to introduce mocks into our tests.
 
@@ -26,7 +26,7 @@ objects in your codebase.
 The library also provides a function, called `patch()`, which replaces the real 
 objects in your code with Mock instances.
 
-### The Mock Object 
+## The Mock Object 
 _unittest.mock_ offers a base class for mocking objects called `Mock`. 
 
 _Example_: Mock substitutes a DAO instance
@@ -49,7 +49,7 @@ _Example_: Configure a MOck's method
 In that case, we can use a method `readData()` which requires no arguments (in fact it will
 accept any argument) and returns another Mock object.
 
-#### Assertions and Inspection (Test Spy)
+### Assertions and Inspection (Test Spy)
 Mock instances store data on how we used them. 
 For instance, we can see if we called a method, how we called the method, and so on. 
 There are two main ways to use this information:
@@ -73,7 +73,7 @@ There are two main ways to use this information:
     as we intended.        
 
 
-#### Return Values (Test Stub)
+### Return Values (Test Stub)
 Mock objects can specify a function’s return value. 
 
 _Example_: Specify the return value of a Mock's method 
@@ -85,7 +85,7 @@ invoked on a Mock object.
 During the test case, when the `readData()` method is called, it returns the data
 `[0.8273, 0.7822, 0.9731, 0.1239, 0.9898]` which we have specified.
 
-#### Side Effects (Test Stub)
+### Side Effects (Test Stub)
 A `side_effect` attribute defines what happens when we call the mocked method.
 
 _Example_: Mocked method throws an exception
@@ -102,7 +102,7 @@ that `Mock` will invoke when you call your mocked method.
 exceptions, or a mixture of both. 
 The iterable will produce its next value every time you call your mocked method. 
 
-#### patch()
+### patch()
 
 `unittest.mock` provides a powerful mechanism for mocking objects, called `patch()`, 
 which looks up an object in a given module and replaces that object with a Mock.
