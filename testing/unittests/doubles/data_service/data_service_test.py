@@ -21,12 +21,12 @@ class DataServiceTest(unittest.TestCase):
         self.assertEqual(1, self.dao.readData.call_count)    
 
     def testDataAccessError(self):
-        with self.assertRaises(ServiceError):
-            # Setup
-            self.dao = Mock()  # Mock() replaces DataAccessObject
-            self.dao.readData.side_effect = DataAccessError('Can not read data!')
-            self.service = DataService(self.dao)
-            # Exercise
+        # Setup
+        self.dao = Mock()  # Mock() replaces DataAccessObject
+        self.dao.readData.side_effect = DataAccessError('Can not read data!')
+        self.service = DataService(self.dao)
+        # Exercise
+        with self.assertRaises(ServiceError):            
             self.service.csvData()
 
 if __name__ == '__main__':

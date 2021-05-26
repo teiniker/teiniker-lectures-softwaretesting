@@ -7,9 +7,9 @@ from data_analysis import DataAnalysisService, DataAccessError, ServiceError
 class AnalysisServiceTest(unittest.TestCase):
 
     def setUp(self):
-        self.dao = Mock()
+        self.dao = Mock()                               # DOC
         self.dao.readData.return_value = [0.8273, 0.7822, 0.9731, 0.1239, 0.9898]
-        self.service = DataAnalysisService(self.dao)
+        self.service = DataAnalysisService(self.dao)    # SUT
 
 
     def testMeanValue(self):
