@@ -1,5 +1,6 @@
 import unittest
-import re
+
+from binary_number import operation, ValidationError
 
 # Parameterized Tests
 #
@@ -10,20 +11,6 @@ import re
 # We define very simple test methods for each test, which then call the
 # parameterized test and pass in the data required to make this test unique.
 
-class ValidationError(Exception):
-    pass
-
-
-def operation(data):
-    print(data)
-    pattern = '^[01]{1,8}$'  # Regular expression
-    result = re.match(pattern, data)
-    if result:
-        return int(data, 2)
-    else:
-        raise ValidationError('Invalid data value!');
-
-
 class BinaryNumberTest(unittest.TestCase):
 
     def parameterizedTest(self, expected, input):
@@ -32,7 +19,7 @@ class BinaryNumberTest(unittest.TestCase):
 
     def parameterizedTestWithException(self, exception, input):
         try:
-            actual = operation(input)
+            operation(input)
             self.fail()
         except exception:
             pass

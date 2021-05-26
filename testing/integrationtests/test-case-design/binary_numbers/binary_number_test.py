@@ -1,20 +1,6 @@
 import unittest
-import re
 
-
-class ValidationError(Exception):
-    pass
-
-
-def operation(data):
-    print(data)
-    pattern = '^[01]{1,8}$'  # Regular expression
-    result = re.match(pattern, data)
-    if result:
-        return int(data, 2)
-    else:
-        raise ValidationError('Invalid data value!');
-
+from binary_number import operation, ValidationError
 
 class BinaryNumberTest(unittest.TestCase):
 
@@ -55,9 +41,3 @@ class BinaryNumberTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-# References:
-# > Python RegEx
-#   https://www.programiz.com/python-programming/regex
-# > Regular Expression HOWTO
-#   https://docs.python.org/3/howto/regex.html

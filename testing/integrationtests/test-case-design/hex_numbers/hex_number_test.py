@@ -1,25 +1,12 @@
 import unittest
-import re
 
-
-class ValidationError(Exception):
-    pass
-
-
-def operation(data):
-    print(data)
-    pattern = '^[A-F0-9]{2,4}$'  # Regular expression
-    result = re.match(pattern, data)
-    if result:
-        return int(data, 16)
-    else:
-        raise ValidationError('Invalid data value!');
+from hex_number import operation, ValidationError
 
 
 class HexNumberTest(unittest.TestCase):
 
     def testValidHexString(self):
-        value = int('AA', 16)
+        self.assertEqual(0xaa, int('AA', 16))
 
     def testInValidHexString(self):
         with self.assertRaises(ValueError):
@@ -82,9 +69,3 @@ class HexNumberTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-# References:
-# > Python RegEx
-#   https://www.programiz.com/python-programming/regex
-# > Regular Expression HOWTO
-#   https://docs.python.org/3/howto/regex.html
