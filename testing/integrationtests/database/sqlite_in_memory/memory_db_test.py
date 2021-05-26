@@ -21,7 +21,7 @@ class SQLiteMemoryTest(unittest.TestCase):
         self.cur.execute("INSERT INTO user (id,username, password) VALUES (5, 'maggie', 'aae5be5f6474904b686f639e0fcfd2be440121cd889fa381a94b71750758345e')")
 
     def tearDown(self):
-        self.conn.close();
+        self.conn.close()
 
     def testSelectAllUsers(self):
         self.cur.execute('SELECT* from user')

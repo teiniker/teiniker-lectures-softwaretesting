@@ -30,9 +30,14 @@ class SQLiteTest(unittest.TestCase):
     def setUp(self):
         self.conn = sqlite3.connect(SQLiteTest.DATABALE_NAME)
         self.cur = self.conn.cursor()
+        # begin()  start a database transaction
+        # The Python sqlite3 module by default issues a BEGIN statement implicitly
+        # before a Data Modification Language (DML) statement
+        # (i.e. INSERT/UPDATE/DELETE/REPLACE).
 
     def tearDown(self):
-        self.conn.close();
+        self.conn.rollback()
+        self.conn.close()
 
     def testSelectAll(self):
         # Exercise
@@ -45,7 +50,3 @@ class SQLiteTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-# References:
-# https://docs.python.org/3.8/library/sqlite3.html
-# https://www.sqlitetutorial.net/
