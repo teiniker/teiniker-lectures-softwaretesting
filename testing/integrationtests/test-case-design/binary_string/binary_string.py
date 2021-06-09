@@ -14,8 +14,3 @@ def operation(data):
     else:
         raise ValidationError('Invalid data value!')
 
-# References:
-# > Python RegEx
-#   https://www.programiz.com/python-programming/regex
-# > Regular Expression HOWTO
-#   https://docs.python.org/3/howto/regex.html

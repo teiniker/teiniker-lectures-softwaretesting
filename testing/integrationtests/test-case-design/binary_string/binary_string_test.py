@@ -1,6 +1,6 @@
 import unittest
 
-from binary_number import operation, ValidationError
+from binary_string import operation, ValidationError
 
 class BinaryNumberTest(unittest.TestCase):
 

@@ -1,6 +1,6 @@
 import unittest
 
-from hex_number import operation, ValidationError
+from hex_string import operation, ValidationError
 
 
 class HexNumberTest(unittest.TestCase):
