@@ -14,12 +14,8 @@ class LoginPage:
     def __init__(self, driver):
         self.driver = driver
         self.driver.get('http://stundenplan.fh-joanneum.at/')
-
-    def username(self, username):
-        self.username = username
-
-    def password(self, password):
-        self.password = password
+        self._username = ""
+        self.password = ""
 
     def login(self):
         self.driver.find_element(By.NAME, "user").click()
@@ -39,11 +35,11 @@ class SeleniumTest(unittest.TestCase):
 
     def testLoginLogout(self):
         login_page = LoginPage(self.driver)
-        login_page.username('swd')
-        login_page.password('swd')
+        login_page.username = 'stm'
+        login_page.password = 'stm'
         logout_page = login_page.login()
         # ...
-        logout_page.logout();
+        logout_page.logout()
 
 
 if __name__ == '__main__':
