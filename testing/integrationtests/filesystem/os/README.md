@@ -33,11 +33,11 @@ The **os** and **os.path** modules include many functions to interact with the f
     Create a directory named path with the specified numeric mode. 
     This method raise FileExistsError if the directory to be created already exists.
 
-* **os.makedirs('path')**\    
+* **os.makedirs('path')**\
     Create a directory recursively. 
     That means while making leaf directory if any intermediate-level directory is missing, os.makedirs() method will create them all.
 
-* **os.listdir('path)**\    
+* **os.listdir('path)**\
     Get the list of all files and directories in the specified directory. 
     If we don’t specify any directory, then list of files and directories in the current working directory will be returned.
 
