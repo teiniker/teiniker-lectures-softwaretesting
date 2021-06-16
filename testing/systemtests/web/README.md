@@ -8,7 +8,7 @@ Selenium is an umbrella project for a range of tools and libraries that enable a
   WebDriver uses **browser automation APIs** provided by browser vendors to **control browser** and run tests. 
   This is as if a real user is operating the browser. 
   
-* **IDE**\ 
+* **IDE**\
   IDE (Integrated Development Environment) is the tool you use to develop your Selenium test cases. 
   It’s an easy-to-use **Chrome and Firefox extension** and is generally the most efficient way to develop test cases. 
   It **records the users’ actions** in the browser for you, using existing Selenium commands, with parameters defined 
