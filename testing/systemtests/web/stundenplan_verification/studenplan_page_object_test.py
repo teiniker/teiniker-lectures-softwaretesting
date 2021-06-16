@@ -6,9 +6,18 @@ class SchedulePage:
     def __init__(self, driver):
         self.driver = driver
 
-    def get_lectures(self):
-        lectures = [self.driver.find_element(By.CSS_SELECTOR, ".event:nth-child(116)").text]
-        return lectures
+    def get_lecture(self):
+        self.driver.find_element(By.NAME, "new_jg").click()
+        dropdown = self.driver.find_element(By.NAME, "new_jg")
+        dropdown.find_element(By.XPATH, "//option[. = '2020']").click()
+        self.driver.find_element(By.CSS_SELECTOR, "select:nth-child(1) > option:nth-child(2)").click()
+        self.driver.find_element(By.NAME, "new_date").click()
+        self.driver.find_element(By.CSS_SELECTOR, "option:nth-child(38)").click()
+        self.driver.find_element(By.NAME, "new_values").click()       
+        self.driver.find_element(By.CSS_SELECTOR, ".event:nth-child(117)").click()
+        lecture = self.driver.find_element(By.CSS_SELECTOR, ".event:nth-child(117)").text
+        print(lecture)
+        return lecture
 
     def logout(self):
         self.driver.find_element(By.LINK_TEXT, "Logout").click()
@@ -18,18 +27,14 @@ class LoginPage:
     def __init__(self, driver):
         self.driver = driver
         self.driver.get('http://stundenplan.fh-joanneum.at/')
-
-    def username(self, username):
-        self.username = username
-
-    def password(self, password):
-        self.password = password
+        self.username = ''
+        self.password = ''
 
     def login(self):
         self.driver.find_element(By.NAME, "user").click()
         self.driver.find_element(By.NAME, "user").send_keys(self.username)
         self.driver.find_element(By.NAME, "pass").send_keys(self.password)
-        self.driver.find_element(By.NAME, "login").click()
+        self.driver.find_element(By.NAME, "login").click()        
         return SchedulePage(self.driver)
 
 
@@ -43,14 +48,14 @@ class SeleniumTest(unittest.TestCase):
 
     def testLookup(self):
         login_page = LoginPage(self.driver)
-        login_page.username('ste')
-        login_page.password('ste')
+        login_page.username = 'stm'
+        login_page.password = 'stm'
         schedule_page = login_page.login()
 
-        lectures = schedule_page.get_lectures()
+        lecture = schedule_page.get_lecture()
         schedule_page.logout()
         
-        self.assertEqual("08:00-09:30\nVO - SWT - G.AP147.119\nTeiniker", lectures[0])
+        self.assertEqual('09:00-10:30\nLE - SW Testing - X/ONL/Teams\nTeiniker', lecture)
 
 
 if __name__ == '__main__':
