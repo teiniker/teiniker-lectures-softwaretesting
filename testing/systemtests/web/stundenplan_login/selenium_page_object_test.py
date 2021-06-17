@@ -14,7 +14,7 @@ class LoginPage:
     def __init__(self, driver):
         self.driver = driver
         self.driver.get('http://stundenplan.fh-joanneum.at/')
-        self._username = ""
+        self.username = ""
         self.password = ""
 
     def login(self):

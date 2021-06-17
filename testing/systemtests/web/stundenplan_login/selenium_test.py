@@ -2,6 +2,7 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+import time
 
 class SeleniumTest(unittest.TestCase):
 
@@ -18,6 +19,8 @@ class SeleniumTest(unittest.TestCase):
         self.driver.find_element(By.NAME, "pass").send_keys('stm')
         self.driver.find_element(By.NAME, "login").click()
         # ...
+        time.sleep(3)
+        
         self.driver.find_element(By.LINK_TEXT, "Logout").click()
 
 
