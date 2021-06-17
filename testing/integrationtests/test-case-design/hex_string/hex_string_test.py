@@ -13,8 +13,12 @@ class HexNumberTest(unittest.TestCase):
             int('AG', 16)
 
     def testValidData(self):
+        self.assertEqual(0x00, operation('00'))
+        self.assertEqual(0x99, operation('99'))
         self.assertEqual(0xaa, operation('AA'))
         self.assertEqual(0xff, operation('FF'))
+        self.assertEqual(0, operation('0000'))
+        self.assertEqual(0x9999, operation('9999'))
         self.assertEqual(0xaaaa, operation('AAAA'))
         self.assertEqual(0xffff, operation('FFFF'))
 
