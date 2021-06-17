@@ -1,7 +1,7 @@
 Exercise: Selenium Test - Stundenplan
 ------------------------------------------------------------------------------
 
-Given the running "stundenplan_pres.py" which has been imported from a
+Given the running "stundenplan_test.py" which has been imported from a
 Selenium IDE recording.
 
 Re-implement the test in the "student_page_object_test.py" file, using 
