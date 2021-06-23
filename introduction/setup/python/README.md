@@ -102,6 +102,35 @@ It is implemented as a Firefox extension, and allows you to record, edit, and de
 * Click the button **[Add to Firefox]**
 
 
+## Radon 
+
+Radon is a Python tool that computes various **metrics from the source code**. 
+Radon can compute:
+* McCabe’s complexity, i.e. cyclomatic complexity
+* raw metrics (these include SLOC, comment lines, blank lines, &c.)
+* Halstead metrics (all of them)
+* Maintainability Index (the one used in Visual Studio)
+
+With a single `pip` command, we can install Radon:
+```
+$ pip3 install radon
+
+$ radon --help
+    usage: radon [-h] [-v] {cc,raw,mi,hal} ...
+    
+    positional arguments:
+    {cc,raw,mi,hal}
+        cc     Analyze the given Python modules and compute Cyclomatic Complexity (CC).
+        raw    Analyze the given Python modules and compute raw metrics.
+        mi     Analyze the given Python modules and compute the Maintainability Index.
+        hal    Analyze the given Python modules and compute their Halstead metrics.
+    
+    optional arguments:
+    -h, --help       show this help message and exit
+    -v, --version    show program's version number and exit
+```
+
+
 ## References
 * [https://www.python.org/](https://www.python.org/)
 
@@ -110,5 +139,7 @@ It is implemented as a Firefox extension, and allows you to record, edit, and de
 * [Selenium Browser Automation Project](https://www.selenium.dev/documentation/en/)
 
 * [Selenium IDE - Getting Started](https://www.selenium.dev/selenium-ide/docs/en/introduction/getting-started)
+
+* [Radon](https://pypi.org/project/radon/)
 
 *Egon Teiniker, 2020-2021, GPL v3.0*
