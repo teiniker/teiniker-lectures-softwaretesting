@@ -112,3 +112,5 @@ Your code has been rated at 6.84/10 (previous run: 9.47/10, -2.63)
 * [Pylint](https://pypi.org/project/pylint/)
 
 * [Pylint User Manual](http://pylint.pycqa.org/en/latest/)
+
+* [Youtube: Pylint Tutorial – How to Write Clean Python](https://youtu.be/fFY5103p5-c)
