@@ -32,6 +32,10 @@ Each of these short videos repeats a specific language construct of the Python p
   * **Loops** 
     * [Youtube (Corey Schafer): Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ) 
   
+  * **Enumerations** 
+    * [Youtube: Using Enum in Python](https://youtu.be/gPPDXgCMZ0k)
+    * [Python HOWTOs: Enum](https://docs.python.org/3.11/howto/enum.html)
+      
   * **Data Structures** 
     * [Youtube (Socratica): Sets in Python](https://youtu.be/sBvaPopWOmQ)
       
