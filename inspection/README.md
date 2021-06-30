@@ -11,7 +11,7 @@ Static analysis tools borrow a lot from the compiler building world:
 * **Lexical Analysis**: By grouping input characters into tokens, a **Lexer** reduces the number of individual items that must be inspected by the parser.
     A Lexer typically:
     * Removes comments.
-    * Saves the text of interesting tokens like identifiers, strings, and numeric literals.    
+    * Saves the text of interesting tokens like identifiers, strings, and numeric literals.    
     * Tags tokens with line and column numbers to generate error messages.
 
 * **Syntax Analysis (Parsing)**: A **Parser** calls the lexer to obtain the tokens of the input program and assembles the tokens together to a parse tree.
@@ -52,5 +52,7 @@ Here are some of the tools that exist in the Python ecosystem for static analysi
 * Terence Parr. **Language Implementation Patterns**. The Pragmatic Bookshelf, 2010 
 
 * [Python Static Analysis Tools](https://luminousmen.com/post/python-static-analysis-tools)
+
+* [Youtube: Static Code Analysis with Python](https://youtu.be/mfXIJ-Fu5Fw)
 
 *Egon Teiniker, 2020-2021, GPL v3.0*
