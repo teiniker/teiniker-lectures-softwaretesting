@@ -2,6 +2,27 @@
 
 The following metrics are measured using [Radon](https://pypi.org/project/radon/), a Python metrics tool.
 
+## Setup
+
+With a single `pip` command, we can install Radon:
+```
+$ pip3 install radon
+
+$ radon --help
+    usage: radon [-h] [-v] {cc,raw,mi,hal} ...
+    
+    positional arguments:
+    {cc,raw,mi,hal}
+        cc     Analyze the given Python modules and compute Cyclomatic Complexity (CC).
+        raw    Analyze the given Python modules and compute raw metrics.
+        mi     Analyze the given Python modules and compute the Maintainability Index.
+        hal    Analyze the given Python modules and compute their Halstead metrics.
+    
+    optional arguments:
+    -h, --help       show this help message and exit
+    -v, --version    show program's version number and exit
+```
+
 ## Lines of Code (LOC)
 ```
 Usage: $ radon raw <path1> <path2>

@@ -1,14 +1,17 @@
 
 # Pylint - Static Code Analysis 
 
-**Pylint** is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. 
+Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. 
 It can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored 
 and can offer you details about the code's complexity
 
+## Setup
 Install Pylint, we can use the `pip` command:
 ```
 pip3 install pylint
 ```
+
+## Command Line Usage 
 
 Pylint is usually installed with the Visual Studio Code **Python Extension**.
 
