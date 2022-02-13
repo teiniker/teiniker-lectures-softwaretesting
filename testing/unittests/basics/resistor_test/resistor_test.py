@@ -24,14 +24,10 @@ class ResistorTest(unittest.TestCase):
 
 
     def test_add_resistors(self):
-        # Setup
         r1 = Resistor(1000)
         r2 = Resistor(330)
-        # Exercise
         r = r1 + r2
-        # Verify
         self.assertEqual(1000+330, r.value)
-        # Teardown
 
 if __name__ == '__main__':
     unittest.main()
