@@ -20,13 +20,11 @@ Each of these short videos repeats a specific language construct of the Python p
     * [Youtube (Socratica): Interactive Help](https://youtu.be/BVXv0-1Rcc8)
       
   * **Data Types** 
-    * [Youtube (Socratica): Numbers in Python Version 3](https://youtu.be/_87ASgggEg0)
-    * [Youtube (Socratica): Arithmetic in Python Version 3](https://youtu.be/Aj8FQRIHJSc)
-    * [Youtube (Socratica): Python Strings](https://youtu.be/iAzShkKzpJo)
-  
+    * [YouTube (Corey Schafer): Strings - Working with Textual Data](https://youtu.be/k9TUPpGqYTo)
+
+
+
   * **Conditional Statements**  
-    * [Youtube (Socratica): Python Booleans](https://youtu.be/9OK32jb_TdI)
-    * [Youtube (Socratica): If, Then, Else in Python](https://youtu.be/f4KOjWS_KZs)
     * [Youtube (Corey Schafer): Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
   
   * **Loops** 
@@ -39,10 +37,8 @@ Each of these short videos repeats a specific language construct of the Python p
   * **Data Structures** 
     * [Youtube (Socratica): Sets in Python](https://youtu.be/sBvaPopWOmQ)
       
-    * [Youtube (Socratica): Python Lists](https://youtu.be/ohCDWZgNIU0)
     * [Youtube (Corey Schafer): Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc) 
 
-    * [Youtube (Socratica): Python Dictionaries](https://youtu.be/XCcpzWs-CI4)
     * [Youtube (Corey Schafer): Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
 
   * [**Functions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/functions) 
