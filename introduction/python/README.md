@@ -17,6 +17,7 @@ Each of these short videos repeats a specific language construct of the Python p
 ## Python Language Features
 
   * **Data Types** 
+    * [YouTube (Corey Schafer): Integers and Floats - Working with Numeric Data](https://youtu.be/khKv-8q7YmY)
     * [YouTube (Corey Schafer): Strings - Working with Textual Data](https://youtu.be/k9TUPpGqYTo)
  
   * **Conditional Statements**  
