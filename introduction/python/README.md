@@ -16,70 +16,61 @@ Each of these short videos repeats a specific language construct of the Python p
 
 ## Python Language Features
 
-  * **Getting Started** 
-    * [Youtube (Socratica): Interactive Help](https://youtu.be/BVXv0-1Rcc8)
-      
   * **Data Types** 
     * [YouTube (Corey Schafer): Strings - Working with Textual Data](https://youtu.be/k9TUPpGqYTo)
-
-
-
+ 
   * **Conditional Statements**  
-    * [Youtube (Corey Schafer): Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
+    * [YouTube (Corey Schafer): Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
   
   * **Loops** 
-    * [Youtube (Corey Schafer): Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ) 
+    * [YouTube (Corey Schafer): Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ) 
   
   * **Enumerations** 
-    * [Youtube: Using Enum in Python](https://youtu.be/gPPDXgCMZ0k)
+    * [YouTube: Using Enum in Python](https://youtu.be/gPPDXgCMZ0k)
     * [Python HOWTOs: Enum](https://docs.python.org/3.11/howto/enum.html)
       
   * **Data Structures** 
-    * [Youtube (Socratica): Sets in Python](https://youtu.be/sBvaPopWOmQ)
-      
-    * [Youtube (Corey Schafer): Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc) 
-
-    * [Youtube (Corey Schafer): Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
+    * [YouTube (Corey Schafer): Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc) 
+    * [YouTube (Corey Schafer): Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
+    * [YouTube (Corey Schafer): String Formatting - Advanced Operations for Dicts, Lists, Numbers, and Dates](https://youtu.be/vTX3IwquFkc)
 
   * [**Functions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/functions) 
-      * [Youtube (Corey Schafer): Functions](https://youtu.be/9Os0o3wzS_I)
+      * [YouTube (Corey Schafer): Functions](https://youtu.be/9Os0o3wzS_I)
   
   * [**Classes**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/classes)
-      * [Youtube (Socratica): Python Classes and Objects](https://youtu.be/apACNr7DC_s)
-      * [Youtube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
-      * [Youtube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/rq8cL2XMM5M)
-      * [Youtube (Corey Schafer): Class Variables](https://youtu.be/BJ-VvGyQxho)
-      * [Youtube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/ZDa-Z5JzLYM)
-      * [Youtube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
+      * [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
+      * [YouTube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/rq8cL2XMM5M)
+      * [YouTube (Corey Schafer): Class Variables](https://youtu.be/BJ-VvGyQxho)
+      * [YouTube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/ZDa-Z5JzLYM)
+      * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
       
   * [**Exceptions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/exceptions)
-      * [Youtube (Socratica):  Exceptions in Python](https://youtu.be/nlCKrKGHSSk)
-      * [Youtube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
-      * [Youtube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
+      * [YouTube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
+      * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
       
   
   * [**Modules**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python)
-      * [Youtube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
+      * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
 
 
 ## Python Standard Library
   
   * **Test Automation**
-    * [Youtube (Corey Schafer): Unit Testing Your Code with the unittest Module](https://youtu.be/6tNS--WetLI)   
+    * [YouTube (Corey Schafer): Unit Testing Your Code with the unittest Module](https://youtu.be/6tNS--WetLI)   
 
   * **Date and Time**
      * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
 
   * **Regular Expressions**
-    * [Youtube (Corey Schafer): re Module - How to Write and Match Regular Expressions (Regex)](https://youtu.be/K8L6KVGG-7o)  
+    * [YouTube (Corey Schafer): re Module - How to Write and Match Regular Expressions (Regex)](https://youtu.be/K8L6KVGG-7o)  
         
   * [**File Handling**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/files)
-     * [Youtube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)  
-     * [Youtube (Corey Schafer): File Objects - Reading and Writing to Files](https://youtu.be/Uh2ebFW8OYM)   
-     * [Youtube (Corey Schafer): CSV Module - How to Read, Parse, and Write CSV Files](https://youtu.be/q5uM4VKywbA)
+     * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)  
+     * [YouTube (Corey Schafer): File Objects - Reading and Writing to Files](https://youtu.be/Uh2ebFW8OYM)   
+     * [YouTube (Corey Schafer): CSV Module - How to Read, Parse, and Write CSV Files](https://youtu.be/q5uM4VKywbA)
 
   * **Databases**
-    * [Youtube (Corey Schafer): Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries](https://youtu.be/pd-0G0MigUA)
+    * [YouTube (Corey Schafer): Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries](https://youtu.be/pd-0G0MigUA)
 
       
 
@@ -89,4 +80,4 @@ Each of these short videos repeats a specific language construct of the Python p
 * Slatkin Brett. **Effective Python**. Pearson Education, 2nd Edition, 2020
 
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
