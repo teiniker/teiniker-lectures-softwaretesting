@@ -40,11 +40,11 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
     * [YouTube (Corey Schafer): String Formatting - Advanced Operations for Dicts, Lists, Numbers, and Dates](https://youtu.be/vTX3IwquFkc)
 
-  * [**Functions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/functions) 
+  * **Functions** 
     * [Introduction](functions)
     * [YouTube (Corey Schafer): Functions](https://youtu.be/9Os0o3wzS_I)
   
-  * [**Classes**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/classes)
+  * **Classes**
     * [Introduction](classes)  
     * [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
     * [YouTube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/rq8cL2XMM5M)
@@ -52,13 +52,13 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/ZDa-Z5JzLYM)
     * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
       
-  * [**Exceptions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/exceptions)
+  * **Exceptions**
     * [Introduction](exceptions) 
     * [YouTube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
     * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
       
   
-  * [**Modules**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python)
+  * **Modules**
     * [Introduction](modules) 
     * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
 
