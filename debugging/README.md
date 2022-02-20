@@ -11,18 +11,18 @@ As programmers, we know that bugs do not creep out of mother nature into our pro
 
 ## From Defects to Failures
 
-* **The programmer creates a defect**
+* **The programmer creates a defect**\
   A defect is a piece of the code that can cause an infection. 
   The defect is technically created by the programmer.
 
-* **The defect causes an infection**
+* **The defect causes an infection**\
   After execution of the defect, the program state differs from what the programmer intended.
 
-* **The infection propagates**
+* **The infection propagates**\
   As the remaining program execution accesses the infected state, 
   it generates further infections tat can spread into later program states. 
 
-* **The infection causes a failure**
+* **The infection causes a failure**\
   A failure is an external observable error in the program behavior. 
   It is caused by an infection in the program state.
 
@@ -35,25 +35,25 @@ The issue of debugging is to identify the infection chain, to find its root caus
 
 ## From Failures to Fixes
 
-* **Track the problem**
+* **Track the problem**\
   The first step in debugging is to file a problem report such that the defect will not go by unnoticed.
 
-* **Reproduce the failure**
+* **Reproduce the failure**\
   Reproducing may require control over all possible input sources.
 
-* **Automate and simplify the test case**
+* **Automate and simplify the test case**\
   We have to think about how to automate the failure (in that we want to reproduce the failure automatically) 
   and how to simplify its input such that we obtain a minimum test case.
 
-* **Find possible infection origins**
+* **Find possible infection origins**\
   We have to observe what actually happens in a failing run. 
   Observation techniques include logging and interactive debuggers.
 
-* **Correct the defect**
+* **Correct the defect**\
   Finally, we have to correct the defect. 
   If the failure no longer occurs, we know that the defect caused the failure.
 
-* **Learning from mistakes**
+* **Learning from mistakes**\
   We can aggregate earlier problem reports and fixes to find out where 
   the most defects occur in the program.
 
