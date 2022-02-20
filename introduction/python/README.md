@@ -74,7 +74,7 @@ Each of these short videos repeats a specific language construct of the Python p
   * **Regular Expressions**
     * [YouTube (Corey Schafer): re Module - How to Write and Match Regular Expressions (Regex)](https://youtu.be/K8L6KVGG-7o)  
         
-  * [**File Handling**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/files)
+  * **File Handling**
      * [Introduction](files) 
      * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)  
      * [YouTube (Corey Schafer): File Objects - Reading and Writing to Files](https://youtu.be/Uh2ebFW8OYM)   
