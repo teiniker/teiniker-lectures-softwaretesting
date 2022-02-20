@@ -13,7 +13,7 @@ To get access to all the facts about Python you can follow these two sources:
 
 There is also a **Python style guide** which defines coding conventions for the Python code comprising the standard library 
 in the main Python distribution:
-
+* [Introduction](Python-StyleGuide.md)
 * [PEP 8: Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
 
 The following list references numerous **videos** which are created by by engaged authors and freely accessible on YouTube.
@@ -41,22 +41,26 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): String Formatting - Advanced Operations for Dicts, Lists, Numbers, and Dates](https://youtu.be/vTX3IwquFkc)
 
   * [**Functions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/functions) 
-      * [YouTube (Corey Schafer): Functions](https://youtu.be/9Os0o3wzS_I)
+    * [Introduction](functions)
+    * [YouTube (Corey Schafer): Functions](https://youtu.be/9Os0o3wzS_I)
   
   * [**Classes**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/classes)
-      * [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
-      * [YouTube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/rq8cL2XMM5M)
-      * [YouTube (Corey Schafer): Class Variables](https://youtu.be/BJ-VvGyQxho)
-      * [YouTube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/ZDa-Z5JzLYM)
-      * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
+    * [Introduction](classes)  
+    * [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
+    * [YouTube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/rq8cL2XMM5M)
+    * [YouTube (Corey Schafer): Class Variables](https://youtu.be/BJ-VvGyQxho)
+    * [YouTube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/ZDa-Z5JzLYM)
+    * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
       
   * [**Exceptions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/exceptions)
-      * [YouTube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
-      * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
+    * [Introduction](exceptions) 
+    * [YouTube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
+    * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
       
   
   * [**Modules**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python)
-      * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
+    * [Introduction](modules) 
+    * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
 
 
 ## Python Standard Library
@@ -71,6 +75,7 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): re Module - How to Write and Match Regular Expressions (Regex)](https://youtu.be/K8L6KVGG-7o)  
         
   * [**File Handling**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/python/files)
+     * [Introduction](files) 
      * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)  
      * [YouTube (Corey Schafer): File Objects - Reading and Writing to Files](https://youtu.be/Uh2ebFW8OYM)   
      * [YouTube (Corey Schafer): CSV Module - How to Read, Parse, and Write CSV Files](https://youtu.be/q5uM4VKywbA)
