@@ -30,7 +30,7 @@ Not every defect results in an infection, and not every infection results in a f
 
 **Testing can only show the presents of defects, but never their absence.** (Dijkstra)
 
-The issue of debugging is to identify the infection chain, to find its root cause (the defect), and to remove the defect.
+The issue of debugging is to **identify the infection chain, to find its root cause (the defect), and to remove the defect**.
 
 
 ## From Failures to Fixes
