@@ -7,22 +7,33 @@ the concepts of software testing and code inspection in the software development
 
 The following topics will be covered:
 
-1. [**Introduction**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction)
-    * [Environment Setup](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/introduction/setup)
-    * [Python Tutorial](https://github.com/teiniker/teiniker-lectures-softwaretesting/blob/master/introduction/python)
+1. **Introduction**
+    * [Linux Tutorial](introduction/linux)
+
+    * [Python Tutorial](introduction/python)
     
-2. [**Debugging**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging)
+2. **Debugging**
+    * [Introduction](debugging)
 
-2. [**Software Testing**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing)
-    * [Unit Tests](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/unittests)
+2. **Software Testing**
+    * [Introduction](testing)
+    
+    * [Unit Tests](testing/unittests)
 
-    * [Integration Tests](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/integrationtests)
+    * [Integration Tests](testing/integrationtests)
 
-    * [System Tests](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/systemtests)
+    * [System Tests](testing/systemtests)
 
     * Non-Functional Tests
 
-2. [**Software Inspection**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/inspection)
+2. **Software Inspection**
+    * [Introduction](inspection)
+
+
+There is a separate [setup](setup) directory in which the instructions can be found for **installing and configuring** the required tools and libraries.
+
+As a development environment, you can use a pre-configured Debian 11 Linux VM image: 
+[Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l)
 
 ## References
 * Glenford J. Myers, Corey Sandler, Tom Badgett.**The Art of Software Testing**. Wiley, 3rd edition 2012
@@ -30,4 +41,4 @@ The following topics will be covered:
 * Andreas Zeller. **Why Programs Fail - A Guide to Systematic Debugging**. dpunkt.verlag, 2009
 
  
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*

@@ -47,4 +47,4 @@ _Tip_: You can find both JSON files in this documentation directory.
 ## References
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*

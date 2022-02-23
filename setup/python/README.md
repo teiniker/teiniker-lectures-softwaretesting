@@ -167,4 +167,4 @@ setoptconf-0.2.0 snowballstemmer-2.1.0 typing-extensions-3.10.0.0 zipp-3.4.1
 
 * [Prospector - Python Static Analysis](https://prospector.landscape.io/en/master/)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*

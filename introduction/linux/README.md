@@ -66,4 +66,4 @@ your Linux machine.
     * `1:06:30` Working with Processes
     * `1:11:15` Terminal Shortcuts
 
-*Egon Teiniker, 2020-2021, GPL v3.0*    
+*Egon Teiniker, 2020-2022, GPL v3.0*    
