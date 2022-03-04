@@ -42,8 +42,9 @@ Some of the commonly used parameters are the following:
 
 
 ## References
+* [YouTube (Schafer): Logging Basics - Logging to Files, Setting Levels, and Formatting](https://youtu.be/-ARI4Cz-awo)
 * [Logging in Python](https://realpython.com/python-logging/)
 * [Basic Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
 * [Logging facility for Python](https://docs.python.org/3/library/logging.html)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
