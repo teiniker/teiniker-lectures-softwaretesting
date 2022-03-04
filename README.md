@@ -15,7 +15,10 @@ The following topics will be covered:
 2. **Debugging**
     * [Introduction](debugging)
 
-2. **Software Testing**
+3. **Software Inspection**
+    * [Introduction](inspection)
+
+4. **Software Testing**
     * [Introduction](testing)
     
     * [Unit Tests](testing/unittests)
@@ -26,8 +29,6 @@ The following topics will be covered:
 
     * Non-Functional Tests
 
-2. **Software Inspection**
-    * [Introduction](inspection)
 
 
 There is a separate [setup](setup) directory in which the instructions can be found for **installing and configuring** the required tools and libraries.
