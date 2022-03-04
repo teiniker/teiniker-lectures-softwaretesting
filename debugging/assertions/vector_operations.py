@@ -33,7 +33,7 @@ assert vector_multiple == [7*5, 7*2, 7*1]
 
 vector_sum =  vector_add(a, b)
 print('a + b = {}'.format(vector_sum))
-assert vector_sum == [5+3, 2+7, 1+1]
+assert vector_sum == [5+3, 2+7, 1+11]
 
 scalar_product = vector_scalar_product(a, b)
 print('a * b = {}'.format(scalar_product))
