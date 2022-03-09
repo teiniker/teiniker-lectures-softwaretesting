@@ -1,4 +1,4 @@
-def Insertion_sort(A):
+def insertion_sort(A):
     for j in range(1, len(A)):
         key = A[j]
         i = j - 1
@@ -8,6 +8,6 @@ def Insertion_sort(A):
         A[i+1] = key
 
 
-x = [2,7,3,8,1] 
-Insertion_sort(x)
+x = [2,7,3,8,1]
+insertion_sort(x)
 print(x)

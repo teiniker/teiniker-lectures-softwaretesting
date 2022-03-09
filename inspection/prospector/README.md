@@ -36,9 +36,9 @@ Prospector can be configured to set exactly which **tools to run**:
 ```
 $ prospector --tool mccabe
 ```
-Possible values are: **bandit**, **dodgy**, **frosted**, **mccabe**, **mypy**, **pep257**, **pep8**, **profile-validator**, **pyflakes**, **pylint**, **pyroma**, **vulture**. 
+Possible values are: **bandit**, **dodgy**, **frosted**, **mccabe**, **mypy**,  **profile-validator**, **pycodestyle**, **pydocstyle**, **pyflakes**, **pylint**, **pyroma**, **vulture**. 
 
-By default, the following tools will be run: **dodgy**, **mccabe**, **pep257**, **pep8**, **profile-validator**, **pyflakes**, **pylint**
+By default, the following tools will be run: **dodgy**, **mccabe**, **profile-validator**, **pyflakes**, **pylint**
 
 _Example_: Measure complexity metrics (Cyclomatic Complexity Number) only
 ```
@@ -82,5 +82,8 @@ $ prospector -t mccabe
 * [Supported Tools](http://prospector.landscape.io/en/master/supported_tools.html)
 
 * [Command Line Usage](http://prospector.landscape.io/en/master/usage.html)
+
+* **Target Projects**
+    * [GitHub: simplejson](https://github.com/simplejson/simplejson)
 
 *Egon Teiniker, 2020-2021, GPL v3.0*

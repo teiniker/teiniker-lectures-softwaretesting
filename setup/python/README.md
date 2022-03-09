@@ -1,4 +1,4 @@
-# Setup Python, Tools & Libraries 
+# Setup Python
 
 The following setup steps are described from the perspective of the [Debian VM](). 
 For other platforms, the respective manuals must be used as an aid.
@@ -102,55 +102,6 @@ It is implemented as a Firefox extension, and allows you to record, edit, and de
 * Click the button **[Add to Firefox]**
 
 
-## Radon 
-
-Radon is a Python tool that computes various **metrics from the source code**. 
-Radon can compute:
-* McCabe’s complexity, i.e. cyclomatic complexity
-* raw metrics (these include SLOC, comment lines, blank lines, &c.)
-* Halstead metrics (all of them)
-* Maintainability Index (the one used in Visual Studio)
-
-With a single `pip` command, we can install Radon:
-```
-$ pip3 install radon
-
-$ radon --help
-    usage: radon [-h] [-v] {cc,raw,mi,hal} ...
-    
-    positional arguments:
-    {cc,raw,mi,hal}
-        cc     Analyze the given Python modules and compute Cyclomatic Complexity (CC).
-        raw    Analyze the given Python modules and compute raw metrics.
-        mi     Analyze the given Python modules and compute the Maintainability Index.
-        hal    Analyze the given Python modules and compute their Halstead metrics.
-    
-    optional arguments:
-    -h, --help       show this help message and exit
-    -v, --version    show program's version number and exit
-```
-
-## Pylint 
-
-Pylint is a tool that checks for errors in Python code.
-Install Pylint, we can use the `pip` command:
-```
-pip3 install pylint
-```
-
-
-
-## Prospector 
-
-We can install default tools using pip command:
-```
-$ pip3 install prospector
-
-Successfully installed astroid-2.4.1 dodgy-0.2.1 flake8-3.9.2 flake8-polyfill-1.0.2 importlib-metadata-4.6.0 
-isort-4.3.21 pep8-naming-0.10.0 prospector-1.3.1 pycodestyle-2.6.0 pydocstyle-6.1.1 pyflakes-2.2.0 pylint-2.5.3 
-pylint-celery-0.3 pylint-django-2.1.0 pylint-flask-0.6 pylint-plugin-utils-0.6 pyyaml-5.4.1 requirements-detector-0.7 
-setoptconf-0.2.0 snowballstemmer-2.1.0 typing-extensions-3.10.0.0 zipp-3.4.1
-```	
 
 ## References
 * [https://www.python.org/](https://www.python.org/)
@@ -161,10 +112,5 @@ setoptconf-0.2.0 snowballstemmer-2.1.0 typing-extensions-3.10.0.0 zipp-3.4.1
 
 * [Selenium IDE - Getting Started](https://www.selenium.dev/selenium-ide/docs/en/introduction/getting-started)
 
-* [Radon](https://pypi.org/project/radon/)
-
-* [Pylint](https://pypi.org/project/pylint/)
-
-* [Prospector - Python Static Analysis](https://prospector.landscape.io/en/master/)
 
 *Egon Teiniker, 2020-2022, GPL v3.0*

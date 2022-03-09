@@ -8,7 +8,7 @@ and can offer you details about the code's complexity
 ## Setup
 Install Pylint, we can use the `pip` command:
 ```
-pip3 install pylint
+$ pip3 install pylint
 ```
 
 ## Command Line Usage 
@@ -44,4 +44,4 @@ Your code has been rated at 6.84/10 (previous run: 9.47/10, -2.63)
 * [Youtube: Pylint Tutorial – How to Write Clean Python](https://youtu.be/fFY5103p5-c)
 
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
