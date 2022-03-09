@@ -83,7 +83,4 @@ $ prospector -t mccabe
 
 * [Command Line Usage](http://prospector.landscape.io/en/master/usage.html)
 
-* **Target Projects**
-    * [GitHub: simplejson](https://github.com/simplejson/simplejson)
-
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
