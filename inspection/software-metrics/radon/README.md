@@ -94,5 +94,6 @@ The following options can be used:
 ## References
 * [Radon](https://pypi.org/project/radon/)			
 
+* [Introduction to Code Metrics](https://radon.readthedocs.io/en/latest/intro.html)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
