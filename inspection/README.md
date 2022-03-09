@@ -5,7 +5,7 @@ Software inspection is a **static technique** in which a software system is revi
 Generally, inspections focus on **source code**, but any readable representation of the software such as its 
 **requirements** or a **design model** can be inspected.
 
-We use knowledge of the system, its application domain and the programming language or design model to discover errors.
+We use knowledge of the system, its application domain and the programming language or design model to discover errors.
 
 * **Software Metrics**
     * [Radon - Complexity Metrics](software-metrics/radon)
@@ -13,7 +13,7 @@ We use knowledge of the system, its application domain and the programming lang
 * **Static Code Analysis**
     * [Introduction](static-analysis)
     * [Pylint](static-analysis/pylint)
-    * [Prospector]static-analysis/prospector)
+    * [Prospector](static-analysis/prospector)
 
 ## References
 * Ian Sommerville. **Software Engineering**. Pearson, Global Edition 2015
