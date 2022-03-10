@@ -8,7 +8,7 @@ the concepts of software testing and code inspection in the software development
 The following topics will be covered:
 
 1. **Introduction**
-    * [Linux Tutorial](introduction/linux)
+    * [Linux Platform](introduction/linux)
 
     * [Python Tutorial](introduction/python)
     
