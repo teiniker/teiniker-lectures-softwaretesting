@@ -1,11 +1,21 @@
-def insertion_sort(A):
-    for j in range(1, len(A)):
-        key = A[j]
+"""
+Example used to measure software metrics via radon:
+    CCN = 5
+    LOC: 21
+    LLOC: 13
+"""
+def insertion_sort(data):
+    """
+    Implementation of the assertion sort algorithm.
+    Sort the given list data.
+    """
+    for j in range(1, len(data)):
+        key = data[j]
         i = j - 1
-        while (i >=0) and (A[i] > key):
-            A[i+1] = A[i]
+        while (i >=0) and (data[i] > key):
+            data[i+1] = data[i]
             i = i - 1
-        A[i+1] = key
+        data[i+1] = key
 
 
 x = [2,7,3,8,1]
