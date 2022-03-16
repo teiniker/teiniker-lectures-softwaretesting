@@ -50,8 +50,8 @@ class instances.
 We can define a class attribute by assigning a value to a variable name outside of `__init__()`.
 
 **Private attributes** that cannot be accessed except from inside an object don't exist in Python.
-There is a convention that is followed by most Python code: a **name prefixed with an underscore** 
-(e.g. `_value`) 
+There is a convention that is followed by most Python code: a **name prefixed with two underscores** 
+(e.g. `__value`) 
 should be treated as a non-public part of the API (whether it is a function, a method or a data member).
 
 Every attribute in a class needs an initial value, even if that value is 0 or an empty string. 
@@ -68,6 +68,38 @@ We can **change an attribute’s value** in three ways:
 Instance methods are functions that are defined inside a class and can only be called from an instance 
 of that class. 
 An instance method’s first parameter is always `self`.
+
+
+### Access Modifiers in Python 
+
+Object-oriented languages, like C++ and Java, use various keywords to control 
+and restrict the resource usage of a class.
+
+This is where keywords like `public`, `private` and `protected` come into the picture. However, Python has a different way of providing the functionality of these access modifiers.
+
+* **Public**\
+   Public members of a class are available to everyone. 
+   So they can be accessed from outside the class and also by other classes too.
+
+   All members of a class are by **default** public in Python. 
+   These members can be accessed outside of the class, and their values can be modified too.
+
+* **Protected**\
+    protected members of a class can be accessed by other members within the class and are also available to their subclasses.
+    No other entity can access these members. 
+
+    Python has a unique convention to make a member protected: Add a prefix `_` (single underscore). This prevents its usage by outside entities unless it is a subclass.
+
+    The attribute defined in the above program is accessible outside the class scope. It can also be modified as well.
+
+* **Private**\
+The private members of a class are only accessible within the class. 
+
+In Python, a private member can be defined by using a prefix `__` (double underscore).
+
+Python performs name mangling on private attributes. 
+Every member with a double underscore will be changed to `_object._class__variable`.
+
 
 ## Making an Class Instance
 
