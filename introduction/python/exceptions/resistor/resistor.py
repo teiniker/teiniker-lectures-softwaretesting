@@ -8,23 +8,23 @@ class Resistor():
         if tolerance < 0:
             raise ValueError('Invalid tolerance!')
 
-        self.value = value              
-        self.tolerance = tolerance       
+        self.__value = value              
+        self.__tolerance = tolerance       
 
     def __repr__(self):
-        return 'Resistor({}, {})'.format(self.value, self.tolerance)
+        return 'Resistor({}, {})'.format(self.__value, self.__tolerance)
 
     def __str__(self):
-        return 'Resistor: value={}, tolerance={}'.format(self.value, self.tolerance)    
+        return 'Resistor: value={}, tolerance={}'.format(self.__value, self.__tolerance)    
 
     def __eq__(self, other):
-        if self.value == other.value and self.tolerance == other.tolerance:
+        if self.__value == other.__value and self.__tolerance == other.__tolerance:
             return True
         else:
             return False
 
     def __add__(self, other):
-        return Resistor(self.value + other.value)
+        return Resistor(self.__value + other.__value)
 
 
 # Verify implementation
