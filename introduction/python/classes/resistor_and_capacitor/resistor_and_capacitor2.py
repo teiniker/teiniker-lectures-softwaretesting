@@ -45,3 +45,11 @@ assert 'Capacitor: value=1uF, tolerance=5' == str(c1)
 
 #print(help(Resistor))
 #print(help(Capacitor))
+
+#print(isinstance(r1, Resistor))
+#print(isinstance(r1, Part))
+#print(isinstance(r1, Capacitor))
+
+print(issubclass(Resistor, Part))
+print(issubclass(Capacitor, Part))
+print(issubclass(Resistor, Capacitor))
