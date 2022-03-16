@@ -42,3 +42,6 @@ assert 100 == c2.value
 assert 10 == c2.tolerance
 
 assert 'Capacitor: value=1uF, tolerance=5' == str(c1)
+
+#print(help(Resistor))
+#print(help(Capacitor))
