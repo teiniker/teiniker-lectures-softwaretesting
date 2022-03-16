@@ -2,10 +2,10 @@ class Mail():
     """Model of an email address."""
 
     def __init__(self, address):
-        self._address = address              
+        self.__address = address              
 
     def get_address(self):
-        return self._address
+        return self.__address
 
     def __repr__(self):
         return "Mail('{}')".format(self.get_address())
@@ -14,7 +14,7 @@ class Mail():
         return 'Mail: address={}'.format(self.get_address())    
 
     def __eq__(self, other):
-        if self._address == other._address :
+        if self.__address == other.__address :
             return True
         else:
             return False
@@ -24,22 +24,22 @@ class User():
     """Model of a user."""
 
     def __init__(self, id, username, password, mail):
-        self._id = id
-        self._username = username          
-        self._password = password    
-        self._mail = mail
+        self.__id = id
+        self.__username = username          
+        self.__password = password    
+        self.__mail = mail
 
     def get_id(self):
-        return self._id
+        return self.__id
 
     def get_username(self):
-        return self._username
+        return self.__username
 
     def get_password(self):
-        return self._password
+        return self.__password
 
     def get_mail(self):
-        return self._mail
+        return self.__mail
 
     def __repr__(self):
         return "User({}, '{}', '{}', {})".format(self.get_id(), self.get_username(), self.get_password(), repr(self.get_mail()))
@@ -48,7 +48,7 @@ class User():
         return "User: id={}, username='{}', mail='{}'".format(self.get_id(), self.get_username(), self.get_mail().get_address())    
 
     def __eq__(self, other):
-        if self._id == other._id:
+        if self.__id == other.__id:
             return True
         else:
             return False
