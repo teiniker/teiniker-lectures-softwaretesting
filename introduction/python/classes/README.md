@@ -233,9 +233,11 @@ Python will disregard the parent class method and only pay attention to the meth
 
 
 ## References
-
 * Eric Matthes. Python Crash Course. No Starch Press, 2016. Chapter 9: Classes
+
 * [Object-Oriented Programming (OOP) in Python 3](https://realpython.com/python3-object-oriented-programming/)
+
+* [Public, Private, and Protected — Access Modifiers in Python](https://betterprogramming.pub/public-private-and-protected-access-modifiers-in-python-9024f4c1dd4)
 
 * [Operator and Function Overloading in Custom Python Classes](https://realpython.com/operator-function-overloading/)
 * [Python __str__() and __repr__() functions](https://www.journaldev.com/22460/python-str-repr-functions)
@@ -243,4 +245,5 @@ Python will disregard the parent class method and only pay attention to the meth
 
 
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+
+*Egon Teiniker, 2020-2022, GPL v3.0*
