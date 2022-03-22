@@ -8,15 +8,12 @@ class User():
         return "User: id={}, username='{}'".format(self.id, self.username)    
 
     def __eq__(self, other):
-        if self.id == other.id:
-            return True
-        else:
-            return False
+        return self.id == other.id
 
 
 class UserTable():
     def __init__(self):
-        self.users = list()
+        self.users = []
 
     def insert(self, user):
         self.users.append(user)

@@ -2,79 +2,59 @@ class Mail():
     """Model of an email address."""
 
     def __init__(self, address):
-        self.__address = address              
-
-    def get_address(self):
-        return self.__address
+        self.address = address              
 
     def __repr__(self):
-        return "Mail('{}')".format(self.get_address())
+        return f"Mail('{self.address}')"
 
     def __str__(self):
-        return 'Mail: address={}'.format(self.get_address())    
+        return f"Mail: address='{self.address}'"    
 
     def __eq__(self, other):
-        if self.__address == other.__address :
-            return True
-        else:
-            return False
+        return self.address == other.address
 
 
 class User():
     """Model of a user."""
 
-    def __init__(self, id, username, password, mail):
-        self.__id = id
-        self.__username = username          
-        self.__password = password    
-        self.__mail = mail
-
-    def get_id(self):
-        return self.__id
-
-    def get_username(self):
-        return self.__username
-
-    def get_password(self):
-        return self.__password
-
-    def get_mail(self):
-        return self.__mail
+    def __init__(self, id, username, password, mails = []):
+        self.id = id
+        self.username = username          
+        self.password = password    
+        self.mails = mails
 
     def __repr__(self):
-        return "User({}, '{}', '{}', {})".format(self.get_id(), self.get_username(), self.get_password(), repr(self.get_mail()))
+        return f"User({self.id}, '{self.username}', '{self.password}', {repr(self.mails)})"
 
     def __str__(self):
-        return "User: id={}, username='{}', mail='{}'".format(self.get_id(), self.get_username(), self.get_mail().get_address())    
+        return f"User: id={self.id}, username='{self.username}', mails={self.mails}"    
 
     def __eq__(self, other):
-        if self.__id == other.__id:
-            return True
-        else:
-            return False
+        return self.id == other.id
 
 
 # Verify Mail 
 
-m = Mail('homer.simpson@springfield.com')
-assert 'homer.simpson@springfield.com' == m.get_address()
+m1 = Mail('homer.simpson@springfield.com')
+assert 'homer.simpson@springfield.com' == m1.address
+assert "Mail('homer.simpson@springfield.com')" == repr(m1)
+assert "Mail: address='homer.simpson@springfield.com'" == str(m1)
 
-assert "Mail('homer.simpson@springfield.com')" == repr(m)
-
-assert 'Mail: address=homer.simpson@springfield.com' == str(m)
-
-m2 = Mail('homer.simpson@springfield.com')
-assert m == m2 
+m2 = Mail('homer.simpson@powerplant.com')
+assert m2.address ==  'homer.simpson@powerplant.com'
 
 
 # Verify User
 
-u = User(7, 'homer', ')jh%6Zgur5)r', m)
-assert 7 == u.get_id()
-assert 'homer' == u.get_username()
-assert ')jh%6Zgur5)r' == u.get_password()
-assert 'homer.simpson@springfield.com' == u.get_mail().get_address()
+u = User(7, 'homer', ')jh%6Zgur5)r', [m1, m2])
 
-assert "User(7, 'homer', ')jh%6Zgur5)r', Mail('homer.simpson@springfield.com'))" == repr(u)
+assert 7 == u.id
+assert 'homer' == u.username
+assert ')jh%6Zgur5)r' == u.password
 
-assert "User: id=7, username='homer', mail='homer.simpson@springfield.com'" == str(u) 
+mails = u.mails
+assert 'homer.simpson@springfield.com' == mails[0].address
+assert 'homer.simpson@powerplant.com' == mails[1].address
+
+assert "User(7, 'homer', ')jh%6Zgur5)r', [Mail('homer.simpson@springfield.com'), Mail('homer.simpson@powerplant.com')])" == repr(u)
+assert "User: id=7, username='homer', mails=[Mail('homer.simpson@springfield.com'), Mail('homer.simpson@powerplant.com')]" == str(u) 
