@@ -62,6 +62,7 @@ Each of these short videos repeats a specific language construct of the Python p
   
   * **Modules**
     * [Introduction](modules) 
+    * [YouTube (Corey Schafer): Import Modules and Exploring The Standard Library](https://youtu.be/CqvZ3vGoGs0)
     * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
 
 
