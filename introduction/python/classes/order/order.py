@@ -4,10 +4,7 @@ class Entity():
         self.id = id
 
     def __eq__(self, other):
-        if(self.id == other.id):
-            return True
-        else:
-            return False
+        return self.id == other.id
 
 
 class Product(Entity):
@@ -18,7 +15,7 @@ class Product(Entity):
         self.price = price
 
     def __str__(self):
-        return 'Product: id={}, description="{}", price={}'.format(self.id, self.description, self.price)            
+        return f'Product: id={self.id}, description="{self.description}", price={self.price}'            
 
 
 class OrderLine(Entity):
@@ -28,21 +25,21 @@ class OrderLine(Entity):
         self.product = product
 
     def __str__(self):
-        return 'OrderLine: id={}, quantity={}, product={}'.format(self.id, self.quantity, self.product)            
+        return f'OrderLine: id={self.id}, quantity={self.quantity}, product={self.product}'           
 
 
 class Order(Entity):
     def __init__(self, id, name):
         super().__init__(id)
         self.name = name
-        self.lines = list()
+        self.lines = []
 
     def add_line(self, line):
         self.lines.append(line)    
 
     def __str__(self):    
         lines_str = '; '.join([str(elem) for elem in self.lines])
-        return 'Order: id={}, name={}, lines=[{}]'.format(self.id, self.name, lines_str)
+        return f'Order: id={self.id}, name={self.name}, lines=[{lines_str}]'
 
 
 e1 = Entity(7)

@@ -1,0 +1,22 @@
+Exercise: Classes, Associations, Inheritance
+-------------------------------------------------------------------------------
+
+Implement a base class called "Entity" together with the following
+Subclasses:
+   [Order] ---[*]-> [OrderLine] ---[1]-> [Product]
+
+Entity: 
+   Attribute: id
+   Methods: __init__(), __eq__()
+
+Product:
+   Attributes: description, price
+   Methods: __init__(), __str__()
+ 
+OrderLine:
+   Attributes: quantity, product
+   Methods: __init__(), __str__()
+ 
+Order:
+   Attributes: name
+   Methods: __init__(), add_line(), __str__()  
