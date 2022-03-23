@@ -1,36 +1,47 @@
-
 class Resistor():
     """Model of a resistor with a given tolerance."""
 
-    def __init__(self, value, tolerance=2):
+    def __init__(self, value, tolerance):
+        self.value = value              
+        self.tolerance = tolerance       
+
+    @property
+    def value(self):
+        return self._value
+
+    @value.setter
+    def value(self, value):
         if value < 0:
             raise ValueError('Invalid value!')
+        self._value = value
+
+    @property
+    def tolerance(self):
+        return self._tolerance
+
+    @tolerance.setter
+    def tolerance(self, tolerance):
         if tolerance < 0:
             raise ValueError('Invalid tolerance!')
+        self._tolerance = tolerance
 
-        self.__value = value              
-        self.__tolerance = tolerance       
 
-    def __repr__(self):
-        return 'Resistor({}, {})'.format(self.__value, self.__tolerance)
+    def __add__(self, other): # +
+        value = self._value + other._value
+        tolerance = self._max(self.tolerance, other.tolerance)
+        return Resistor(value, tolerance)
 
-    def __str__(self):
-        return 'Resistor: value={}, tolerance={}'.format(self.__value, self.__tolerance)    
-
-    def __eq__(self, other):
-        if self.__value == other.__value and self.__tolerance == other.__tolerance:
-            return True
+    def _max(self, a, b):
+        if(a > b):
+            return a
         else:
-            return False
-
-    def __add__(self, other):
-        return Resistor(self.__value + other.__value)
+            return b
 
 
 # Verify implementation
 
 try:
-    r1 = Resistor(1000)
+    r1 = Resistor(1000, -1)
     #...
 except ValueError as e: 
     print("Resistor object can't be created: {}".format(e))    
@@ -39,7 +50,7 @@ else:
 
 
 try:
-    r1 = Resistor(-1000)
+    r1 = Resistor(-1000, 2)
     #...
 except ValueError as e: 
     print("Resistor object can't be created: {}".format(e))    
