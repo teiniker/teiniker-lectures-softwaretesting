@@ -1,5 +1,6 @@
 
 class Resistor():
+    """Class implementation at its simplest."""
     def __init__(self, value, tolerance):
         self.value = value              
         self.tolerance = tolerance       

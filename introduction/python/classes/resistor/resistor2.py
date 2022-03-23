@@ -1,5 +1,6 @@
 
 class Resistor():
+    """Class using private attributes together with getter and setter methods."""
     def __init__(self, value, tolerance):
         self.__value = value              
         self.__tolerance = tolerance       
