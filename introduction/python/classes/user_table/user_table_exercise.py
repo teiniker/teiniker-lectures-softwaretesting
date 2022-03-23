@@ -1,16 +1,3 @@
-# Exercise: Classes, Associations
-#
-# Implement the classes User and UserTable which are related in the
-# following way:
-#    [UserTable] ---[*]-> [User]
-# 
-# User: 
-#    Attributes: id, username, password
-#    Methods: __init__(), __str__(), __eq__()
-# 
-# UserTable:
-#   Methods: __init__(), insert(), find_by_id(), find_all()
- 
 class User():
     pass
 
@@ -34,5 +21,4 @@ table.insert(marge)
 
 assert 'marge' == table.find_by_id(7).username
 assert 'homer' == table.find_by_id(3).username
-
 assert 2 == len(table.find_all())

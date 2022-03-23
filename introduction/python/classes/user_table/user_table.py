@@ -5,7 +5,7 @@ class User():
         self.password = password    
 
     def __str__(self):
-        return "User: id={}, username='{}'".format(self.id, self.username)    
+        return f"User: id={self.id}, username='{self.username}'"    
 
     def __eq__(self, other):
         return self.id == other.id
@@ -13,19 +13,19 @@ class User():
 
 class UserTable():
     def __init__(self):
-        self.users = []
+        self._users = []
 
     def insert(self, user):
-        self.users.append(user)
+        self._users.append(user)
 
     def find_by_id(self, id):
-        for user in self.users:
+        for user in self._users:
             if user.id == id:
                 return user        
         return None
 
     def find_all(self):
-        return self.users
+        return self._users
 
 
 # Verify implementations
@@ -44,5 +44,4 @@ table.insert(marge)
 
 assert 'marge' == table.find_by_id(7).username
 assert 'homer' == table.find_by_id(3).username
-
 assert 2 == len(table.find_all())
