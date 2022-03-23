@@ -3,12 +3,13 @@ class Part():
         self.tolerance = tolerance       
         self.value= value   
 
+
 class Resistor(Part):
     def __init__(self, value, tolerance=2):
         super().__init__(value, tolerance)              
             
     def __str__(self):
-        return 'Resistor: value={}Ohm, tolerance={}'.format(self.value, self.tolerance)    
+        return f'Resistor: value={self.value}Ohm, tolerance={self.tolerance}%'    
 
 
 class Capacitor(Part):
@@ -16,7 +17,7 @@ class Capacitor(Part):
         super().__init__(value, tolerance)              
 
     def __str__(self):
-        return 'Capacitor: value={}uF, tolerance={}'.format(self.value, self.tolerance)    
+        return f'Capacitor: value={self.value}uF, tolerance={self.tolerance}%'   
 
 
 # Verify implementations
@@ -30,7 +31,7 @@ assert 470 == r2.value
 assert 5 == r2.tolerance
 
 r = Resistor(330, 2)
-assert 'Resistor: value=330Ohm, tolerance=2' == str(r)
+assert 'Resistor: value=330Ohm, tolerance=2%' == str(r)
 
 
 c1 = Capacitor(1)
@@ -41,7 +42,7 @@ c2 = Capacitor(100, 10)
 assert 100 == c2.value
 assert 10 == c2.tolerance
 
-assert 'Capacitor: value=1uF, tolerance=5' == str(c1)
+assert 'Capacitor: value=1uF, tolerance=5%' == str(c1)
 
 #print(help(Resistor))
 #print(help(Capacitor))
