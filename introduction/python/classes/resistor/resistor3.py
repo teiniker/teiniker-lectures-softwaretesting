@@ -25,13 +25,14 @@ class Resistor():
     def __str__(self):
         return f'Resistor: value={self.__value}, tolerance={self.__tolerance}'
 
+
     def __eq__(self, other):
         if self.__value == other.__value and self.__tolerance == other.__tolerance:
             return True
         else:
             return False
 
-    def __add__(self, other):
+    def __add__(self, other): # +
         value = self.__value + other.__value
         tolerance = self.__max(self.__tolerance, other.__tolerance)
         return Resistor(value, tolerance)

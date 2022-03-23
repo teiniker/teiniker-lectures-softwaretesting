@@ -100,6 +100,40 @@ In Python, a private member can be defined by using a prefix `__` (double unders
 Python performs name mangling on private attributes. 
 Every member with a double underscore will be changed to `_object._class__variable`.
 
+Double underscores are not very common in practice.
+If we need to define attibutes as private, we use a single underscore, and respect the Python convention that it is a private attribute.
+
+
+### Properties
+Poperties are used when we need to define **access control** to some attributes in 
+an object.
+
+In other programming languages like Java, we create accress methods (getters and setters) but in Python we use properties instead.
+
+```Python
+    @property
+    def tolerance(self):
+        return self._tolerance
+
+    @tolerance.setter
+    def tolerance(self, tolerance):
+        if tolerance < 0:
+            raise ValueError('Invalid tolerance!')
+        self._tolerance = tolerance
+```
+
+The `@property` method will return the value held by a private attribute.
+
+The `@<property-name>.setter` method takes a value and validates it before 
+the value will be stored in a private attrbute.
+
+```Python
+r1 = Resistor(100,1)
+assert 100 == r1.value
+assert 1 == r1.tolerance
+```
+Note that the usage of properties is **transparent to the code outside a class**.
+
 
 ## Making an Class Instance
 
@@ -233,7 +267,11 @@ Python will disregard the parent class method and only pay attention to the meth
 
 
 ## References
-* Eric Matthes. Python Crash Course. No Starch Press, 2016. Chapter 9: Classes
+* Eric Matthes. Python Crash Course. No Starch Press, 2016. 
+    * Chapter 9: Classes
+
+* Mariano Anaya. Clean Code in Python. Packt Publishing, 2018. 
+    * Chapter 2: Pythonic Code
 
 * [Object-Oriented Programming (OOP) in Python 3](https://realpython.com/python3-object-oriented-programming/)
 
@@ -242,8 +280,6 @@ Python will disregard the parent class method and only pay attention to the meth
 * [Operator and Function Overloading in Custom Python Classes](https://realpython.com/operator-function-overloading/)
 * [Python __str__() and __repr__() functions](https://www.journaldev.com/22460/python-str-repr-functions)
 * [Python __eq__](https://www.pythontutorial.net/python-oop/python-__eq__)
-
-
 
 
 *Egon Teiniker, 2020-2022, GPL v3.0*

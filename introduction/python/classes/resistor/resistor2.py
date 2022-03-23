@@ -8,6 +8,7 @@ class Resistor():
         return self.__value
 
     def set_value(self, value):
+        # Input validation
         self.__value = value 
 
     def get_tolerance(self):
