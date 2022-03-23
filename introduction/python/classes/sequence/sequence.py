@@ -1,14 +1,14 @@
 class IntegerSequence():
-    __value = 0   # class variable
+    _value = 0   # class variable
 
     @classmethod
     def init_value(cls, value):
-        cls.__value = value
+        cls._value = value
 
     @classmethod
     def next_value(cls):
-        cls.__value += 1
-        return cls.__value
+        cls._value += 1
+        return cls._value
        
 
 # Verify implementations

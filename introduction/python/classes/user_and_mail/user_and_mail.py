@@ -13,6 +13,8 @@ class Mail():
 
 
 class User():
+    """Model of a user having only one mail addresse."""
+
     def __init__(self, id, username, password, mail):
         self.id = id
         self.username = username

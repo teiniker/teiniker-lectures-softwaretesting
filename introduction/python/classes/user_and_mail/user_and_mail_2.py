@@ -15,13 +15,16 @@ class Mail():
 
 
 class User():
-    """Model of a user."""
+    """Model of a user having many mail addresses."""
 
-    def __init__(self, id, username, password, mails = []):
+    def __init__(self, id, username, password):
         self.id = id
         self.username = username          
         self.password = password    
-        self.mails = mails
+        self.mails = []
+
+    def add_mail(self, mail):
+        self.mails.append(mail)
 
     def __repr__(self):
         return f"User({self.id}, '{self.username}', '{self.password}', {repr(self.mails)})"
@@ -46,7 +49,9 @@ assert m2.address ==  'homer.simpson@powerplant.com'
 
 # Verify User
 
-u = User(7, 'homer', ')jh%6Zgur5)r', [m1, m2])
+u = User(7, 'homer', ')jh%6Zgur5)r')
+u.add_mail(m1)
+u.add_mail(m2)
 
 assert 7 == u.id
 assert 'homer' == u.username
