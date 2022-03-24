@@ -72,13 +72,13 @@ When a module named spam is imported, the interpreter first searches for a built
 
 sys.path is initialized from these locations:
 
-* The directory containing the input script (or the current directory when no file is specified).
+* The directory containing the input script (or the **current directory** when no file is specified).
 
 * **PYTHONPATH** (a list of directory names, with the same syntax as the shell variable PATH).
 
 * The installation-dependent default.
 
-Python programs can modify sys.path.
+Python programs can modify `sys.path`.
 
 The directory containing the script being run is placed at the beginning of the search path, ahead of the standard library path. 
 This means that scripts in that directory will be loaded instead of modules of the same name in the library directory. 
@@ -86,16 +86,15 @@ This means that scripts in that directory will be loaded instead of modules of t
 
 # Packages
 
-Packages are a way of structuring Python’s module namespace by using “dotted module names”. 
+Packages are a way of structuring Python’s module namespace by using **dotted module names**. 
 
-When importing the package, Python searches through the directories on sys.path looking for the package subdirectory.
+When importing the package, Python searches through the directories on `sys.path` looking for the package subdirectory.
 
-The __init__.py files are required to make Python treat **directories containing the file as packages**.
-In the simplest case, __init__.py can just be an empty file, but it can also execute initialization code for the package or set the __all__ variable.
+The `__init__.py` files are required to make Python treat **directories containing the file as packages**.
+In the simplest case, `__init__.py` can just be an empty file, but it can also execute initialization code for the package or set the `__all__` variable.
 
-Users of the package can import individual modules from the package.
 
-_Example_: 
+_Example_: Users of the package can import individual modules from the package.
 ```Python
 import sound.effects.echo
 
