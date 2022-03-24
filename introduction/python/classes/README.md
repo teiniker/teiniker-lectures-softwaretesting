@@ -157,8 +157,8 @@ To **call a method**, give the name of the instance and the method we want to ca
 
 _Example_: 
 ```Python
-r2.get_value()
-r2.get_tolerance()
+r1.value = 1000
+r2.add(r1)
 ``` 
 
 
