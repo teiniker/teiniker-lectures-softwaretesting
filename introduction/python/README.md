@@ -48,11 +48,11 @@ Each of these short videos repeats a specific language construct of the Python p
   * **Classes**
     * [Introduction](classes)  
     * [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
+    * [YouTube (Corey Schafer): Property Decorators - Getters, Setters, and Deleters](https://youtu.be/jCzT9XFZ5bw)  
     * [YouTube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/3ohzBxoFHAY)
     * [YouTube (Corey Schafer): Class Variables](https://youtu.be/BJ-VvGyQxho)
     * [YouTube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/rq8cL2XMM5M)
     * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
-    * [YouTube (Corey Schafer): Property Decorators - Getters, Setters, and Deleters](https://youtu.be/jCzT9XFZ5bw)  
       
   * **Exceptions**
     * [Introduction](exceptions) 
