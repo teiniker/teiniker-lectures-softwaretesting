@@ -242,8 +242,8 @@ _Example_:
 
 
 ## Inheritance
-When one class inherits from another, it automatically takes on all the attributes and methods of the 
-first class. The original class is called the **parent class**, and the new class is the **child class**.
+When one class inherits from another, it automatically **takes on all the attributes and methods of the 
+first class**. The original class is called the **parent class**, and the new class is the **child class**.
 The child class inherits every attribute and method from its parent class but is also free to define 
 new attributes and methods of its own.
 
