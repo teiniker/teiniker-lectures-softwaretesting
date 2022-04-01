@@ -31,6 +31,7 @@ Each of these short videos repeats a specific language construct of the Python p
   
   * **Loops** 
     * [YouTube (Corey Schafer): Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ) 
+    * [Youtibe: Loop like a native: while, for, iterators, generators](https://youtu.be/EnSu9hHGq5o)
   
   * **Enumerations** 
     * [YouTube: Using Enum in Python](https://youtu.be/gPPDXgCMZ0k)
