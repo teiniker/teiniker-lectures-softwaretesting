@@ -66,6 +66,8 @@ def base64decode(s):
 
 encoded_msg = base64encode('Hello Eggenberg!')
 print(encoded_msg)
+assert 'SGVsbG8gRWdnZW5iZXJnIU==' == encoded_msg
 
 decoded_msg =base64decode('SGVsbG8gRWdnZW5iZXJnIU==')
 print(decoded_msg)
+assert 'Hello Eggenberg!' == decoded_msg
