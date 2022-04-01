@@ -1,5 +1,3 @@
-from pyrsistent import v
-
 def vector_print(vector, msg):
     print(f'{msg}: {vector}')
 
