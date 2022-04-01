@@ -1,12 +1,6 @@
 import unittest
 from order import Order, OrderLine, Product
 
-# Exercise: Fixture Setup - Order 
-# 
-# Implement a custom creation method called "createOrder()" which 
-# sets up the [Order] --[*]-> [OrderLine] --[1]-> [Product] objects
-# used in the given test case.  
-
 class OrderTest(unittest.TestCase):
 
     def testDelegationFixture(self):
