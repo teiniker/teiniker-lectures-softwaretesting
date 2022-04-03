@@ -43,6 +43,7 @@ do not have type definitions!
 
 
 ## References
+* [YouTube (Real Python): Python Type Hints: Pros & Cons](https://youtu.be/
 * [Type checking your Python code!](https://medium.com/juntos-somos-mais/type-checking-your-python-code-76d24b75a2ee)
 
 * [Mypy - Static Typing for Python](https://github.com/python/mypy)
