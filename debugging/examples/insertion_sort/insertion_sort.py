@@ -19,8 +19,11 @@ def insertion_sort(arr):
                 j -= 1
         # Bug: arr[j] = key 
         arr[j+1] = key 
-        log.debug('  {}'.format(arr))        
-# Verify 
+        log.debug('  {}'.format(arr))
+
+
+# Verify
+ 
 list_of_nums = [5, 2, 1, 8, 4]
 insertion_sort(list_of_nums)
 print(list_of_nums)

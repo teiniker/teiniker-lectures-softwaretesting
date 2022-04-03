@@ -1,4 +1,3 @@
-
 def list_even_numbers(nums):
     result = []
     for n in nums:
@@ -8,7 +7,7 @@ def list_even_numbers(nums):
     return result
 
 numbers = [5, 2, 1, 8, 4]
-even = list_even_numbers(numbers)
-print('Even elements = {}'.format(even))
-
+even_numbers = list_even_numbers(numbers)
+print(f'Even elements = {even_numbers}')
+assert [2, 8, 4] == even_numbers
 

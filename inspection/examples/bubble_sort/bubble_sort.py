@@ -1,5 +1,5 @@
 """
-PyLint Example: How to fix PyLint warnings.
+This module contains an implementation of the bubble sort algorithm.
 """
 
 def bubble_sort(nums):
@@ -7,7 +7,6 @@ def bubble_sort(nums):
     Implementation of the bubble sort algorithm.
     """
     swapped = True
-
     while swapped:
         swapped = False
         for i in range(len(nums) - 1):
