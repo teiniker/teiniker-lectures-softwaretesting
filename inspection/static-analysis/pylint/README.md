@@ -35,6 +35,25 @@ simple_caesar.py:12:12: C0103: Constant name "encoded" doesn't conform to UPPER_
 Your code has been rated at 6.84/10 (previous run: 9.47/10, -2.63)
 ```
 
+## Configure VS Code to Use PyLint
+
+Simply add one line to enable `pylint` in the `.settings.json` file:
+```
+"python.linting.pylintEnabled": true
+```
+
+which resulds in the final `.settings.json` file:
+```
+{
+    "python.pythonPath": "python3",
+    "python.terminal.executeInFileDir" : true,
+    "code-runner.executorMap": {
+        "python": "python3 -u",
+    },
+    "code-runner.fileDirectoryAsCwd": true,
+    "python.linting.pylintEnabled": true
+}
+```
 
 ## References 
 * [Pylint](https://pypi.org/project/pylint/)

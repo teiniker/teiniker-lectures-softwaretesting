@@ -42,6 +42,29 @@ The `--ignore-missing-imports` flag makes mypy ignore all missing imports that
 do not have type definitions!
 
 
+## Configure VS Code to Use MyPy
+
+Simply add one line to enable `mypy` in the `.settings.json` file:
+```
+"python.linting.mypyEnabled": true
+```
+
+which resulds in the final `.settings.json` file:
+```
+{
+    "python.pythonPath": "python3",
+    "python.terminal.executeInFileDir" : true,
+    "code-runner.executorMap": {
+        "python": "python3 -u",
+    },
+    "code-runner.fileDirectoryAsCwd": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": true
+}
+```
+
+
+
 ## References
 * [YouTube (Real Python): Python Type Hints: Pros & Cons](https://youtu.be/
 * [Type checking your Python code!](https://medium.com/juntos-somos-mais/type-checking-your-python-code-76d24b75a2ee)
