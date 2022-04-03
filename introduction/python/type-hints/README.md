@@ -1,0 +1,53 @@
+# Type Checking in Python
+
+Languages such as Java or C/C++ are statically typed. Essentially this means that type checking will take place at compile time based on the source code.
+
+
+Python is known for its **duck typing** (dynamically typed) system which is very flexible but often lacks the safety which a static type analysis can offer and is, usually, desired for larger software projects.
+
+**PEP 484** has introduced a way of performing static type checking of Python 
+code by using type hints and a static type checker such as **mypy**.
+
+The static type checking and the type hints can be introduced at **specific parts of the code** where such typing safety is desired.
+
+The syntax is as follows for type hints of function parameters and the function's return type:
+
+```Python
+def fn(arg1: type1, arg2: type2, ...) -> ReturnType:
+    pass
+```
+
+
+
+## Using Mypy as the Static Type Checker
+
+Mypy is a static type checker for Python.
+Type checkers help ensure that you're using variables and functions in your 
+code correctly. 
+With mypy, add type hints (PEP 484) to your Python programs, and mypy will 
+warn you when you use those types incorrectly.
+
+To install is, type:
+```
+$ pip3 install mypy
+```
+
+In order to check existing code we use:
+```
+$ mypy python_module_name.py
+```
+Should any type inconsistencies be detected, then such errors will be reported! Otherwise, mypy will run silently!
+
+The `--ignore-missing-imports` flag makes mypy ignore all missing imports that 
+do not have type definitions!
+
+
+## References
+* [Type checking your Python code!](https://medium.com/juntos-somos-mais/type-checking-your-python-code-76d24b75a2ee)
+
+* [Mypy - Static Typing for Python](https://github.com/python/mypy)
+* [Mypy Documentation](https://mypy.readthedocs.io/en/stable/)
+
+* [PEP 484 – Type Hints](https://peps.python.org/pep-0484/)
+
+*Egon Teiniker, 2020-2022, GPL v3.0*

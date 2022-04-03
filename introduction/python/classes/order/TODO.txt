@@ -5,7 +5,7 @@ Implement a base class called "Entity" together with the following
 Subclasses:
    [Order] ---[*]-> [OrderLine] ---[1]-> [Product]
 
-Entity: 
+Entity: (Base class)
    Attribute: id
    Methods: __init__(), __eq__()
 

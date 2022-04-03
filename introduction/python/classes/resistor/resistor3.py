@@ -46,10 +46,10 @@ assert 'Resistor(330, 2)' == repr(r)
 r = Resistor(330, 2)
 assert 'Resistor: value=330, tolerance=2' == str(r)
 
-r = r1 + r2
+r = r1 + r2 # __add__()
 assert 1000+470 == r.value
 
 r1 = Resistor(2700,2)
 r2 = Resistor(2700,2)
 assert r1 is r1
-assert r1 == r2
+assert r1 == r2 # __eq__()
