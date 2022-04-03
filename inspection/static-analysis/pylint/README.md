@@ -62,5 +62,6 @@ which resulds in the final `.settings.json` file:
 
 * [Youtube: Pylint Tutorial – How to Write Clean Python](https://youtu.be/fFY5103p5-c)
 
+* [YouTube: VSCode Tidbits: VSCODE linting for Python](https://youtu.be/eMIxokGhFHM)
 
 *Egon Teiniker, 2020-2022, GPL v3.0*
