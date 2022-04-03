@@ -3,7 +3,7 @@ class Resistor():
     _value:int
     _tolerance:int
 
-    def __init__(self, value:int, tolerance:int):
+    def __init__(self, value:int, tolerance:int) -> None:
         self.value = value
         self.tolerance = tolerance
 
