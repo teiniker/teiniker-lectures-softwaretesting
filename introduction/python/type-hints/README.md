@@ -66,7 +66,7 @@ which resulds in the final `.settings.json` file:
 
 
 ## References
-* [YouTube (Real Python): Python Type Hints: Pros & Cons](https://youtu.be/
+* [YouTube (Real Python): Python Type Hints: Pros & Cons](https://youtu.be/QS7m167SVXU)
 * [Type checking your Python code!](https://medium.com/juntos-somos-mais/type-checking-your-python-code-76d24b75a2ee)
 
 * [Mypy - Static Typing for Python](https://github.com/python/mypy)
