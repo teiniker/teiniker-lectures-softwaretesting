@@ -10,24 +10,25 @@ class ResistorTest(unittest.TestCase):
 
     def test_resistor_init(self):
         # Setup
-        r = Resistor(470, 5)
+        res = Resistor(470, 5)
         # Exercise
         # Verify
-        self.assertEqual(470, r.value)
-        self.assertEqual(5, r.tolerance)
+        self.assertEqual(470, res.value)
+        self.assertEqual(5, res.tolerance)
         # Teardown
 
     def test_default_value(self):
-        r = Resistor(1000)
-        self.assertEqual(1000, r.value)
-        self.assertEqual(2, r.tolerance)
+        # Setup
+        res = Resistor(1000)
+        self.assertEqual(1000, res.value)
+        self.assertEqual(2, res.tolerance)
 
 
     def test_add_resistors(self):
-        r1 = Resistor(1000)
-        r2 = Resistor(330)
-        r = r1 + r2
-        self.assertEqual(1000+330, r.value)
+        res_1 = Resistor(1000)
+        res_2 = Resistor(330)
+        res = res_1 + res_2
+        self.assertEqual(1000+330, res.value)
 
 if __name__ == '__main__':
     unittest.main()
