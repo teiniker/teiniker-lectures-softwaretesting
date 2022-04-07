@@ -15,6 +15,9 @@ We use knowledge of the system, its application domain and the programming langu
     * [Pylint](static-analysis/pylint)
     * [Prospector](static-analysis/prospector)
 
+* [**static Type Checker](static-analysis/type-hints)
+
+
 ## References
 * Ian Sommerville. **Software Engineering**. Pearson, Global Edition 2015
 
