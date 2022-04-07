@@ -3,10 +3,10 @@ from order import Order, OrderLine, Product
 
 class OrderTest(unittest.TestCase):
 
-    def testDelegationFixture(self):
+    def test_delegation_fixture(self):
 
         # Setup
-        order = self.createOrder()
+        order = self.create_order()
 
         # Exercise
 
@@ -18,7 +18,6 @@ class OrderTest(unittest.TestCase):
         self.assertEqual(2, order.lines[1].quantity)
         self.assertEqual('cd', order.lines[1].product.description)
         self.assertEqual(1299, order.lines[1].product.price)
-
 
 
 if __name__ == '__main__':
