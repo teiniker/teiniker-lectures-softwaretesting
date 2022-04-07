@@ -66,8 +66,8 @@ which resulds in the final `.settings.json` file:
 
 
 ## References
+* [YouTube: Static Typing in Python](https://youtu.be/2gBP1qN5T7I)
 * [YouTube (Real Python): Python Type Hints: Pros & Cons](https://youtu.be/QS7m167SVXU)
-* [YouTube Static Typing in Python](https://youtu.be/2gBP1qN5T7I)
 
 * [Type checking your Python code!](https://medium.com/juntos-somos-mais/type-checking-your-python-code-76d24b75a2ee)
 
