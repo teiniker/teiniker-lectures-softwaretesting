@@ -88,14 +88,14 @@ class SimpleTest(unittest.TestCase):
     def tearDown(self):
         print('tearDown()')
 
-    def testA(self):
+    def test_a(self):
         print('testA()')
 
-    def testB(self):
+    def test_b(self):
         print('testB()')
 
     @unittest.skip("demonstrating skipping")
-    def testC(self):
+    def test_c(self):
         print('testC()')
         self.fail()
 
@@ -108,17 +108,17 @@ $ python3 -m unittest -v simple_test.py
 
 setUpModule()
 setUpClass()
-testA (tests.SimpleTest.SimpleTest) ... 
+test_a (tests.SimpleTest.SimpleTest) ... 
 setUp()
-testA()
+test_a()
 tearDown()
 ok
-testB (tests.SimpleTest.SimpleTest) ... 
+test_b (tests.SimpleTest.SimpleTest) ... 
 setUp()
-testB()
+test_b()
 tearDown()
 ok
-testC (tests.SimpleTest.SimpleTest) ... skipped 'demonstrating skipping'
+test_c (tests.SimpleTest.SimpleTest) ... skipped 'demonstrating skipping'
 tearDownClass()
 tearDownModule()
 ----------------------------------------------------------------------
@@ -221,4 +221,4 @@ class.
 * [Unit testing framework](https://docs.python.org/3/library/unittest.html)
 * [Youtube (Corey Schafer): Unit Testing Your Code with the unittest Module](https://youtu.be/6tNS--WetLI)  
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
