@@ -6,7 +6,7 @@ It can also look for certain type errors, it can recommend suggestions about how
 and can offer you details about the code's complexity
 
 ## Setup
-Install Pylint, we can use the `pip` command:
+To install Pylint, we can use the `pip` command:
 ```
 $ pip3 install pylint
 ```
