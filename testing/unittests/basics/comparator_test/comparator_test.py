@@ -14,7 +14,7 @@ def compare(a, b):
 
 class ComperatorTest(unittest.TestCase):
 
-    def testAgtB(self):
+    def test_a_gt_b(self):
         # Setup
         # Exercise
         actual = compare(7,3)
@@ -22,7 +22,7 @@ class ComperatorTest(unittest.TestCase):
         self.assertEqual(1, actual)
         # Teardown
 
-    def testAltB(self):
+    def test_a_lt_b(self):
         # Setup
         # Exercise
         actual = compare(3,7)
@@ -30,7 +30,7 @@ class ComperatorTest(unittest.TestCase):
         self.assertEqual(-1, actual)
         # Teardown
 
-    def testAeqB(self):
+    def test_a_eq_b(self):
         # Setup
         # Exercise
         actual = compare(7,7)
