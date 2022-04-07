@@ -10,12 +10,10 @@ class DataService:
     def __init__(self, dao):
         self.dao = dao
 
-    def csvData(self):
+    def csv_data(self):
         try:
-            values = self.dao.readData()
+            values = self.dao.read_data()
             csv = ','.join(str(value) for value in values)
             return csv
-        except DataAccessError:
-            raise ServiceError('Can not read data!')
-
-
+        except DataAccessError as ex:
+            raise ServiceError('Can not read data!') from ex
