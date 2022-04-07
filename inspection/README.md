@@ -15,7 +15,8 @@ We use knowledge of the system, its application domain and the programming langu
     * [Pylint](static-analysis/pylint)
     * [Prospector](static-analysis/prospector)
 
-* [**Static Type Checks**](static-analysis/type-hints)
+* **Static Type Checks**
+    * [Introduction](static-analysis/type-hints)  
 
 
 ## References
