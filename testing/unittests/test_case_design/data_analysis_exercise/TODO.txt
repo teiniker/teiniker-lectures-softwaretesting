@@ -12,7 +12,7 @@ How to run the test cases?
 $ pwd
 data_analysis_exercise
 
-$ python3 -m unittest data_analysis_test.py
+$ python3 data_analysis_test.py
 ......
 ----------------------------------------------------------------------
 Ran 6 tests in 0.002s
@@ -24,9 +24,9 @@ How to run the code coverage analysis?
 $ pwd
 data_analysis_exercise
 
-$ coverage3 run -m unittest data_analysis_test.py
+$ coverage run data_analysis_test.py
 
-$ coverage3 report 
+$ coverage report 
 Name                      Stmts   Miss  Cover   Missing
 -------------------------------------------------------
 tdd/DataAnalysis.py          36      0   100%
@@ -34,7 +34,7 @@ tdd/DataAnalysisTest.py      31      0   100%
 -------------------------------------------------------
 TOTAL                        67      0   100%
 
-$ coverage3 html
+$ coverage html
 => Browser: htmlcov/index.html
 
 
