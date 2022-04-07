@@ -1,17 +1,17 @@
 class ValidationError(Exception):
-   pass    
+    pass
 
 class User:
-    def __init__(self, id, username, password):
-        if not isinstance(id, int):
-                raise TypeError('Invalid id: wrong type!')
-        if id < 0:
-            raise ValueError('Invalid id: should be a positive number!')
+    def __init__(self, oid, username, password):
+        if not isinstance(oid, int):
+            raise TypeError('Invalid object id: wrong type!')
+        if oid < 0:
+            raise ValueError('Invalid object id: should be a positive number!')
         if len(username) < 5:
             raise ValueError('Invalid username: too short!')
         if len(password) < 12:
             raise ValidationError('Invalid password: too short!')
 
-        self.id = id
+        self.oid = oid
         self.username = username
         self.password = password
