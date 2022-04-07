@@ -6,7 +6,7 @@ It can also look for certain type errors, it can recommend suggestions about how
 and can offer you details about the code's complexity
 
 ## Setup
-Install Pylint, we can use the `pip` command:
+To install Pylint, we can use the `pip` command:
 ```
 $ pip3 install pylint
 ```
@@ -35,9 +35,9 @@ simple_caesar.py:12:12: C0103: Constant name "encoded" doesn't conform to UPPER_
 Your code has been rated at 6.84/10 (previous run: 9.47/10, -2.63)
 ```
 
-## Configure VS Code to Use PyLint
+## Configure VS Code to Use Pylint
 
-Simply add one line to enable `pylint` in the `.settings.json` file:
+Simply add one line to enable `Pylint` in the `.settings.json` file:
 ```
 "python.linting.pylintEnabled": true
 ```
@@ -51,9 +51,14 @@ which resulds in the final `.settings.json` file:
         "python": "python3 -u",
     },
     "code-runner.fileDirectoryAsCwd": true,
-    "python.linting.pylintEnabled": true
+    
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": ["--disable=missing-module-docstring,
+            missing-class-docstring,missing-function-docstring"],
+
 }
 ```
+Note that we can use `python.linting.pylintArgs` to **disable singel Pylint rules**.
 
 ## References 
 * [Pylint](https://pypi.org/project/pylint/)
