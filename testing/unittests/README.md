@@ -10,11 +10,11 @@ The most important properties of unit and component tests are:
 * Unit and component tests are **implemented by the developer team** (the tester supports the team by defining test cases).  
 
 The following topics are important for implementing good unit tests:
-* [Unit Testing Basics](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/unittests/basics)
-* [Fixture Setup](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/unittests/fixture)
-* [Result Verification](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/unittests/verification)
-* [Test Doubles](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/unittests/doubles)
-* [Test Case Design](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/testing/unittests/test_case_design)
+* [Unit Testing Basics](/basics)
+* [Fixture Setup](fixture)
+* [Result Verification](verification)
+* [Test Case Design](test_case_design)
+* [Test Doubles](doubles)
 
 ## References
 * Glenford J. Myers, Corey Sandler, Tom Badgett. **The Art of Software Testing**. Wiley, 3rd Edition 2012

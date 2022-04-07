@@ -11,7 +11,6 @@ class OrderLine:
 
 
 class Order:
-    def __init__(self, id):
-        self.id = id
+    def __init__(self, oid):
+        self.oid = oid
         self.lines = []
-

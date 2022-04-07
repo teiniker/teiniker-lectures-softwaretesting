@@ -4,36 +4,36 @@ from order import Order, OrderLine, Product
 
 class OrderTest(unittest.TestCase):
 
-    def testOrder(self):
+    def test_order(self):
         # Setup
         order = Order(7)
         order.lines.append(OrderLine(Product('dvd', 1799), 3))
         order.lines.append(OrderLine(Product('cd', 1299), 2))
 
         # Verify
-        expected = self.createOrder()
-        self.assertEqualsOrder(expected, order)
+        expected = self.create_order()
+        self.assert_equals_order(expected, order)
 
     # Custom assert methods
 
-    def assertEqualProduct(self,expected,actual):
+    def assert_equal_product(self,expected,actual):
         self.assertEqual(expected.description, actual.description, 'different Product.description')
         self.assertEqual(expected.price, actual.price, 'different Product.price')
 
-    def assertEqualOrderLine(self, expected, actual, msg=''):
+    def assert_equal_order_line(self, expected, actual, msg=''):
         self.assertEqual(expected.quantity, actual.quantity, 'different OrderLine.quantity'+msg)
-        self.assertEqualProduct(expected.product, actual.product)
+        self.assert_equal_product(expected.product, actual.product)
 
-    def assertEqualsOrder(self, expected, actual):
+    def assert_equals_order(self, expected, actual):
         self.assertEqual(expected.id, actual.id)
         self.assertEqual(len(expected.lines), len(actual.lines))
         length = len(expected.lines)
         for i in range(length):
-            self.assertEqualOrderLine(expected.lines[i], actual.lines[i], ' in line: ' + str(i))
+            self.assert_equal_order_line(expected.lines[i], actual.lines[i], ' in line: ' + str(i))
 
     # Custom creation methods
 
-    def createOrder(self):
+    def create_order(self):
         order = Order(7)
         order.lines.append(OrderLine(Product('dvd', 1799), 3))
         order.lines.append(OrderLine(Product('cd', 1299), 2))
