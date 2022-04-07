@@ -35,50 +35,6 @@ An analysis can use different coverage metrics:
 * **Path coverage** measures whether each possible path from start (method entry) to 
     finish (return statement, thrown exception) is covered.
 
-## Coverage.py
-Coverage.py is a tool for measuring code coverage of Python programs. By default, **statement
-coverage** will be measured.
-
-There are a few different ways to use coverage.py. 
-The simplest is the **command line**, which lets you run your program and see the results:
-
-_Example_: Run coverage.py from the command line
-```
-$ coverage3 run -m unittest comparator_test.py
-$ coverage3 report 
-$ coverage3 html
-```
-Make sure you are in your project's directory when you execute the commands.
-The **run** command executes all test cases in the specified file and records the coverage
-information. **report** reads the recorded data and creates a command line summary of the 
-coverage analysis.
-With **html**, a HTML report will be generated, which can be reviewed with a web browser:
- 
-URL: `htmlcov/index.html` 
-
-coverage.py also supports **branch coverage** measurement. 
-Where a line in your program could jump to more than one next line, coverage.py tracks 
-which of those destinations are actually visited, and flags lines that haven’t visited 
-all of their possible destinations.
-
-To measure branch coverage, run coverage.py with the `--branch` flag.
-
-_Example_: Measure branch coverage
-```
-$ coverage run --branch -m unittest comparator_test.py
-$ coverage3 report 
-$ coverage3 html
-```
-When you report on the results with coverage report or coverage html, 
-the percentage of branch possibilities taken will be included in the 
-percentage covered total for each file. The coverage percentage for a 
-file is the actual executions divided by the execution opportunities. 
-Each line in the file is an execution opportunity, as is each branch destination.
-
-The HTML report gives information about which lines had missing branches. 
-Lines that were missing some branches are shown in yellow, with an annotation 
-at the far right showing branch destination line numbers that were not exercised.
-
 
 ## References
 * Stefan Berner, Roland Weber, Rudolf K. Keller. 
@@ -86,6 +42,6 @@ at the far right showing branch destination line numbers that were not exercised
 
 * [Coverage.py](https://coverage.readthedocs.io/en/coverage-5.5/)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*
 
 
