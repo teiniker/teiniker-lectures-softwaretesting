@@ -11,7 +11,7 @@ class OrderTest(unittest.TestCase):
         # Exercise
 
         # Verify
-        self.assertEqual(7, order.id)
+        self.assertEqual(7, order.oid)
         self.assertEqual(3, order.lines[0].quantity)
         self.assertEqual('dvd', order.lines[0].product.description)
         self.assertEqual(1799, order.lines[0].product.price)
