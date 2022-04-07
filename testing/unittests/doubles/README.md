@@ -44,9 +44,9 @@ A Mock object creates its attributes when we access them.
 
 _Example_: Configure a MOck's method
 ```Python
-    self.dao.readData()
+    self.dao.read_data()
 ```
-In that case, we can use a method `readData()` which requires no arguments (in fact it will
+In that case, we can use a method `read_data()` which requires no arguments (in fact it will
 accept any argument) and returns another Mock object.
 
 ### Assertions and Inspection (Test Spy)
@@ -55,7 +55,7 @@ For instance, we can see if we called a method, how we called the method, and so
 There are two main ways to use this information:
 * We can assert that your program used an object as you expected:
     ```Python
-    self.dao.readData.assert_called_once()
+    self.dao.read_data.assert_called_once()
     ```
   `assert_called()` ensures we called the mocked method while 
   `assert_called_once()` checks that we called the method exactly one time.
@@ -65,8 +65,8 @@ There are two main ways to use this information:
 
 * We can view special attributes to understand how our application used an object:  
     ```Python
-    self.dao.readData.assert_called_once()
-    self.assertEqual(1, self.dao.readData.call_count)    
+    self.dao.read_data.assert_called_once()
+    self.assertEqual(1, self.dao.read_data.call_count)    
     ```
     See also: `call_args()`, `call_args_list()`, `calls()`
     Test cases can use these attributes to make sure that our objects behave 
@@ -78,11 +78,11 @@ Mock objects can specify a function’s return value.
 
 _Example_: Specify the return value of a Mock's method 
 ```Python
-    self.dao.readData.return_value = [0.8273, 0.7822, 0.9731, 0.1239, 0.9898]
+    self.dao.read_data.return_value = [0.8273, 0.7822, 0.9731, 0.1239, 0.9898]
 ```
 Using the `return_value` attribute, we can define a predictable result for a method
 invoked on a Mock object.
-During the test case, when the `readData()` method is called, it returns the data
+During the test case, when the `read_data()` method is called, it returns the data
 `[0.8273, 0.7822, 0.9731, 0.1239, 0.9898]` which we have specified.
 
 ### Side Effects (Test Stub)
@@ -90,9 +90,9 @@ A `side_effect` attribute defines what happens when we call the mocked method.
 
 _Example_: Mocked method throws an exception
 ```Python
-    self.dao.readData.side_effect = DataAccessError('Can not read data!')
+    self.dao.read_data.side_effect = DataAccessError('Can not read data!')
 ```
-We can use `side_effect` to configure that `readData()` raises an exception 
+We can use `side_effect` to configure that `read_data()` raises an exception 
 as a side effect of its invocation.
 
 If we want to be a little more dynamic, we can set `side_effect` to a function 
@@ -111,15 +111,15 @@ _Example_: Patch an object's method
 ```Python
 def testMeanValueMocked(self):
     # Setup
-    with patch('data_analysis.DataAccessObject.readData') as mock_readData:
+    with patch('data_analysis.DataAccessObject.read_data') as mock_readData:
         mock_readData.return_value = [1.0, 2.0, 3.0, 4.0, 5.0]        
         # Exercise
-        mean = self.service.meanValue()
+        mean = self.service.mean_value()
         # Verify
         self.assertEqual((1.0 + 2.0 + 3.0 + 4.0 + 5.0)/5.0, mean, 1E-3)    
 ```
-In this test case, we exercise the `service.meanValue()` method which calls the 
-`DataAccessObject.readData()` method to read data from a file.
+In this test case, we exercise the `service.mean_value()` method which calls the 
+`DataAccessObject.read_data()` method to read data from a file.
 
 The `patch()` operation takes the name of the mocked method `patch('module.class.method')`.
 Using `return_value` we configure the mocked return value. 
@@ -129,4 +129,4 @@ In the same way, we can use `side_effect` to throw exceptions.
 * [Understanding the Python Mock Object Library](https://realpython.com/python-mock-library/)
 * [unittest.mock](https://docs.python.org/3/library/unittest.mock-examples.html)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*

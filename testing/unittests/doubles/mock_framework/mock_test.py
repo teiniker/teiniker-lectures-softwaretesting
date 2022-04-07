@@ -7,7 +7,7 @@ class MockTest(unittest.TestCase):
     def setUp(self):
         self.json = Mock()  # Mock() replaces any object
 
-    def testCalled(self):
+    def test_called(self):
         # exercise
         self.json.loads('{"key": "value"}')
 
@@ -18,7 +18,7 @@ class MockTest(unittest.TestCase):
         self.json.loads.assert_called_once_with('{"key": "value"}')
 
 
-    def testCalledOnce(self):
+    def test_called_once(self):
         # exercise
         self.json.loads('{"key": "value"}')
         self.json.loads('{"key": "value"}')
@@ -28,7 +28,7 @@ class MockTest(unittest.TestCase):
             self.json.loads.assert_called_once()
 
 
-    def testCalledCount(self):
+    def test_called_count(self):
         # exercise
         self.json.loads('{"key": "value"}')
         self.json.loads('{"key": "value"}')
@@ -37,17 +37,20 @@ class MockTest(unittest.TestCase):
         self.assertEqual(2, self.json.loads.call_count)
 
 
-    # When writing tests, it is important to ensure that the results 
+    # When writing tests, it is important to ensure that the results
     # are predictable.
-    # You can use Mock to eliminate uncertainty from your code 
+    # You can use Mock to eliminate uncertainty from your code
     # during testing.
 
-    def testReturnValue(self):
+    def test_return_value(self):
         # setup
         self.json.random.return_value = 666
 
         # exercise
-        randomValue = self.json.random()
+        random_value = self.json.random()
 
         # verify
-        self.assertEqual(666, randomValue)
+        self.assertEqual(666, random_value)
+
+if __name__ == '__main__':
+    unittest.main()
