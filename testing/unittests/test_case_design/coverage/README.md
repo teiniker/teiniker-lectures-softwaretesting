@@ -31,9 +31,9 @@ To run the coverage analysis, we just replace the initial `python3` with `covera
 
 _Example_: Run coverage.py from the command line
 ```
-$ coverage3 run comparator_test.py
-$ coverage3 report 
-$ coverage3 html
+$ coverage run comparator_test.py
+$ coverage report 
+$ coverage html
 ```
 Make sure you are in your project's directory when you execute the commands.
 * The **run** command executes all test cases in the specified file and records the coverage
