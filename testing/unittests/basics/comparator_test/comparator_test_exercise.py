@@ -1,9 +1,9 @@
 import unittest
 
-def compare(a, b):
-    if a > b:
+def compare(value_a, value_b):
+    if value_a > value_b:
         return 1
-    elif a < b:
+    elif value_a < value_b:
         return -1
     else:
         return 0
