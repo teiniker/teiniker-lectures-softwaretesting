@@ -126,6 +126,8 @@ Using `return_value` we configure the mocked return value.
 In the same way, we can use `side_effect` to throw exceptions.
 
 ## References
+* [YouTube (Real Python): Mock Objects: Improve Your Testing in Python](https://youtu.be/05QPrIv5auA)
+
 * [Understanding the Python Mock Object Library](https://realpython.com/python-mock-library/)
 * [unittest.mock](https://docs.python.org/3/library/unittest.mock-examples.html)
 
