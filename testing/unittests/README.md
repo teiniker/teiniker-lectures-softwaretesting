@@ -10,7 +10,7 @@ The most important properties of unit and component tests are:
 * Unit and component tests are **implemented by the developer team** (the tester supports the team by defining test cases).  
 
 The following topics are important for implementing good unit tests:
-* [Unit Testing Basics](/basics)
+* [Unit Testing Basics](basics)
 * [Fixture Setup](fixture)
 * [Result Verification](verification)
 * [Test Case Design](test_case_design)
