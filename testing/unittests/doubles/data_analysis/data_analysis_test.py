@@ -8,35 +8,35 @@ class AnalysisServiceTest(unittest.TestCase):
 
     def setUp(self):
         self.dao = Mock()                               # DOC
-        self.dao.readData.return_value = [0.8273, 0.7822, 0.9731, 0.1239, 0.9898]
+        self.dao.read_data.return_value = [0.8273, 0.7822, 0.9731, 0.1239, 0.9898]
         self.service = DataAnalysisService(self.dao)    # SUT
 
 
-    def testMeanValue(self):
+    def test_mean_value(self):
         # Exercise
-        mean = self.service.meanValue()
+        mean = self.service.mean_value()
         # Verify
         expected = (0.8273 + 0.7822 + 0.9731 + 0.1239 + 0.9898) / 5.0
         self.assertEqual(expected, mean, 1E-3)
 
-    def testMaxValue(self):
+    def test_max_value(self):
         # Exercise
-        min = self.service.maxValue()
+        minimal = self.service.max_value()
         # Verify
-        self.assertEqual(0.9898, min, 1E-3)
+        self.assertEqual(0.9898, minimal, 1E-3)
 
-    def testMeanValue_FileNotFound(self):
+    def test_mean_value_exception(self):
         # Setup
-        self.dao.readData.side_effect = DataAccessError()
+        self.dao.read_data.side_effect = DataAccessError()
         # Exercise
         with self.assertRaises(ServiceError):
-            self.service.meanValue()
+            self.service.mean_value()
 
-    def testMaxValue_FileNotFound(self):
+    def test_max_value_exception(self):
        # Setup
-        self.dao.readData.side_effect = DataAccessError()
+        self.dao.read_data.side_effect = DataAccessError()
         with self.assertRaises(ServiceError):
-            self.service.maxValue()
+            self.service.max_value()
 
 if __name__ == '__main__':
     unittest.main()

@@ -13,17 +13,17 @@ class DataAnalysisService:
     def __init__(self, dao):
         self.dao = dao
 
-    def meanValue(self):
+    def mean_value(self):
         try:
-            values = self.dao.readData()
+            values = self.dao.read_data()
             return statistics.mean(values)
-        except DataAccessError:
-            raise ServiceError('Can not read data!')
+        except DataAccessError as ex:
+            raise ServiceError('Can not read data!') from ex
 
-    def maxValue(self):
+    def max_value(self):
         try:
-            values = self.dao.readData()
+            values = self.dao.read_data()
             values.sort()
             return values[-1]
-        except DataAccessError:
-            raise ServiceError('Can not read data!')
+        except DataAccessError as ex:
+            raise ServiceError('Can not read data!') from ex
