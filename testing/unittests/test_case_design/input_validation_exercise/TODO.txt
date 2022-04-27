@@ -12,7 +12,7 @@ How to run the test cases?
 $ pwd
 input_validation
 
-$ python3 input_validation_test_exercise.py
+$ python3 input_validation_test.py
 .....
 ----------------------------------------------------------------------
 Ran 5 tests in 0.001s
@@ -24,7 +24,7 @@ How to run the code coverage analysis?
 $ pwd
 input_validation
 
-$ coverage3 run input_validation_test_exercise.py
+$ coverage3 run input_validation_test.py
 
 $ coverage3 report 
 Name                       Stmts   Miss  Cover

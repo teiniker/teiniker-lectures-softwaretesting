@@ -25,7 +25,7 @@ class OrderTest(unittest.TestCase):
         self.assert_equal_product(expected.product, actual.product)
 
     def assert_equals_order(self, expected, actual):
-        self.assertEqual(expected.id, actual.id)
+        self.assertEqual(expected.oid, actual.oid)
         self.assertEqual(len(expected.lines), len(actual.lines))
         length = len(expected.lines)
         for i in range(length):

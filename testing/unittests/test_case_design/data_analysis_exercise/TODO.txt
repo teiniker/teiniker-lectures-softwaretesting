@@ -36,18 +36,3 @@ TOTAL                        67      0   100%
 
 $ coverage html
 => Browser: htmlcov/index.html
-
-
-References:
------------
-> Errors and Exceptions
-	https://docs.python.org/3/tutorial/errors.html
-
-> Python Custom Exceptions
-	https://www.programiz.com/python-programming/user-defined-exception
-
-> Python Exception Handling - Try, Except and Finally
-	https://www.programiz.com/python-programming/exception-handling
-
-> csv — CSV File Reading and Writing
-	https://docs.python.org/3/library/csv.html
