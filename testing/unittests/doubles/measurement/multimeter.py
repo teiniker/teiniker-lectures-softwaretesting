@@ -24,14 +24,14 @@ class Multimeter:
                 MODE.RES: "res"
             }
 
-    def setMode(self, mode):
-         self.device.set_measurement_mode(self.mode_dictionary.get(mode))
+    def set_mode(self, mode):
+        self.device.set_measurement_mode(self.mode_dictionary.get(mode))
 
-    def setRange(self, range):
-        self.device.set_measurement_range(range)
+    def set_range(self, range_value):
+        self.device.set_measurement_range(range_value)
 
     def measure(self)-> float:
         try:
             return self.device.get_measurement_value()
-        except DeviceError:
-            raise MeasurementError('Can not perform measurement!')
+        except DeviceError as ex:
+            raise MeasurementError('Can not perform measurement!') from ex

@@ -46,8 +46,7 @@ _Example_: Configure a MOck's method
 ```Python
     self.dao.read_data()
 ```
-In that case, we can use a method `read_data()` which requires no arguments (in fact it will
-accept any argument) and returns another Mock object.
+In that case, we can use a method `read_data()` which requires no arguments (in fact it will accept any argument) and returns another Mock object.
 
 ### Assertions and Inspection (Test Spy)
 Mock instances store data on how we used them. 
