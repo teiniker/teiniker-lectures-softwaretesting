@@ -3,6 +3,10 @@ from unittest.mock import Mock
 from data_service import DataService, DataAccessError, ServiceError
 
 class DataServiceTest(unittest.TestCase):
+    def __init__(self, methodName):
+        super().__init__(methodName)
+        self.dao = None
+        self.service = None
 
     def test_csv_data(self):
         # Setup
