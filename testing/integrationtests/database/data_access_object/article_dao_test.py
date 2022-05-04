@@ -1,7 +1,7 @@
 import unittest
 import sqlite3
 
-from article_dao import Article, ArticleDao, DataAccessError
+from article_dao import Article, ArticleDao
 
 class SQLiteTest(unittest.TestCase):
     DATABASE_NAME = 'testdb.db'
@@ -35,7 +35,7 @@ class SQLiteTest(unittest.TestCase):
         self.conn.rollback()
         self.conn.close()
 
-    def testInsert(self):
+    def test_insert(self):
         # Exercise
         article = Article(3, 'Book: Effective Python', 4550)
         self.dao.insert(article)
@@ -46,7 +46,7 @@ class SQLiteTest(unittest.TestCase):
         self.assertEqual('Book: Effective Python', row[1])
         self.assertEqual(4550, row[2])
 
-    def testUpdate(self):
+    def test_update(self):
         # Exercise
         article = Article(2, 'Book: Python Crash Course', 1599)
         self.dao.update(article)
@@ -57,7 +57,7 @@ class SQLiteTest(unittest.TestCase):
         self.assertEqual('Book: Python Crash Course', row[1])
         self.assertEqual(1599, row[2])
 
-    def testDelete(self):
+    def test_delete(self):
         # Exercise
         self.dao.delete(2)
         # Verify
@@ -65,7 +65,7 @@ class SQLiteTest(unittest.TestCase):
         table = self.cur.fetchall()
         self.assertEqual(1, len(table))
 
-    def testFindById(self):
+    def test_find_by_id(self):
         # Exercise
         article = self.dao.find_by_id(1)
         # Verify
@@ -73,13 +73,12 @@ class SQLiteTest(unittest.TestCase):
         self.assertEqual('Book: Fluent Python', article.description)
         self.assertEqual(3599, article.price)
 
-    def testFindAll(self):
+    def test_find_all(self):
         # Exercise
         articles = self.dao.find_all()
         # Verify
         print(articles)
         self.assertEqual(2, len(articles))
-
 
 if __name__ == '__main__':
     unittest.main()

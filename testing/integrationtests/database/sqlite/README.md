@@ -107,4 +107,4 @@ DROP TABLE user
 * [Youtube (Corey Schafer): Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries](https://youtu.be/pd-0G0MigUA)
 * [Youtube: SQLite Databases With Python](https://youtu.be/byHcYRpMgI4)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2022, GPL v3.0*

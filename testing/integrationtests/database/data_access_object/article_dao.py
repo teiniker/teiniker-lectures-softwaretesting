@@ -1,7 +1,3 @@
-import unittest
-import sqlite3
-
-
 class DataAccessError(Exception):
     pass
 
@@ -9,13 +5,13 @@ class DataAccessError(Exception):
 class Article:
     """Entity class: a data object which can be stored in the database."""
 
-    def __init__(self, id, description, price):
-        self.id = id
+    def __init__(self, oid, description, price):
+        self.oid = oid
         self.description = description
         self.price = price
 
     def __str__(self):
-        return ("Article: [id = %d, description=%s, price=%d]" % (self.id, self.description, self.price))
+        return f"Article: [id = {self.oid}, description={self.description}, price={self.price}]"
 
     def __repr__(self):
         return str(self)
@@ -33,8 +29,8 @@ class ArticleDao:
         try:
             cur = self.conn.cursor()
             cur.execute(sql, parameters)
-        except Warning as e:
-            raise DataAccessError("Can't insert Article: " + article) from e
+        except Warning as ex:
+            raise DataAccessError("Can't insert Article: " + article) from ex
 
     def update(self, article):
         sql = "UPDATE article SET description=?, price=? WHERE id=?"
@@ -42,28 +38,28 @@ class ArticleDao:
         try:
             cur = self.conn.cursor()
             cur.execute(sql, parameters)
-        except Warning as e:
-            raise DataAccessError("Can't update Article: " + article) from e
+        except Warning as ex:
+            raise DataAccessError("Can't update Article: " + article) from ex
 
-    def delete(self, id):
+    def delete(self, oid):
         sql = "DELETE FROM article WHERE id=?"
-        parameters = (id,)
+        parameters = (oid,)
         try:
             cur = self.conn.cursor()
             cur.execute(sql, parameters)
-        except Warning as e:
-            raise DataAccessError("Can't remove Article with id: " + id) from e
+        except Warning as ex:
+            raise DataAccessError("Can't remove Article with id: " + id) from ex
 
-    def find_by_id(self, id):
+    def find_by_id(self, oid):
         sql = "SELECT * FROM article WHERE id=?"
-        parameters = (id,)
+        parameters = (oid,)
         try:
             cur = self.conn.cursor()
             cur.execute(sql, parameters)
             row = cur.fetchone()
             return Article(row[0], row[1], row[2])
-        except Warning as e:
-            raise DataAccessError("Can't find Article with given id: " + id) from e
+        except Warning as ex:
+            raise DataAccessError("Can't find Article with given id: " + id) from ex
 
     def find_all(self):
         sql = "SELECT * FROM article"
@@ -75,5 +71,5 @@ class ArticleDao:
             for row in rows:
                 results.append(Article(row[0], row[1], row[2]))
             return results
-        except Warning as e:
-            raise DataAccessError("Can't find Article with given id: " + id) from e
+        except Warning as ex:
+            raise DataAccessError("Can't find Article with given id: " + id) from ex

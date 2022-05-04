@@ -2,11 +2,6 @@ import unittest
 import sqlite3
 
 class SQLiteMemoryTest(unittest.TestCase):
-    # We can use the special name :memory: to create a database in RAM.
-    # The database ceases to exist as soon as the database connection is closed.
-    # Every :memory: database is distinct from every other. So, opening two
-    # database connections each with the filename ":memory:" will create two
-    # independent in-memory databases.
 
     DATABASE_NAME = ':memory:'
 
@@ -23,7 +18,7 @@ class SQLiteMemoryTest(unittest.TestCase):
     def tearDown(self):
         self.conn.close()
 
-    def testSelectAllUsers(self):
+    def test_select_all_users(self):
         self.cur.execute('SELECT* from user')
         table = self.cur.fetchall()
         # Verify
@@ -31,7 +26,7 @@ class SQLiteMemoryTest(unittest.TestCase):
         for row in table:
             print(row)
 
-    def testSelectAllUsersOrderedByUsername(self):
+    def test_select_all_users_ordered_by_username(self):
         self.cur.execute('SELECT * from user ORDER BY username')
         table = self.cur.fetchall()
         # Verify
@@ -42,7 +37,7 @@ class SQLiteMemoryTest(unittest.TestCase):
         self.assertEqual('maggie', table[3][1])
         self.assertEqual('marge', table[4][1])
 
-    def testSelectAllUsersUsernameLike(self):
+    def test_select_all_users_username_like(self):
         parameters = ('m%',)
         # Exercise
         self.cur.execute("SELECT * from user WHERE username LIKE ?", parameters)
@@ -53,7 +48,7 @@ class SQLiteMemoryTest(unittest.TestCase):
         self.assertEqual('maggie', table[1][1])
 
 
-    def testSelectUser(self):
+    def test_select_user(self):
         # Setup
         parameters = ('bart',)
         # Exercise
@@ -66,7 +61,7 @@ class SQLiteMemoryTest(unittest.TestCase):
         self.assertEqual('bart', record[1])   # username
         self.assertEqual('9551dadbf76a27457946e70d1aebebe2132f8d3bce6378d216c11853524dd3a6', record[2])  # password
 
-    def testAuthentication(self):
+    def test_authentication(self):
         # Setup
         parameters = ('lisa', 'd84fe7e07bedb227cffff10009151d96fc944f6a1bd37cff60e8e4626a1eb1c3')
         # Exercise
@@ -77,7 +72,3 @@ class SQLiteMemoryTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-# References:
-# https://www.sqlite.org/inmemorydb.html
-# https://www.sqlitetutorial.net/sqlite-like/

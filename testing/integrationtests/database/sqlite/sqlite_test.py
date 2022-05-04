@@ -39,7 +39,7 @@ class SQLiteTest(unittest.TestCase):
         self.conn.rollback()
         self.conn.close()
 
-    def testSelectAll(self):
+    def test_select_all(self):
         # Exercise
         self.cur.execute('SELECT * from user')
         table = self.cur.fetchall()
