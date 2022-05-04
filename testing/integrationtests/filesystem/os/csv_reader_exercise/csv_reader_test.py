@@ -1,12 +1,13 @@
 import unittest
-import os, shutil
+import os
+import shutil
 
-from csv_reader import DataAccessError, CsvDataReader, Order
+from csv_reader import CsvDataReader, Order
 
 
 class CsvDataReaderTest(unittest.TestCase):
-    
-    def setUp(self):        
+
+    def setUp(self):
         # TODO
         pass
 
@@ -14,7 +15,7 @@ class CsvDataReaderTest(unittest.TestCase):
         # TODO
         pass
 
-    def testReadCsv(self):
+    def test_read_csv(self):
         # Exercise
         orders = self.reader.read_csv(self.data_file)
         # Verify

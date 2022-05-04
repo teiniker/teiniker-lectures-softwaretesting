@@ -1,12 +1,12 @@
 import unittest
-import os, shutil
+import os
+import shutil
 
-from csv_reader import DataAccessError, CsvDataReader, Order
-
+from csv_reader import CsvDataReader, Order
 
 class CsvDataReaderTest(unittest.TestCase):
-    
-    def setUp(self):        
+
+    def setUp(self):
         os.mkdir('test_data')
         self.data_file = 'test_data/order.csv'
         shutil.copyfile('data/data.csv', self.data_file)
@@ -16,7 +16,7 @@ class CsvDataReaderTest(unittest.TestCase):
         shutil.rmtree('test_data')
 
 
-    def testReadCsv(self):
+    def test_read_csv(self):
         # Exercise
         orders = self.reader.read_csv(self.data_file)
         # Verify
