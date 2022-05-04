@@ -37,7 +37,7 @@ class LectureTest(unittest.TestCase):
         self.conn.rollback()
         self.conn.close()
 
-    def testQuery1(self):
+    def test_query_1(self):
         self.cur.execute('SELECT id,title,sws FROM lectures ORDER BY title')
         table = self.cur.fetchall()
         # Verify
@@ -48,7 +48,7 @@ class LectureTest(unittest.TestCase):
         self.assertEqual((2,'Software Environments and Programming',4), table[3])
         self.assertEqual((5,'System Requirements and Testing',4), table[4])
 
-    def testQuery2(self):
+    def test_query_2(self):
         self.cur.execute("SELECT id,title,sws,ects FROM lectures WHERE title like '%Test%'")
         table = self.cur.fetchall()
         # Verify
@@ -56,7 +56,7 @@ class LectureTest(unittest.TestCase):
         self.assertEqual((1,'Mathematical Methods in Test Engineering',4,6), table[0])
         self.assertEqual((5,'System Requirements and Testing',4,6), table[1])
 
-    def testDelete(self):
+    def test_delete(self):
         self.cur.execute("DELETE FROM lectures WHERE id IN (1,3)")
         # Verify
         self.cur.execute("SELECT id FROM lectures")

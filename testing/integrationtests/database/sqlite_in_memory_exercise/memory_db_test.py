@@ -7,10 +7,9 @@ class SQLiteMemoryTest(unittest.TestCase):
 
     DATABALE_NAME = ':memory:'
 
-    # TODO: Implement setUp() and tearDown()
+    #TODO: Implement setUp() and tearDown()
 
-    # TODO: Implement test cases
+    #TODO: Implement test cases
 
 if __name__ == '__main__':
     unittest.main()
-
