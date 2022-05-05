@@ -24,7 +24,7 @@ features that the customer (PO) wants. These tests also drive development,
 but at a higher level.
 
 These automated tests run directly on the business logic in the production 
-code without having to go through a presentation layer.
+code **without having to go through a presentation layer**.
 
 Functional tests are implemented by the team based on examples and 
 prototypes and test cases provided from the PO and the tester.
