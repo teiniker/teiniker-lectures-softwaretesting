@@ -98,8 +98,6 @@ DROP TABLE user
 ```
 
 ## References
-* Jay A. Kreibich. **Using SQLite: Small. Fast. Reliable. Choose Any Three**. O'Reilly, 2012
-
 * [sqlite3 — DB-API 2.0 interface for SQLite databases](https://docs.python.org/3.8/library/sqlite3.html)
 * [SQLite: Tutorial](https://www.sqlitetutorial.net/)
 * [SQLite:In-Memory Databases](https://www.sqlite.org/inmemorydb.html)
