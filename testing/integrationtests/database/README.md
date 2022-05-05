@@ -14,6 +14,9 @@
 ## References
 
 ## References
+* Gerard Meszaros. **xUnit Test Patterns**. Addison-Wesley, 2007
+    * Chapter 13: Testing with Databases
+
 * Jay A. Kreibich. **Using SQLite: Small. Fast. Reliable. Choose Any Three**. O'Reilly, 2012
 
 *Egon Teiniker, 2020-2022, GPL v3.0*
