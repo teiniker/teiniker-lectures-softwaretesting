@@ -4,37 +4,37 @@ from binary_string import operation, ValidationError
 
 class BinaryNumberTest(unittest.TestCase):
 
-    def testValidBinaryString(self):
+    def test_valid_binary_string(self):
         value = int('11110000', 2)
         self.assertEqual(240, value)
 
-    def testInValidBinaryString(self):
+    def test_invalid_binary_string(self):
         with self.assertRaises(ValueError):
             int('012', 2)
 
-    def testValidData(self):
+    def test_valid_data(self):
         self.assertEqual(0b0, operation('0'))
         self.assertEqual(0b1, operation('1'))
         self.assertEqual(0b0, operation('00000000'))
         self.assertEqual(0b11111111, operation('11111111'))
 
-    def testInValidData_TooShort(self):
+    def test_invalid_data_too_short(self):
         with self.assertRaises(ValidationError):
             operation('')
 
-    def testInValidData_TooLong1(self):
+    def test_invalid_data_too_long1(self):
         with self.assertRaises(ValidationError):
             operation('000000000')
 
-    def testInValidData_TooLong2(self):
+    def test_invalid_data_too_long2(self):
         with self.assertRaises(ValidationError):
             operation('111111111')
 
-    def testInValidData_TooSmallAsciiValue(self):
+    def test_invalid_data_too_small_ascii_value(self):
         with self.assertRaises(ValidationError):
             operation('/')
 
-    def testInValidData_TooLargeAsciiValue(self):
+    def test_invalid_data_too_large_ascii_value(self):
         with self.assertRaises(ValidationError):
             operation('2')
 
