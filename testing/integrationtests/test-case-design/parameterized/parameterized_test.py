@@ -13,45 +13,43 @@ from binary_string import operation, ValidationError
 
 class BinaryNumberTest(unittest.TestCase):
 
-    def parameterizedTest(self, expected, input):
-        actual = operation(input)
+    def parameterized_test(self, expected, input_data):
+        actual = operation(input_data)
         self.assertEqual(expected, actual)
 
-    def parameterizedTestWithException(self, exception, input):
+    def parameterized_test_with_exception(self, exception, input_data):
         try:
-            operation(input)
+            operation(input_data)
             self.fail()
         except exception:
             pass
-        except:
-            self.fail('unexpected exception')
 
-    def testValidData1(self):
-        self.parameterizedTest(0b0, '0')
+    def test_valid_data1(self):
+        self.parameterized_test(0b0, '0')
 
-    def testValidData2(self):
-        self.parameterizedTest(0b1, '1')
+    def test_valid_data2(self):
+        self.parameterized_test(0b1, '1')
 
-    def testValidData3(self):
-        self.parameterizedTest(0b0, '00000000')
+    def test_valid_data3(self):
+        self.parameterized_test(0b0, '00000000')
 
-    def testValidData4(self):
-        self.parameterizedTest(0b11111111, '11111111')
+    def test_valid_data4(self):
+        self.parameterized_test(0b11111111, '11111111')
 
-    def testInValidData_TooShort(self):
-        self.parameterizedTestWithException(ValidationError, '')
+    def test_invalid_data_too_short(self):
+        self.parameterized_test_with_exception(ValidationError, '')
 
-    def testInValidData_TooLong1(self):
-        self.parameterizedTestWithException(ValidationError, '000000000')
+    def test_invalid_data_too_long1(self):
+        self.parameterized_test_with_exception(ValidationError, '000000000')
 
-    def testInValidData_TooLong2(self):
-        self.parameterizedTestWithException(ValidationError, '111111111')
+    def test_invalid_data_too_long2(self):
+        self.parameterized_test_with_exception(ValidationError, '111111111')
 
-    def testInValidData_TooSmallAsciiValue(self):
-        self.parameterizedTestWithException(ValidationError, '/')
+    def test_invalid_data_too_small_ascii_value(self):
+        self.parameterized_test_with_exception(ValidationError, '/')
 
-    def testInValidData_TooLargeAsciiValue(self):
-        self.parameterizedTestWithException(ValidationError, '2')
+    def test_invalid_data_too_large_ascii_value(self):
+        self.parameterized_test_with_exception(ValidationError, '2')
 
 if __name__ == '__main__':
     unittest.main()

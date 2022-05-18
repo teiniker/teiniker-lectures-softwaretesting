@@ -13,4 +13,3 @@ def operation(data):
         return int(data, 16)
     else:
         raise ValidationError('Invalid data value!')
-

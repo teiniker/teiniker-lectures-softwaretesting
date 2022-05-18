@@ -12,4 +12,3 @@ def operation(data):
         return int(data, 2)
     else:
         raise ValidationError('Invalid data value!')
-
