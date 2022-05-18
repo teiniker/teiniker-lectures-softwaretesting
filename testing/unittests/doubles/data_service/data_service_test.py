@@ -5,8 +5,8 @@ from data_service import DataService, DataAccessError, ServiceError
 class DataServiceTest(unittest.TestCase):
     def __init__(self, methodName):
         super().__init__(methodName)
-        self.dao = None
-        self.service = None
+        self.dao = None     # DOC
+        self.service = None # SUT
 
     def test_csv_data(self):
         # Setup

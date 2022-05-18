@@ -15,12 +15,12 @@ Put all tests in the file called "data_analysis_test.py".
 
 How to run the test cases?
 --------------------------
-$ python3 -m unittest data_analysis_test.py
+$ python3 data_analysis_test.py
 
 
 How to run the code coverage analysis?
 -------------------------------------------------------------------------------
-$ coverage3 run -m unittest data_analysis_test.py
+$ coverage3 run data_analysis_test.py
 
 $ coverage3 report 
 

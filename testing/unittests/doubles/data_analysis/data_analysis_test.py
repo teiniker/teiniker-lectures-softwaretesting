@@ -21,9 +21,9 @@ class AnalysisServiceTest(unittest.TestCase):
 
     def test_max_value(self):
         # Exercise
-        minimal = self.service.max_value()
+        maximum = self.service.max_value()
         # Verify
-        self.assertEqual(0.9898, minimal, 1E-3)
+        self.assertEqual(0.9898, maximum, 1E-3)
 
     def test_mean_value_exception(self):
         # Setup
