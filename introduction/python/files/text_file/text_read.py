@@ -1,4 +1,4 @@
-file = open('data.txt')
+file = open('data.txt', 'r', encoding="utf-8")
 for line in file:
-    print("> {}".format(line), end='')
+    print(f"> {line}", end='')
 file.close()

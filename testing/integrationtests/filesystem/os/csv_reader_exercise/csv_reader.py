@@ -29,4 +29,4 @@ class CsvDataReader:
         with open(filename, 'w', encoding="UTF-8") as file:
             csv_writer = csv.writer(file, delimiter=',', quoting=csv.QUOTE_NONNUMERIC)
             for order in orders:
-                csv_writer.writerow([order.id, order.part, order.quantity])
+                csv_writer.writerow([order.oid, order.part, order.quantity])
