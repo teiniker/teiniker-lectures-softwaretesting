@@ -12,7 +12,7 @@ class SeleniumTest(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
-    def testLoginLogout(self):
+    def test_login_logout(self):
         self.driver.get('http://stundenplan.fh-joanneum.at/')
         self.driver.find_element(By.NAME, "user").click()
         self.driver.find_element(By.NAME, "user").send_keys('stm')

@@ -33,7 +33,7 @@ class SeleniumTest(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
-    def testLoginLogout(self):
+    def test_login_logout(self):
         login_page = LoginPage(self.driver)
         login_page.username = 'stm'
         login_page.password = 'stm'

@@ -69,7 +69,7 @@ class SQLiteTest(unittest.TestCase):
         # Exercise
         article = self.dao.find_by_id(1)
         # Verify
-        self.assertEqual(1, article.id)
+        self.assertEqual(1, article.oid)
         self.assertEqual('Book: Fluent Python', article.description)
         self.assertEqual(3599, article.price)
 
