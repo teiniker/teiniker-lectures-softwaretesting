@@ -23,6 +23,15 @@ Selenium is an umbrella project for a range of tools and libraries that enable a
   browser and operating system combinations. This is where Grid comes into the picture.
 
 
+## Selenium IDE
+Selenium IDE is an integrated development environment for Selenium tests. 
+It is implemented as a Firefox extension, and allows you to record, edit, and debug tests.
+
+**Install Selenium IDE addon for Firefox**:
+* Using Firefox, vistit the page: https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/
+* Click the button **[Add to Firefox]**
+
+
 ## Web Driver 
 WebDriver drives a browser natively, as a user would, either locally or on a remote machine using the Selenium server, 
 marks a leap forward in terms of browser automation.
@@ -41,27 +50,16 @@ controlling code. This is commonly referred to as just WebDriver.
     ```
 * Add the webdriver directory to the PATH environment variable:
     ```
-    $ vi ~/.bashrc
+    $ code ~/.bashrc
     [i]
     export WEBDRIVER=/home/student/local/webdriver/
     export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:$M2_HOME/bin:$COVERAGE/bin:/opt/bin:$WEBDRIVER/:$PATH
-    [ESC] [:] [w][q]
     ```
 
 **Install the selenium module for Python**
     ```
     $ pip3 install selenium  
     ```
-
-## Selenium IDE
-Selenium IDE is an integrated development environment for Selenium tests. 
-It is implemented as a Firefox extension, and allows you to record, edit, and debug tests.
-
-**Install Selenium IDE addon for Firefox**:
-* Using Firefox, vistit the page: https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/
-* Click the button **[Add to Firefox]**
-
-
 
 ## References
 * [https://www.python.org/](https://www.python.org/)
