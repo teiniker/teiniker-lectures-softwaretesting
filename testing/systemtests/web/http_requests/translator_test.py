@@ -31,5 +31,15 @@ class SeleniumTest(unittest.TestCase):
         self.assertTrue('Translate: cat into Katze' in content)
         # Teardown
 
+    def test_get_request_headers(self):
+        # Setup
+        url = 'http://localhost:8080/'
+        # Exercise
+        response = requests.get(url)
+        # Verify
+        headers = response.headers
+        print(f"Response headers: {headers}")
+        self.assertEqual('text/html;charset=UTF-8', headers['Content-Type'])
+
 if __name__ == '__main__':
     unittest.main()

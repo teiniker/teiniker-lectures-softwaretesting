@@ -23,6 +23,34 @@ URL: http://localhost:8080/index.html
 **cURL** is a command line tool to execute HTTP(S) requests. We use this tool 
 to send a POST request to the web application:
 
+_Example_: GET request 
+```
+$ curl -i http://localhost:8080
+
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Last-Modified: Thu, 21 Oct 2021 18:42:44 GMT
+Accept-Ranges: bytes
+Content-Type: text/html;charset=UTF-8
+Content-Language: en-US
+Content-Length: 1160
+Date: Wed, 29 Jun 2022 13:42:53 GMT
+
+<html>
+<head>
+    <title>Servlet Translator</title>
+</head>
+
+<body>
+<h2>Translator </h2>
+    ...
+</body>
+</html>
+```
+
+_Example_: POST request  
 ```
 $ curl -i -X POST -d 'word=cat&language=Deutsch&action=Translate' http://localhost:8080/translator
 
