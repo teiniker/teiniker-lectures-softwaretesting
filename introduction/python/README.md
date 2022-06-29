@@ -67,7 +67,7 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
 
 
-## Python Standard Library
+## Python Libraries
   
   * **Test Automation**
     * [YouTube (Corey Schafer): Unit Testing Your Code with the unittest Module](https://youtu.be/6tNS--WetLI)   
