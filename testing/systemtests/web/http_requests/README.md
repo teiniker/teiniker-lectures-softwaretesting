@@ -5,8 +5,9 @@ A web browser may be the client, and an application on a computer that hosts a w
 
 ## Setup
 
-The simplest library to send HTTP requests is called **Requests**.
-To download and install Requests library, use following command:
+The **requests library** is the de facto standard for making HTTP requests in Python. It abstracts the complexities of making requests behind a beautiful, simple API so that you can focus on interacting with services and consuming data in your application.
+
+To download and install the requests library, use following command:
 ```
 $ pip3 install requests
 ```
@@ -22,33 +23,38 @@ _Example_: HTTP GET request
 ```Python
     def test_get_request(self):
         # Setup
-        url = 'http://localhost:8080/'    
+        url = 'http://localhost:8080/'
         # Exercise
-        req = requests.get(url = url)
+        response = requests.get(url)
         # Verify
-        response = req.text
-        print(f"Response: {response}")
-        #Teardown
+        content = response.text
+        print(f"Response content: {content}")
+        status = response.status_code
+        self.assertEqual(200, status)
 ```
 
 _Example_: HTTP POST request 
 ```Python
-   def test_post_request(self):
+    def test_post_request(self):
         # Setup
         url = 'http://localhost:8080/translator'    
         data = {'word':'cat',
                 'language':'Deutsch',
                 'action': 'Translate'}
         # Exercise
-        req = requests.post(url = url, data = data)
+        response = requests.post(url, data)
         # Verify
-        response = req.text
+        status = response.status_code
+        self.assertEqual(200, status)
+        content = response.text
         print(f"Response: {response}")
-        self.assertTrue('Translate: cat into Katze' in response)
-        # Teardown
+        self.assertTrue('Translate: cat into Katze' in content)
 ```
 
 ## References
+* [YouTube (Schafer): Python Requests Tutorial: Request Web Pages, Download Images, POST Data, Read JSON, and More](https://youtu.be/tb8gHvYlCFs)
+
+* [Real Python: Python’s Requests Library](https://realpython.com/python-requests/)
 * [Requests: HTTP for Humans](https://requests.readthedocs.io/en/latest/)
 * [GET and POST requests using Python](https://www.geeksforgeeks.org/get-post-requests-using-python/)
 

@@ -7,10 +7,12 @@ class SeleniumTest(unittest.TestCase):
         # Setup
         url = 'http://localhost:8080/'
         # Exercise
-        req = requests.get(url = url)
+        response = requests.get(url)
         # Verify
-        response = req.text
-        print(f"Response: {response}")
+        content = response.text
+        print(f"Response content: {content}")
+        status = response.status_code
+        self.assertEqual(200, status)
 
 
     def test_post_request(self):
@@ -20,11 +22,13 @@ class SeleniumTest(unittest.TestCase):
                 'language':'Deutsch',
                 'action': 'Translate'}
         # Exercise
-        req = requests.post(url = url, data = data)
+        response = requests.post(url, data)
         # Verify
-        response = req.text
+        status = response.status_code
+        self.assertEqual(200, status)
+        content = response.text
         print(f"Response: {response}")
-        self.assertTrue('Translate: cat into Katze' in response)
+        self.assertTrue('Translate: cat into Katze' in content)
         # Teardown
 
 if __name__ == '__main__':
