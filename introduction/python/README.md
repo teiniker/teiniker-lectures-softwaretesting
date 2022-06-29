@@ -87,7 +87,8 @@ Each of these short videos repeats a specific language construct of the Python p
   * **Databases**
     * [YouTube (Corey Schafer): Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries](https://youtu.be/pd-0G0MigUA)
 
-      
+  * **HTTP Requests**
+    * [YouTube (Corey Schafer): Python Requests Tutorial: Request Web Pages, Download Images, POST Data, Read JSON, and More](https://youtu.be/tb8gHvYlCFs)       
 
 
 ## References
