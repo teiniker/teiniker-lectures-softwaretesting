@@ -52,7 +52,8 @@ _Example_: HTTP POST request
 ```
 
 ## References
-* [YouTube (Schafer): Python Requests Tutorial: Request Web Pages, Download Images, POST Data, Read JSON, and More](https://youtu.be/tb8gHvYlCFs)
+* [YouTube (Corey Schafer): Python Requests Tutorial: Request Web Pages, Download Images, POST Data, Read JSON, and More](https://youtu.be/tb8gHvYlCFs)
+* [YouTube (Corey Schafer): Web Scraping with BeautifulSoup and Requests](https://youtu.be/ng2o98k983k) 
 
 * [Real Python: Python’s Requests Library](https://realpython.com/python-requests/)
 * [Requests: HTTP for Humans](https://requests.readthedocs.io/en/latest/)

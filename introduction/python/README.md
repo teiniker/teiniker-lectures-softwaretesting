@@ -89,6 +89,7 @@ Each of these short videos repeats a specific language construct of the Python p
 
   * **HTTP Requests**
     * [YouTube (Corey Schafer): Python Requests Tutorial: Request Web Pages, Download Images, POST Data, Read JSON, and More](https://youtu.be/tb8gHvYlCFs)       
+    * [YouTube (Corey Schafer): Web Scraping with BeautifulSoup and Requests](https://youtu.be/ng2o98k983k) 
 
 
 ## References
