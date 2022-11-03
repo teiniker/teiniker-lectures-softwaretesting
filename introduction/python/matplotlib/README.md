@@ -1,6 +1,8 @@
 # Python Matplotlib Tutorial
 
-Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Using Matplotlib we can:
+Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. 
+
+Using Matplotlib we can:
 * Create publication quality plots.
 * Make interactive figures that can zoom, pan, update.
 * Customize visual style and layout.
