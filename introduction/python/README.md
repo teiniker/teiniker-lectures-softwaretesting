@@ -13,7 +13,7 @@ To get access to all the facts about Python you can follow these two sources:
 
 There is also a **Python style guide** which defines coding conventions for the Python code comprising the standard library 
 in the main Python distribution:
-* [Introduction](Python-StyleGuide.md)
+* [Introduction](coding-style-guide/README.md)
 * [PEP 8: Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
 
 The following list references numerous **videos** which are created by by engaged authors and freely accessible on YouTube.
@@ -86,6 +86,9 @@ Each of these short videos repeats a specific language construct of the Python p
 
   * **Databases**
     * [YouTube (Corey Schafer): Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries](https://youtu.be/pd-0G0MigUA)
+
+  * **Visualizations**
+    * [Matplotlib](matplotlib)
 
   * **HTTP Requests**
     * [YouTube (Corey Schafer): Python Requests Tutorial: Request Web Pages, Download Images, POST Data, Read JSON, and More](https://youtu.be/tb8gHvYlCFs)       
