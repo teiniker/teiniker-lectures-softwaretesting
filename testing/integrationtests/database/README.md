@@ -1,6 +1,6 @@
 # Testing with Databases
 
-* [**Introduction to SQLite**](sqlite/README.md)
+* [**Introduction to SQLite**](introduction/python/sqlite/README.md)
 
 * **Demo Examples**
     * [sqlite](sqlite)
