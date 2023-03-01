@@ -1,7 +1,8 @@
 from fileinput import filename
 import logging
 
-logging.basicConfig(level=logging.DEBUG, filename='example.log', format='%(asctime)s %(levelname)s %(name)s : %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s : %(message)s')
+#logging.basicConfig(level=logging.DEBUG, filename='example.log', format='%(asctime)s %(levelname)s %(name)s : %(message)s')
 log = logging.getLogger(__name__)
 
 log.debug('This is a debug message')
