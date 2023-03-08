@@ -3,19 +3,18 @@ import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s : %(message)s')
 log = logging.getLogger(__name__)
 
-def list_count_element(nums, e):
-    log.debug('list_count_element({}, {})'.format(nums, e))
-    count = 0
+def list_count_element(nums, element):
+    log.debug(f"list_count_element({nums}, {element})")
+    counter = 0
     for n in nums:
-        log.debug('  for-loop: n = {}'.format(n))
-        if n == e:
-            log.debug('    element found, count = {}'.format(count))
+        log.debug(f"  for-loop: n = {n}")
+        if n == element:
+            log.debug(f"    element found, counter = {counter}")
             # Bug: count += count + 1
-            count = count +1
-    return count
+            counter += 1
+    return counter
 
 numbers = [5, 2, 1, 8, 4, 3, 7, 1, 1, 4]
 count = list_count_element(numbers, 1)
-print('Count of elements = {}'.format(count))
-
-
+print(f"Count of elements = {count}")
+assert count == 3
