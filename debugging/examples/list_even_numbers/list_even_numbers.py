@@ -10,4 +10,3 @@ numbers = [5, 2, 1, 8, 4]
 even_numbers = list_even_numbers(numbers)
 print(f'Even elements = {even_numbers}')
 assert [2, 8, 4] == even_numbers
-
