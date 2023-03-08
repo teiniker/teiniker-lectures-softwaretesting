@@ -62,11 +62,11 @@ The issue of debugging is to **identify the infection chain, to find its root ca
 
 The following techniques are commonly used to find bugs in applications:
 
-* [**Logging**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/logging)
+* [Logging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/logging)
 
-* [**Interactive Debugging**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/debugger)
+* [Interactive Debugging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/debugger)
 
-* [**Assertions**](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/assertions)
+* [Assertions](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/assertions)
 
 
 ## References
