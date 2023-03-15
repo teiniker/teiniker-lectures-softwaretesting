@@ -45,7 +45,7 @@ Simply add one line to enable `Pylint` in the `.settings.json` file:
 which resulds in the final `.settings.json` file:
 ```
 {
-    "python.pythonPath": "python3",
+    "python.defaultInterpreterPath": "python3",
     "python.terminal.executeInFileDir" : true,
     "code-runner.executorMap": {
         "python": "python3 -u",
@@ -69,4 +69,4 @@ Note that we can use `python.linting.pylintArgs` to **disable singel Pylint rule
 
 * [YouTube: VSCode Tidbits: VSCODE linting for Python](https://youtu.be/eMIxokGhFHM)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2023, GPL v3.0*
