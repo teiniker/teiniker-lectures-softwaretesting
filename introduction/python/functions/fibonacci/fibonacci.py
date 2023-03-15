@@ -15,7 +15,7 @@ def fibonacci_numbers(size):
 
 # Verify implementation
 
-assert [] == fibonacci_numbers(0)
+assert not fibonacci_numbers(0)
 assert [0] == fibonacci_numbers(1)
 assert [0, 1] == fibonacci_numbers(2)
 assert [0, 1, 1] == fibonacci_numbers(3)
