@@ -52,7 +52,7 @@ Simply add one line to enable `mypy` in the `.settings.json` file:
 which resulds in the final `.settings.json` file:
 ```
 {
-    "python.pythonPath": "python3",
+    "python.defaultInterpreterPath": "python3",
     "python.terminal.executeInFileDir" : true,
     "code-runner.executorMap": {
         "python": "python3 -u",
@@ -76,4 +76,4 @@ which resulds in the final `.settings.json` file:
 
 * [PEP 484 – Type Hints](https://peps.python.org/pep-0484/)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2023, GPL v3.0*
