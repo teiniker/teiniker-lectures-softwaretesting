@@ -3,9 +3,9 @@ class Resistor():
     """Class using operator overloading and magic methods."""
 
     def __init__(self, value, tolerance=2):
-        self.value = value              
-        self.tolerance = tolerance      
-    
+        self.value = value
+        self.tolerance = tolerance
+
     def __repr__(self):
         return f'Resistor({self.value}, {self.tolerance})'
 
@@ -18,16 +18,15 @@ class Resistor():
         else:
             return False
 
-    def __add__(self, other): # +
+    def __add__(self, other): # if we use '+' Python invokes __add__()
         value = self.value + other.value
         tolerance = self._max(self.tolerance, other.tolerance)
         return Resistor(value, tolerance)
 
-    def _max(self, a, b):
-        if(a > b):
-            return a
-        else:
-            return b
+    def _max(self, tol_a, tol_b):
+        if tol_a > tol_b:
+            return tol_a
+        return tol_b
 
 
 # Verify implementation
@@ -41,12 +40,12 @@ assert 470 == r2.value
 assert 5 == r2.tolerance
 
 r = Resistor(330, 2)
-assert 'Resistor(330, 2)' == repr(r)
+assert 'Resistor(330, 2)' == repr(r)                # invoke __repr__()
 
 r = Resistor(330, 2)
-assert 'Resistor: value=330, tolerance=2' == str(r)
+assert 'Resistor: value=330, tolerance=2' == str(r) # invoke __str__()
 
-r = r1 + r2 # __add__()
+r = r1 + r2                                         # invoke __add__()
 assert 1000+470 == r.value
 
 r1 = Resistor(2700,2)

@@ -1,22 +1,22 @@
 
 class Resistor():
     """Class implementation at its simplest."""
-    def __init__(self, value, tolerance):
-        self.value = value              
-        self.tolerance = tolerance       
+    def __init__(self, value:int, tolerance:int):
+        self.value = value
+        self.tolerance = tolerance
 
     def add(self, other):
         value = self.value + other.value
         if self.tolerance > other.tolerance:
             tolerance = self.tolerance
-        else: 
-            tolerance = other.tolerance 
+        else:
+            tolerance = other.tolerance
         return Resistor(value, tolerance)
 
 
 # Verify implementation
 
-r1 = Resistor(100,1)
+r1 = Resistor(100,1)    # invoke __init__() => Resistor instance
 assert 100 == r1.value
 assert 1 == r1.tolerance
 

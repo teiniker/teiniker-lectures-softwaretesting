@@ -1,8 +1,8 @@
 
 class Resistor():
     def __init__(self, value, tolerance):
-        self.value = value              
-        self.tolerance = tolerance       
+        self.value = value
+        self.tolerance = tolerance
 
     @property
     def value(self):
@@ -24,30 +24,28 @@ class Resistor():
         print(f'set tolerance: {tolerance}')
         self._tolerance = tolerance
 
-
-    def __add__(self, other): # +
+    def __add__(self, other):
         value = self._value + other._value
         tolerance = self._max(self.tolerance, other.tolerance)
         return Resistor(value, tolerance)
 
-    def _max(self, a, b):
-        if(a > b):
-            return a
-        else:
-            return b
+    def _max(self, tol_a, tol_b):
+        if tol_a > tol_b:
+            return tol_a
+        return tol_b
 
 
 # Verify implementation
 
 r1 = Resistor(100,1)
-assert 100 == r1.value
-assert 1 == r1.tolerance
+assert 100 == r1.value          # invoke value()
+assert 1 == r1.tolerance        # invoke tolerance()
 
 r2 = Resistor(330,5)
-r2.value = 470
+r2.value = 470                  # invoke value(470)
 assert 470 == r2.value
 assert 5 == r2.tolerance
 
-r = r1 + r2
+r = r1 + r2                     # invoke __add__()
 assert 100+470 == r.value
 assert 5 == r.tolerance

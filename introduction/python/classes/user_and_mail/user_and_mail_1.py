@@ -1,3 +1,7 @@
+# Bidirectional association between classes
+#
+#   [User]---1->[Mail]
+
 class Mail():
     def __init__(self, address):
         self.address = address
@@ -15,20 +19,20 @@ class Mail():
 class User():
     """Model of a user having only one mail addresse."""
 
-    def __init__(self, id, username, password, mail):
-        self.id = id
+    def __init__(self, oid, username, password, mail):
+        self.oid = oid
         self.username = username
         self.password = password
         self.mail = mail
 
     def __repr__(self):
-        return f"User({self.id}, '{self.username}', '{self.password}', {repr(self.mail)})"
+        return f"User({self.oid}, '{self.username}', '{self.password}', {repr(self.mail)})"
 
     def __str__(self):
-        return f"User: id={self.id}, username='{self.username}', mail='{self.mail.address}'"
+        return f"User: id={self.oid}, username='{self.username}', mail='{self.mail.address}'"
 
     def __eq__(self, other):
-        return self.id == other.id
+        return self.oid == other.id
 
 
 # Verify Mail
@@ -45,7 +49,7 @@ assert m1 == m2
 # Verify User
 
 u = User(7, 'homer', ')jh%6Zgur5)r', m1)
-assert 7 == u.id
+assert 7 == u.oid
 assert 'homer' == u.username
 assert ')jh%6Zgur5)r' == u.password
 assert 'homer.simpson@springfield.com' == u.mail.address
