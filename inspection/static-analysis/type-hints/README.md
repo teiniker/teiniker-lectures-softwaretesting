@@ -17,7 +17,13 @@ def fn(arg1: type1, arg2: type2, ...) -> ReturnType:
     pass
 ```
 
+Type hints can also be used to **specify the element types of data structures**:
 
+```Python
+data_list:list[str] = []
+data_douple:tuple[str, ...] = ("1", "2")
+data_dict:dict[int, str] = {} 
+```
 
 ## Using Mypy as the Static Type Checker
 
