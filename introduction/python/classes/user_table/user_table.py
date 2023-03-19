@@ -1,30 +1,31 @@
+
 class User():
-    def __init__(self, id, username, password):
-        self.id = id
-        self.username = username          
-        self.password = password    
+    def __init__(self, oid:int, username:str, password:str):
+        self.oid = oid
+        self.username = username
+        self.password = password
 
-    def __str__(self):
-        return f"User: id={self.id}, username='{self.username}'"    
+    def __str__(self)->str:
+        return f"User: id={self.oid}, username='{self.username}'"
 
-    def __eq__(self, other):
-        return self.id == other.id
+    def __eq__(self, other)->bool:
+        return self.oid == other.oid
 
 
 class UserTable():
-    def __init__(self):
-        self._users = []
+    def __init__(self)->None:
+        self._users:list[User] = []
 
-    def insert(self, user):
+    def insert(self, user:User):
         self._users.append(user)
 
-    def find_by_id(self, id):
+    def find_by_id(self, oid:int):
         for user in self._users:
-            if user.id == id:
-                return user        
+            if user.oid == oid:
+                return user
         return None
 
-    def find_all(self):
+    def find_all(self)->list[User]:
         return self._users
 
 

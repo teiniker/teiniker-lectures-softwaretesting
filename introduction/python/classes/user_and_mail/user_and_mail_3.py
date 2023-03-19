@@ -5,24 +5,25 @@
 class Mail():
     """Model of an email address."""
 
-    def __init__(self, address):
+    def __init__(self, address:str, user=None)->None:
         self.address = address
-        self.user = None
+        self.user = user
 
-    def set_user(self, user):
+    def set_user(self, user)->None:
         self.user = user
 
 
 class User():
     """Model of a user having many mail addresses."""
 
-    def __init__(self, oid, username, password):
+    def __init__(self, oid:int, username:str, password:str)->None:
         self.oid = oid
         self.username = username
         self.password = password
-        self.mails = []
+        self.mails:list[Mail] = []
 
-    def add_mail(self, mail):
+    def add_mail(self, mail:Mail)->None:
+        mail.set_user(self)
         self.mails.append(mail)
 
 

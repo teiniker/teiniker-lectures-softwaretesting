@@ -26,11 +26,11 @@ order.add_line(line1)
 order.add_line(line2)
 print(order)
 
-assert 1 == order.id
+assert 1 == order.oid
 assert "Pizza Order" == order.name 
 
-assert 2 == order.lines[0].id
-assert 4 == order.lines[1].id
+assert 2 == order.lines[0].oid
+assert 4 == order.lines[1].oid
 
-assert 3 == order.lines[0].product.id 
-assert 5 == order.lines[1].product.id 
+assert 3 == order.lines[0].product.oid
+assert 5 == order.lines[1].product.oid

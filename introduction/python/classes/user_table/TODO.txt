@@ -6,7 +6,7 @@ following way:
     [UserTable] ---[*]-> [User]
  
 A) Class User 
-    Attributes: id, username, password
+    Attributes: oid, username, password
     Methods: __init__(), __str__(), __eq__()
 
 B) Class UserTable

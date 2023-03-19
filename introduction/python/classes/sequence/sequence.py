@@ -1,15 +1,15 @@
 class IntegerSequence():
-    _value = 0   # class variable
+    _value:int = 0   # class variable
 
     @classmethod
-    def init_value(cls, value):
+    def init_value(cls, value:int)->None:
         cls._value = value
 
     @classmethod
-    def next_value(cls):
+    def next_value(cls)->int:
         cls._value += 1
         return cls._value
-       
+
 
 # Verify implementations
 

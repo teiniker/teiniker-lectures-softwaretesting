@@ -1,20 +1,20 @@
 
 class Resistor():
     """Class using private attributes together with getter and setter methods."""
-    def __init__(self, value, tolerance):
+    def __init__(self, value:int, tolerance:int) -> None:
         self.__value = value
         self.__tolerance = tolerance
 
     def get_value(self):
         return self.__value
 
-    def set_value(self, value):
+    def set_value(self, value:int) -> None:
         self.__value = value
 
-    def get_tolerance(self):
+    def get_tolerance(self) -> int:
         return self.__tolerance
 
-    def set_tolerance(self, tolerance):
+    def set_tolerance(self, tolerance:int) -> None:
         self.__tolerance = tolerance
 
     def add(self, other):

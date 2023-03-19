@@ -1,26 +1,26 @@
 
 class Resistor():
-    def __init__(self, value, tolerance):
+    def __init__(self, value:int, tolerance:int):
         self.value = value
         self.tolerance = tolerance
 
     @property
-    def value(self):
+    def value(self) -> int:
         print(f'get value: {self._value}')
         return self._value
 
     @value.setter
-    def value(self, value):
+    def value(self, value:int):
         print(f'set value: {value}')
         self._value = value
 
     @property
-    def tolerance(self):
+    def tolerance(self) -> int:
         print(f'get tolerance: {self._tolerance}')
         return self._tolerance
 
     @tolerance.setter
-    def tolerance(self, tolerance):
+    def tolerance(self, tolerance:int):
         print(f'set tolerance: {tolerance}')
         self._tolerance = tolerance
 

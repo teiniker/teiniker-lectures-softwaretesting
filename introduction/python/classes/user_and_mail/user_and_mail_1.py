@@ -3,35 +3,35 @@
 #   [User]---1->[Mail]
 
 class Mail():
-    def __init__(self, address):
+    def __init__(self, address:str)->None:
         self.address = address
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Mail('{self.address}')"
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Mail: address='{self.address}'"
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         return self.address == other.address
 
 
 class User():
     """Model of a user having only one mail addresse."""
 
-    def __init__(self, oid, username, password, mail):
+    def __init__(self, oid:int, username:str, password:str, mail:Mail):
         self.oid = oid
         self.username = username
         self.password = password
         self.mail = mail
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"User({self.oid}, '{self.username}', '{self.password}', {repr(self.mail)})"
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"User: id={self.oid}, username='{self.username}', mail='{self.mail.address}'"
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         return self.oid == other.id
 
 

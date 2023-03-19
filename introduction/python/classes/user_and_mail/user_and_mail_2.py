@@ -5,38 +5,38 @@
 class Mail():
     """Model of an email address."""
 
-    def __init__(self, address):
+    def __init__(self, address:str) -> None:
         self.address = address
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Mail('{self.address}')"
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Mail: address='{self.address}'"
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         return self.address == other.address
 
 
 class User():
     """Model of a user having many mail addresses."""
 
-    def __init__(self, oid, username, password):
+    def __init__(self, oid:int, username:str, password:str) -> None:
         self.oid = oid
         self.username = username
         self.password = password
-        self.mails = []
+        self.mails:list[Mail] = []
 
-    def add_mail(self, mail):
+    def add_mail(self, mail:Mail) -> None:
         self.mails.append(mail)
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"User({self.oid}, '{self.username}', '{self.password}', {repr(self.mails)})"
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"User: id={self.oid}, username='{self.username}', mails={self.mails}"
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         return self.oid == other.oid
 
 
@@ -65,5 +65,7 @@ mails = u.mails
 assert 'homer.simpson@springfield.com' == mails[0].address
 assert 'homer.simpson@powerplant.com' == mails[1].address
 
-assert "User(7, 'homer', ')jh%6Zgur5)r', [Mail('homer.simpson@springfield.com'), Mail('homer.simpson@powerplant.com')])" == repr(u)
-assert "User: id=7, username='homer', mails=[Mail('homer.simpson@springfield.com'), Mail('homer.simpson@powerplant.com')]" == str(u)
+assert "User(7, 'homer', ')jh%6Zgur5)r', [Mail('homer.simpson@springfield.com'), "\
+    "Mail('homer.simpson@powerplant.com')])" == repr(u)
+assert "User: id=7, username='homer', mails=[Mail('homer.simpson@springfield.com'), "\
+    "Mail('homer.simpson@powerplant.com')]" == str(u)
