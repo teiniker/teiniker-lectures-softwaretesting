@@ -74,12 +74,14 @@ which resulds in the final `.settings.json` file:
 ## References
 * [YouTube: Static Typing in Python](https://youtu.be/2gBP1qN5T7I)
 * [YouTube (Real Python): Python Type Hints: Pros & Cons](https://youtu.be/QS7m167SVXU)
+* [YouTube (Real Python): Forward References and Python 3 Type Hints](https://youtu.be/AJsrxBkV3kc)
 
 * [Type checking your Python code!](https://medium.com/juntos-somos-mais/type-checking-your-python-code-76d24b75a2ee)
+
+* [PEP 484 – Type Hints](https://peps.python.org/pep-0484/)
 
 * [Mypy - Static Typing for Python](https://github.com/python/mypy)
 * [Mypy Documentation](https://mypy.readthedocs.io/en/stable/)
 
-* [PEP 484 – Type Hints](https://peps.python.org/pep-0484/)
 
 *Egon Teiniker, 2020-2023, GPL v3.0*
