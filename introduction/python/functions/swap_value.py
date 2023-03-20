@@ -1,12 +1,13 @@
 # Multiple return values of a function
 
-def swap_value(a,b):
+def swap_value(value_a:int, value_b:int)->tuple[int,int]:
     """Change the values of a and b"""
-    return b, a
+    return value_b, value_a
 
-a = 7
-b = 11
-a,b = swap_value(a,b)
-assert a == 11
-assert b == 7
 
+if __name__ == '__main__':
+    A = 7
+    B = 11
+    A,B = swap_value(A,B)
+    assert A == 11
+    assert B == 7

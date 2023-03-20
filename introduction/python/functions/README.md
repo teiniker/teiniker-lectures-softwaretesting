@@ -111,4 +111,4 @@ A function can return any kind of value we need it to, including more complicate
 
 * [Docstrings in Python](https://www.datacamp.com/community/tutorials/docstrings-python)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2023, GPL v3.0*

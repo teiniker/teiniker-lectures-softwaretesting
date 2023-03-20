@@ -1,14 +1,13 @@
-# Using a docstring 
-
-def max_value(a, b):
+def max_value(value_a:int, value_b:int)->int:
     """Calculate the maximum of two numbers"""
-    if a > b:
-        return a
+    if value_a > value_b:
+        return value_a
     else:
-        return b    
+        return value_b
 
-max = max_value(7,11)
-assert 11 == max       
-assert 'Calculate the maximum of two numbers' == max_value.__doc__
 
-# help(max_value)
+if __name__ == '__main__':
+
+    MAX = max_value(7,11)
+    assert 11 == MAX
+    assert 'Calculate the maximum of two numbers' == max_value.__doc__
