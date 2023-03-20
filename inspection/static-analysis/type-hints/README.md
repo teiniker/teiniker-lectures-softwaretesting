@@ -1,4 +1,4 @@
-# Type Checking in Python
+# Type Hints in Python
 
 Languages such as Java or C/C++ are statically typed. Essentially this means that type checking will take place at compile time based on the source code.
 
