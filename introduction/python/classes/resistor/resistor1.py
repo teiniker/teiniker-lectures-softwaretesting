@@ -14,21 +14,22 @@ class Resistor():
         return Resistor(value, tolerance)
 
 
-# Verify implementation
+if __name__ == '__main__':
 
-r1 = Resistor(100,1)    # invoke __init__() => Resistor instance
-assert 100 == r1.value
-assert 1 == r1.tolerance
+    # Verify implementation
+    r1 = Resistor(100,1)    # invoke __init__() => Resistor instance
+    assert 100 == r1.value
+    assert 1 == r1.tolerance
 
-r2 = Resistor(330,5)
-assert 330 == r2.value
-assert 5 == r2.tolerance
+    r2 = Resistor(330,5)
+    assert 330 == r2.value
+    assert 5 == r2.tolerance
 
-r = r1.add(r2)
-assert 100+330 == r.value
-assert 5 == r.tolerance
+    r = r1.add(r2)
+    assert 100+330 == r.value
+    assert 5 == r.tolerance
 
-r3 = Resistor(1000, 1)
-r4 = r.add(r3)
-print(r4.value)
-assert 100+330+1000 == r4.value
+    r3 = Resistor(1000, 1)
+    r4 = r.add(r3)
+    print(r4.value)
+    assert 100+330+1000 == r4.value

@@ -29,26 +29,27 @@ class Resistor():
         return tol_b
 
 
-# Verify implementation
+if __name__ == '__main__':
 
-r1 = Resistor(1000)
-assert 1000 == r1.value
-assert 2 == r1.tolerance
+    # Verify implementation
+    r1 = Resistor(1000)
+    assert 1000 == r1.value
+    assert 2 == r1.tolerance
 
-r2 = Resistor(470,5)
-assert 470 == r2.value
-assert 5 == r2.tolerance
+    r2 = Resistor(470,5)
+    assert 470 == r2.value
+    assert 5 == r2.tolerance
 
-r = Resistor(330, 2)
-assert 'Resistor(330, 2)' == repr(r)                # invoke __repr__()
+    r = Resistor(330, 2)
+    assert 'Resistor(330, 2)' == repr(r)                # invoke __repr__()
 
-r = Resistor(330, 2)
-assert 'Resistor: value=330, tolerance=2' == str(r) # invoke __str__()
+    r = Resistor(330, 2)
+    assert 'Resistor: value=330, tolerance=2' == str(r) # invoke __str__()
 
-r = r1 + r2                                         # invoke __add__()
-assert 1000+470 == r.value
+    r = r1 + r2                                         # invoke __add__()
+    assert 1000+470 == r.value
 
-r1 = Resistor(2700,2)
-r2 = Resistor(2700,2)
-assert r1 is r1
-assert r1 == r2 # __eq__()
+    r1 = Resistor(2700,2)
+    r2 = Resistor(2700,2)
+    assert r1 is r1
+    assert r1 == r2 # __eq__()

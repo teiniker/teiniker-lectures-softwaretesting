@@ -11,10 +11,12 @@ class IntegerSequence():
         return cls._value
 
 
-# Verify implementations
+if __name__ == '__main__':
 
-IntegerSequence.init_value(0)
+    # Verify implementations
 
-assert 1 == IntegerSequence.next_value()
-assert 2 == IntegerSequence.next_value()
-assert 3 == IntegerSequence.next_value()
+    IntegerSequence.init_value(0)
+
+    assert 1 == IntegerSequence.next_value()
+    assert 2 == IntegerSequence.next_value()
+    assert 3 == IntegerSequence.next_value()

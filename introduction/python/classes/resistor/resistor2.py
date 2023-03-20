@@ -27,16 +27,17 @@ class Resistor():
             return tol_a
         return tol_b
 
-# Verify implementation
+if __name__ == '__main__':
 
-r1 = Resistor(100,1)
-assert 100 == r1.get_value()
-assert 1 == r1.get_tolerance()
+    # Verify implementation
+    r1 = Resistor(100,1)
+    assert 100 == r1.get_value()
+    assert 1 == r1.get_tolerance()
 
-r2 = Resistor(330,5)
-assert 330 == r2.get_value()
-assert 5 == r2.get_tolerance()
+    r2 = Resistor(330,5)
+    assert 330 == r2.get_value()
+    assert 5 == r2.get_tolerance()
 
-r = r1.add(r2)
-assert 100+330 == r.get_value()
-assert 5 == r.get_tolerance()
+    r = r1.add(r2)
+    assert 100+330 == r.get_value()
+    assert 5 == r.get_tolerance()

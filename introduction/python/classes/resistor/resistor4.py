@@ -35,17 +35,18 @@ class Resistor():
         return tol_b
 
 
-# Verify implementation
+if __name__ == '__main__':
 
-r1 = Resistor(100,1)
-assert 100 == r1.value          # invoke value()
-assert 1 == r1.tolerance        # invoke tolerance()
+    # Verify implementation
+    r1 = Resistor(100,1)
+    assert 100 == r1.value          # invoke value()
+    assert 1 == r1.tolerance        # invoke tolerance()
 
-r2 = Resistor(330,5)
-r2.value = 470                  # invoke value(470)
-assert 470 == r2.value
-assert 5 == r2.tolerance
+    r2 = Resistor(330,5)
+    r2.value = 470                  # invoke value(470)
+    assert 470 == r2.value
+    assert 5 == r2.tolerance
 
-r = r1 + r2                     # invoke __add__()
-assert 100+470 == r.value
-assert 5 == r.tolerance
+    r = r1 + r2                     # invoke __add__()
+    assert 100+470 == r.value
+    assert 5 == r.tolerance

@@ -1,5 +1,5 @@
 class Resistor():
-    def __init__(self, value:int, tolerance:int=2):
+    def __init__(self, value:int, tolerance:int=2)->None:
         self.tolerance = tolerance
         self.value= value
 
@@ -8,7 +8,7 @@ class Resistor():
 
 
 class Capacitor():
-    def __init__(self, value:int, tolerance:int=5):
+    def __init__(self, value:int, tolerance:int=5)->None:
         self.tolerance = tolerance
         self.value= value
 
@@ -17,31 +17,33 @@ class Capacitor():
 
 
 # Duck typing (whatever part is - use str() to print it)
-def print_part(part):
+def print_part(part)->None:
     print(f"Part: {part}")
 
-# Verify implementations
 
-r1 = Resistor(1000)
-assert 1000 == r1.value
-assert 2 == r1.tolerance
+if __name__ == '__main__':
 
-r2 = Resistor(470,5)
-assert 470 == r2.value
-assert 5 == r2.tolerance
+    # Verify implementations
+    r1 = Resistor(1000)
+    assert 1000 == r1.value
+    assert 2 == r1.tolerance
 
-r = Resistor(330, 2)
-assert 'Resistor: value=330Ohm, tolerance=2%' == str(r)
+    r2 = Resistor(470,5)
+    assert 470 == r2.value
+    assert 5 == r2.tolerance
 
-c1 = Capacitor(1)
-assert 1 == c1.value
-assert 5 == c1.tolerance
+    r = Resistor(330, 2)
+    assert 'Resistor: value=330Ohm, tolerance=2%' == str(r)
 
-c2 = Capacitor(100, 10)
-assert 100 == c2.value
-assert 10 == c2.tolerance
+    c1 = Capacitor(1)
+    assert 1 == c1.value
+    assert 5 == c1.tolerance
 
-assert 'Capacitor: value=1uF, tolerance=5%' == str(c1)
+    c2 = Capacitor(100, 10)
+    assert 100 == c2.value
+    assert 10 == c2.tolerance
 
-print_part(r1)  # r1 "is a " Part
-print_part(c1)  # c1 "is a " Part
+    assert 'Capacitor: value=1uF, tolerance=5%' == str(c1)
+
+    print_part(r1)  # r1 "is a " Part
+    print_part(c1)  # c1 "is a " Part
