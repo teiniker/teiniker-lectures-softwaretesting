@@ -61,11 +61,10 @@ which resulds in the final `.settings.json` file:
 Note that we can use `python.linting.pylintArgs` to **disable singel Pylint rules**.
 
 ## References 
+* [Youtube (Real Python): Pylint Tutorial – How to Write Clean Python](https://youtu.be/fFY5103p5-c)
+
 * [Pylint](https://pypi.org/project/pylint/)
-
 * [Pylint User Manual](http://pylint.pycqa.org/en/latest/)
-
-* [Youtube: Pylint Tutorial – How to Write Clean Python](https://youtu.be/fFY5103p5-c)
 
 * [YouTube: VSCode Tidbits: VSCODE linting for Python](https://youtu.be/eMIxokGhFHM)
 
