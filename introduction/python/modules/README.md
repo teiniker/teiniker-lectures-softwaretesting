@@ -2,13 +2,11 @@
 
 As our program gets longer, we may want to split it into several files for easier maintenance.
 
-To support this, **Python has a way to put definitions in a file and use them in a script or 
-in an interactive instance of the interpreter**. 
-Such a file is called a **module**. Definitions from a module can be imported into other modules 
-or into the main module.
+To support this, **Python has a way to put definitions in a file and use them in a script or in an interactive instance of the interpreter**. 
+Such a file is called a **module**. Definitions from a module can be imported into other modules or into the main module.
 
 A module is a **file containing Python definitions and statements**.
-The **file name is the module name** with the suffix .py appended.
+The **file name is the module name** with the suffix `.py` appended.
 Within a module, the module’s name (as a string) is available as the value of the global variable __name__. 
 
 A module can contain executable statements as well as function definitions.
@@ -51,11 +49,9 @@ fib(500)
 
 ## Executing Modules as Scripts
 
-When you run a Python module the code in the module will be executed, just as if you imported it, 
-but with the __name__ set to "__main__".
+When you run a Python module the code in the module will be executed, just as if you imported it, but with the __name__ set to "__main__".
 
-We can make the file usable as a script as well as an importable module, because the code that parses 
-the command line only runs if the module is executed as the “main” file:
+We can make the file usable as a script as well as an importable module, because the code that parses the command line only runs if the module is executed as the “main” file:
 
 ```Python
 if __name__ == "__main__":
@@ -112,4 +108,4 @@ echo.echofilter(input, output, delay=0.7, atten=4)
 ## References
 * [Modules](https://docs.python.org/3/tutorial/modules.html)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2023, GPL v3.0*
