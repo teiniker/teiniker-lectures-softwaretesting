@@ -43,7 +43,7 @@ class Order(Entity):
 
 
 if __name__ == '__main__':
-    
+
     # Verify implementations
     e1 = Entity(7)
     p1 = Product(3, "Pizza Frutti di Mare", 8.80)

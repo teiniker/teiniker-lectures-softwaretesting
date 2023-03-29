@@ -1,58 +1,60 @@
 class Resistor():
     """Model of a resistor with a given tolerance."""
 
-    def __init__(self, value, tolerance):
-        self.value = value              
-        self.tolerance = tolerance       
+    def __init__(self, value:int, tolerance:int)->None:
+        self.value = value
+        self.tolerance = tolerance
 
     @property
-    def value(self):
+    def value(self)->int:
         return self._value
 
     @value.setter
-    def value(self, value):
+    def value(self, value:int):
         if value < 0:
             raise ValueError('Invalid value!')
         self._value = value
 
     @property
-    def tolerance(self):
+    def tolerance(self)->int:
         return self._tolerance
 
     @tolerance.setter
-    def tolerance(self, tolerance):
+    def tolerance(self, tolerance:int):
         if tolerance < 0:
             raise ValueError('Invalid tolerance!')
         self._tolerance = tolerance
 
 
-    def __add__(self, other): # +
+    def __add__(self, other:"Resistor"):
         value = self._value + other._value
         tolerance = self._max(self.tolerance, other.tolerance)
         return Resistor(value, tolerance)
 
-    def _max(self, a, b):
-        if(a > b):
-            return a
+    def _max(self, value_a, value_b):
+        if value_a > value_b:
+            return value_a
         else:
-            return b
+            return value_b
 
 
-# Verify implementation
+if __name__ == '__main__':
 
-try:
-    r1 = Resistor(1000, -1)
-    #...
-except ValueError as e: 
-    print("Resistor object can't be created: {}".format(e))    
-else:    
-    print("No exception thrown.")
+    # Verify implementation
+
+    try:
+        r1 = Resistor(1000, -1)
+        #...
+    except ValueError as e:
+        print(f"Resistor object can't be created: {e}")
+    else:
+        print("No exception thrown.")
 
 
-try:
-    r1 = Resistor(-1000, 2)
-    #...
-except ValueError as e: 
-    print("Resistor object can't be created: {}".format(e))    
-finally:    
-    print("Do some clean-up.")    
+    try:
+        r1 = Resistor(-1000, 2)
+        #...
+    except ValueError as e:
+        print(f"Resistor object can't be created: {e}")
+    finally:
+        print("Do some clean-up.")

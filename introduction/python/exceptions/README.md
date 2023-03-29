@@ -10,11 +10,8 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
 ```
-Exceptions come in different types, and the type is printed as part of the message: the type in the example 
-is `ZeroDivisionError`.
-The preceding part of the error message shows the context where the exception occurred, in the form of a 
-**stack traceback**. In general it contains a stack traceback listing source lines; however, 
-it will not display lines read from standard input.
+Exceptions come in different types, and the type is printed as part of the message: the type in the example is `ZeroDivisionError`.
+The preceding part of the error message shows the context where the exception occurred, in the form of a **stack traceback**. In general it contains a stack traceback listing source lines; however, it will not display lines read from standard input.
 
 If we write code that **handles the exception**, the program will continue running. 
 
@@ -180,7 +177,7 @@ It is possible to write programs that handle selected exceptions.
         r1 = Resistor(-1000)
         #...
     except ValueError as e: 
-        print("Resistor object can't be created: {}".format(e))  
+        print(f"Resistor object can't be created: {e}")  
 ```
 The `try` statement works as follows.
 * First, the `try` clause (the statement(s) between the `try` and `except` keywords) is executed.
@@ -213,7 +210,7 @@ try:
     r1 = Resistor(1000)
     #...
 except ValueError as e: 
-    print("Resistor object can't be created: {}".format(e))    
+    print(f"Resistor object can't be created: {e}")    
 else:    
     print("No exception thrown.")
 ```
@@ -261,24 +258,24 @@ This can be useful when you are **transforming exceptions**
 
 _Example_: Exception chaining
 ```Python
-    def readData(self):
+    def read_data(self)->list[float]:
          try:
              with open(self.filename, 'r') as file:
                  reader = csv.reader(file, delimiter=',')
                  data = list(reader)
-             values = []
+             values:list[float] = []
              for value in data:
                  values.append(float(value[1]))
              return values
-         except FileNotFoundError as e:
-             raise DataAccessError('File not found: ' + self.filename) from e
+         except FileNotFoundError as ex:
+             raise DataAccessError(f'File not found: {self.filename}') from ex
 ```
 Exception chaining happens **automatically** when an exception is raised inside an `except` or `finally` section. 
 
 _Example_: `FileNotFound` exception transformed into a `DataAccessError` exception 
 (it also works without the `from` keyword - automatic exception chaining).
 ```
-File "file_access.py", line 12, in readData
+File "file_access.py", line 12, in read_data
     with open(self.filename, 'r') as file:
 FileNotFoundError: [Errno 2] No such file or directory: 'datx.csv'
 
@@ -286,9 +283,9 @@ The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
   File "file_access.py", line 25, in <module>
-    values = dao.readData()
-  File "file_access.py", line 20, in readData
-    raise DataAccessError('File not found: ' + self.filename) from e
+    values = dao.read_data()
+  File "file_access.py", line 20, in read_data
+    raise DataAccessError(f'File not found: {self.filename}') from ex
 __main__.DataAccessError: File not found: datx.csv
 ```
 **Exception chaining can be disabled** by using `from None` idiom.
@@ -296,12 +293,12 @@ __main__.DataAccessError: File not found: datx.csv
 _Example_: Disabling exception chaining
 ```
         except FileNotFoundError:
-            raise DataAccessError('File not found: ' + self.filename) from None     
+            raise DataAccessError(f'File not found: {self.filename}') from None     
 
   File "file_access.py", line 25, in <module>
-    values = dao.readData()
-  File "file_access.py", line 20, in readData
-    raise DataAccessError('File not found: ' + self.filename) from None
+    values = dao.read_data()
+  File "file_access.py", line 20, in read_data
+    raise DataAccessError(f'File not found: {self.filename}') from None
 __main__.DataAccessError: File not found: datx.csv
 ```
 
@@ -317,4 +314,4 @@ __main__.DataAccessError: File not found: datx.csv
 * [Python Exceptions: An Introduction](https://realpython.com/python-exceptions/)
 
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2023, GPL v3.0*
