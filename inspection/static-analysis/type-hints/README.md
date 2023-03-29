@@ -1,4 +1,4 @@
-# Type Checking in Python
+# Type Hints in Python
 
 Languages such as Java or C/C++ are statically typed. Essentially this means that type checking will take place at compile time based on the source code.
 
@@ -25,9 +25,9 @@ data_douple:tuple[str, ...] = ("1", "2")
 data_dict:dict[int, str] = {} 
 ```
 
-## Using Mypy as the Static Type Checker
+## Using mypy as the Static Type Checker
 
-Mypy is a static type checker for Python.
+mypy is a static type checker for Python.
 Type checkers help ensure that you're using variables and functions in your 
 code correctly. 
 With mypy, add type hints (PEP 484) to your Python programs, and mypy will 
@@ -48,7 +48,7 @@ The `--ignore-missing-imports` flag makes mypy ignore all missing imports that
 do not have type definitions!
 
 
-## Configure VS Code to Use MyPy
+## Configure VS Code to Use mypy
 
 Simply add one line to enable `mypy` in the `.settings.json` file:
 ```
