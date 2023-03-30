@@ -1,4 +1,4 @@
- 
+
 def fibonacci_numbers(size:int)->list[int]:
     """Calculate the Fibonacci sequence of a given size."""
     pass
