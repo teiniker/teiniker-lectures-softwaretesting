@@ -8,16 +8,21 @@ class DataAccessObject:
         self.filename = filename
 
     def read_data(self)-> list[float]:
+        file=None
         try:
-            with open(self.filename, 'r', encoding="utf-8") as file:
-                reader = csv.reader(file, delimiter=',')
-                data = list(reader)
             values:list[float] = []
+            file = open(self.filename, 'r', encoding="utf-8")
+            reader = csv.reader(file, delimiter=',')
+            data = list(reader)
             for value in data:
                 values.append(float(value[1]))
             return values
         except FileNotFoundError as ex:
-            raise DataAccessError(f'File not found: {self.filename}') from ex
+            raise DataAccessError(f"File {self.filename} not found!") from ex
+        finally:
+            print("finally")
+            if file:
+                file.close()
 
 
 # Verify Implementation
