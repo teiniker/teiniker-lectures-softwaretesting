@@ -42,19 +42,29 @@ if __name__ == '__main__':
 
     # Verify implementation
 
+#    r1 = Resistor(-1000, 1)
+
+    # try:
+    #     r1 = Resistor(1000, -1)
+    #     #...
+    # except ValueError as e:
+    #     print(f"Resistor object can't be created: {e}")
+
+
+    # try:
+    #     r1 = Resistor(-1000, 2)
+    #     #...
+
+    # except ValueError as e:
+    #     print(f"Resistor object can't be created: {e}")
+    # finally:
+    #     print("Do some clean-up.")
+
+
     try:
-        r1 = Resistor(1000, -1)
+        r1 = Resistor(-1000, 1)
         #...
     except ValueError as e:
         print(f"Resistor object can't be created: {e}")
     else:
         print("No exception thrown.")
-
-
-    try:
-        r1 = Resistor(-1000, 2)
-        #...
-    except ValueError as e:
-        print(f"Resistor object can't be created: {e}")
-    finally:
-        print("Do some clean-up.")

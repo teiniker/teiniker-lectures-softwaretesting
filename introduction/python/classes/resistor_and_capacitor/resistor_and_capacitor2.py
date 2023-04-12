@@ -1,10 +1,10 @@
-class Part():
+class Part():   # Base Class (aka Super Class)
     def __init__(self, value:int, tolerance:int)->None:
         self.tolerance = tolerance
         self.value= value
 
 
-class Resistor(Part):
+class Resistor(Part):   # Sub-Class
     def __init__(self, value:int, tolerance:int=2)->None:
         super().__init__(value, tolerance)
 
@@ -12,7 +12,7 @@ class Resistor(Part):
         return f'Resistor: value={self.value}Ohm, tolerance={self.tolerance}%'
 
 
-class Capacitor(Part):
+class Capacitor(Part):  # Sub-Class
     def __init__(self, value:int, tolerance:int=5)->None:
         super().__init__(value, tolerance)
 

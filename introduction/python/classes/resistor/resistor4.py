@@ -24,7 +24,7 @@ class Resistor():
         print(f'set tolerance: {tolerance}')
         self._tolerance = tolerance
 
-    def __add__(self, other):
+    def __add__(self, other):   # + operator
         value = self._value + other._value
         tolerance = self._max(self.tolerance, other.tolerance)
         return Resistor(value, tolerance)
