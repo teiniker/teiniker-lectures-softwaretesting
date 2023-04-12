@@ -5,7 +5,7 @@ class Resistor():
         self.value = value
         self.tolerance = tolerance
 
-    def add(self, other):
+    def add(self, other)->"Resistor":
         value = self.value + other.value
         if self.tolerance > other.tolerance:
             tolerance = self.tolerance
