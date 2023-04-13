@@ -22,6 +22,7 @@ Each of these short videos repeats a specific language construct of the Python p
 ## Python Language Features
 
   * **Data Types** 
+    * [Introduction](types)
     * [YouTube (Corey Schafer): Integers and Floats - Working with Numeric Data](https://youtu.be/khKv-8q7YmY)
     * [YouTube (Corey Schafer): Strings - Working with Textual Data](https://youtu.be/k9TUPpGqYTo)
     * [YouTube (Corey Schafer): F-Strings - How to Use Them and Advanced String Formatting](https://youtu.be/nghuHvKLhJA)
@@ -100,4 +101,4 @@ Each of these short videos repeats a specific language construct of the Python p
 * Slatkin Brett. **Effective Python**. Pearson Education, 2nd Edition, 2020
 * Dusty Phillips. **Python 3 Object-Oriented Programming: Build robust and maintainable software with object-oriented design patterns in Python 3.8**. Packt Publishing, 3rd Edition 2018
 
- *Egon Teiniker, 2020-2022, GPL v3.0*
+ *Egon Teiniker, 2020-2023, GPL v3.0*
