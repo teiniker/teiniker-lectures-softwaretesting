@@ -19,10 +19,10 @@ in the main Python distribution:
 The following list references numerous **videos** which are created by by engaged authors and freely accessible on YouTube.
 Each of these short videos repeats a specific language construct of the Python programming language.
 
-## Python Language Features
+## Python Basics
 
   * **Data Types** 
-    * [Introduction](types)
+    * [Introduction](basics/types/)
     * [YouTube (Corey Schafer): Integers and Floats - Working with Numeric Data](https://youtu.be/khKv-8q7YmY)
     * [YouTube (Corey Schafer): Strings - Working with Textual Data](https://youtu.be/k9TUPpGqYTo)
     * [YouTube (Corey Schafer): F-Strings - How to Use Them and Advanced String Formatting](https://youtu.be/nghuHvKLhJA)
@@ -33,22 +33,26 @@ Each of these short videos repeats a specific language construct of the Python p
   * **Loops** 
     * [YouTube (Corey Schafer): Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ) 
     * [YouTube: Loop like a native: while, for, iterators, generators](https://youtu.be/EnSu9hHGq5o)
-  
-  * **Enumerations** 
-    * [YouTube: Using Enum in Python](https://youtu.be/gPPDXgCMZ0k)
-    * [Python HOWTOs: Enum](https://docs.python.org/3.11/howto/enum.html)
-      
+        
   * **Data Structures** 
+    * [Introdcution](basics/data-structures/)
     * [YouTube (Corey Schafer): Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc) 
     * [YouTube (Corey Schafer): Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
     * [YouTube (Corey Schafer): String Formatting - Advanced Operations for Dicts, Lists, Numbers, and Dates](https://youtu.be/vTX3IwquFkc)
 
   * **Functions** 
-    * [Introduction](functions)
+    * [Introduction](basics/functions)
     * [YouTube (Corey Schafer): Functions](https://youtu.be/9Os0o3wzS_I)
-  
+
+  * **Modules**
+    * [Introduction](basics/modules/) 
+    * [YouTube (Corey Schafer): Import Modules and Exploring The Standard Library](https://youtu.be/CqvZ3vGoGs0)
+    * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
+
+
+  ## Object-Oriented Programming
   * **Classes**
-    * [Introduction](classes)  
+    * [Introduction](oop/)  
     * [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
     * [YouTube (Corey Schafer): Property Decorators - Getters, Setters, and Deleters](https://youtu.be/jCzT9XFZ5bw)  
     * [YouTube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/3ohzBxoFHAY)
@@ -56,18 +60,17 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/rq8cL2XMM5M)
     * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
       
-  * **Exceptions**
-    * [Introduction](exceptions) 
+    * **Enumerations** 
+    * [Introduction](oop/enumerations/)
+    * [YouTube: Using Enum in Python](https://youtu.be/gPPDXgCMZ0k)
+    * [Python HOWTOs: Enum](https://docs.python.org/3.11/howto/enum.html)
+
+    * **Exceptions**
+    * [Introduction](oop/exceptions/) 
     * [YouTube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
     * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
       
   
-  * **Modules**
-    * [Introduction](modules) 
-    * [YouTube (Corey Schafer): Import Modules and Exploring The Standard Library](https://youtu.be/CqvZ3vGoGs0)
-    * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)   
-
-
 ## Python Libraries
   
   * **Test Automation**
@@ -80,16 +83,17 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): re Module - How to Write and Match Regular Expressions (Regex)](https://youtu.be/K8L6KVGG-7o)  
         
   * **File Handling**
-     * [Introduction](files) 
+     * [Introduction](libraries/files/) 
      * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)  
      * [YouTube (Corey Schafer): File Objects - Reading and Writing to Files](https://youtu.be/Uh2ebFW8OYM)   
      * [YouTube (Corey Schafer): CSV Module - How to Read, Parse, and Write CSV Files](https://youtu.be/q5uM4VKywbA)
 
-  * **Databases**
+  * **SQLite Database**
+    * [Introduction](libraries/sqlite/)
     * [YouTube (Corey Schafer): Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries](https://youtu.be/pd-0G0MigUA)
 
-  * **Visualizations**
-    * [Matplotlib](matplotlib)
+  * **Matplotlib**
+    * [Introduction](libraries/matplotlib/)
 
   * **HTTP Requests**
     * [YouTube (Corey Schafer): Python Requests Tutorial: Request Web Pages, Download Images, POST Data, Read JSON, and More](https://youtu.be/tb8gHvYlCFs)       
