@@ -8,7 +8,6 @@ class Instrument(ABC):
         self.range_min = range_min
         self.range_max = range_max
 
-
     @abstractmethod
     def measured_value(self)->float:
         pass
