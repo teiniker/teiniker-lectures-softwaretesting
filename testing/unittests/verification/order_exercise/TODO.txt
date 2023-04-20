@@ -6,8 +6,8 @@ Implement the following custom assert methods which can be used to compare two
 
 A) assert_equal_product(self,expected,actual)
 
-B) assert_equal_order_line(self, expected, actual, msg='')
+B) assert_equal_order_line(self, expected, actual)
 
-B) assert_equals_order(self, expected, actual)
+C) assert_equals_order(self, expected, actual)
 
 

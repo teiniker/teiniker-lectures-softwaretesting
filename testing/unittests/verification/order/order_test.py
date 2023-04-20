@@ -16,15 +16,15 @@ class OrderTest(unittest.TestCase):
 
     # Custom assert methods
 
-    def assert_equal_product(self,expected,actual):
+    def assert_equal_product(self,expected:Product,actual:Product)->None:
         self.assertEqual(expected.description, actual.description, 'different Product.description')
         self.assertEqual(expected.price, actual.price, 'different Product.price')
 
-    def assert_equal_order_line(self, expected, actual, msg=''):
+    def assert_equal_order_line(self, expected:OrderLine, actual:OrderLine, msg='')->None:
         self.assertEqual(expected.quantity, actual.quantity, 'different OrderLine.quantity'+msg)
         self.assert_equal_product(expected.product, actual.product)
 
-    def assert_equals_order(self, expected, actual):
+    def assert_equals_order(self, expected:Order, actual:Order)->None:
         self.assertEqual(expected.oid, actual.oid)
         self.assertEqual(len(expected.lines), len(actual.lines))
         length = len(expected.lines)
