@@ -97,6 +97,33 @@ Finally, we can delete the entire table from the database with the `DROP TABLE` 
 DROP TABLE user
 ```
 
+## DB-API 2.0 interface for SQLite
+
+The **sqlite3** module provides a SQL interface compliant with the DB-API 2.0 specification described by PEP 249.
+
+To use the module, you must first create a `Connection` object that represents the database.
+We can also supply the special name `:memory:` to create a database in RAM.
+```Python
+conn = sqlite3.connect(DATABALE_NAME)
+```
+
+Once we have a `Connection`, we can create a `Cursor` object and call its `execute()` method 
+to perform SQL commands:
+```Python
+cursor = conn.cursor()
+# Create a database table
+cursor.execute("CREATE TABLE user (id INTEGER, username TEXT, password TEXT, PRIMARY KEY(id))")
+
+# Insert data into the database table
+cursor.execute("INSERT INTO user (id,username, password) VALUES (1, 'homer' '2aaab795b3836904f82efc6ca2285d927aed75206214e1da383418eb90c9052f')")
+
+# Commit the changes and close the connection
+conn.commit()
+conn.close()
+```
+
+
+
 ## References
 * [sqlite3 — DB-API 2.0 interface for SQLite databases](https://docs.python.org/3.8/library/sqlite3.html)
 * [SQLite: Tutorial](https://www.sqlitetutorial.net/)
