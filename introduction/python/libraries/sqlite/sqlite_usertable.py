@@ -23,6 +23,16 @@ def select_users():
         print(row)
     conn.close()
 
+def select_users_starting_with(prefix):
+    conn = sqlite3.connect(DATABALE_NAME)
+    cursor = conn.cursor()
+    parameters = (prefix,)
+    cursor.execute("SELECT * from user WHERE username LIKE ?", parameters)
+    table = cursor.fetchall()
+    for row in table:
+        print(row)
+    conn.close()
+
 def drop_table():
     conn = sqlite3.connect(DATABALE_NAME)
     cursor = conn.cursor()
@@ -32,5 +42,6 @@ def drop_table():
 
 if __name__ == '__main__':
     create_table()
-    select_users()
+    #select_users()
+    select_users_starting_with("m%")
     drop_table()
