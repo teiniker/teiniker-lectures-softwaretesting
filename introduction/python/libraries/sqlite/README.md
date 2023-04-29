@@ -143,6 +143,7 @@ cursor as an iterator, call the cursor’s `fetchone()` method to retrieve a sin
 Fetches all (remaining) rows of a query result, returning a list. Note that the cursor’s arraysize attribute can affect the performance of this operation. An empty list is returned when no rows are available.
 
 ## References
+* [DB Browser for SQLite](https://sqlitebrowser.org/)
 * [sqlite3 — DB-API 2.0 interface for SQLite databases](https://docs.python.org/3.8/library/sqlite3.html)
 * [SQLite: Tutorial](https://www.sqlitetutorial.net/)
 * [SQLite:In-Memory Databases](https://www.sqlite.org/inmemorydb.html)
