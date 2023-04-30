@@ -16,7 +16,7 @@ class MODE(Enum):
 class Multimeter:
     def __init__(self, device):
         self.device = device
-        self.mode_dictionary =             {
+        self.mode_dictionary = {
                 MODE.DCV: "dc_v",
                 MODE.ACV: "ac_v",
                 MODE.DCI: "dc_i",

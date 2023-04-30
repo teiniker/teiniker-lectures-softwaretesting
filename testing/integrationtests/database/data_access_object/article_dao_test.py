@@ -9,6 +9,7 @@ class SQLiteTest(unittest.TestCase):
     # Shared test fixture (database schema and test data)
     @classmethod
     def setUpClass(cls):
+        print("setUpClass()")
         conn = sqlite3.connect(SQLiteTest.DATABASE_NAME)
         cursor = conn.cursor()
         cursor.execute("CREATE TABLE article (id INTEGER PRIMARY KEY, description TEXT, price INTEGER)")
@@ -19,6 +20,7 @@ class SQLiteTest(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
+        print("tearDownClass()")
         conn = sqlite3.connect(SQLiteTest.DATABASE_NAME)
         cursor = conn.cursor()
         cursor.execute("DROP TABLE article")
@@ -26,16 +28,19 @@ class SQLiteTest(unittest.TestCase):
         conn.close()
 
     def setUp(self):
+        print("setUp()")
         self.conn = sqlite3.connect(SQLiteTest.DATABASE_NAME)
         self.cur = self.conn.cursor()
         self.dao = ArticleDao(self.conn)
         # begin()  start a database transaction
 
     def tearDown(self):
+        print("tearDown()")
         self.conn.rollback()
         self.conn.close()
 
     def test_insert(self):
+        print("test_insert()")
         # Exercise
         article = Article(3, 'Book: Effective Python', 4550)
         self.dao.insert(article)
@@ -47,6 +52,7 @@ class SQLiteTest(unittest.TestCase):
         self.assertEqual(4550, row[2])
 
     def test_update(self):
+        print("test_update()")
         # Exercise
         article = Article(2, 'Book: Python Crash Course', 1599)
         self.dao.update(article)
@@ -58,6 +64,7 @@ class SQLiteTest(unittest.TestCase):
         self.assertEqual(1599, row[2])
 
     def test_delete(self):
+        print("test_delete()")
         # Exercise
         self.dao.delete(2)
         # Verify
@@ -66,6 +73,7 @@ class SQLiteTest(unittest.TestCase):
         self.assertEqual(1, len(table))
 
     def test_find_by_id(self):
+        print("test_find_by_id()")
         # Exercise
         article = self.dao.find_by_id(1)
         # Verify
@@ -74,6 +82,7 @@ class SQLiteTest(unittest.TestCase):
         self.assertEqual(3599, article.price)
 
     def test_find_all(self):
+        print("test_find_all()")
         # Exercise
         articles = self.dao.find_all()
         # Verify

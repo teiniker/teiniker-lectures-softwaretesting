@@ -137,10 +137,10 @@ To retrieve data after executing a `SELECT statement`, we can either treat the
 cursor as an iterator, call the cursor’s `fetchone()` method to retrieve a single matching row, or call `fetchall()` to get a list of the matching rows.
 
 * **fetchone()**: 
-    Fetches the next row of a query result set, returning a single sequence, or None when no more data is available.
+    Fetches the next row of a query result set, returning a **tuple**, or None when no more data is available.
 
 * **fetchall()**:
-Fetches all (remaining) rows of a query result, returning a list. Note that the cursor’s arraysize attribute can affect the performance of this operation. An empty list is returned when no rows are available.
+Fetches all (remaining) rows of a query result, returning a **list of tuples**. Note that the cursor’s arraysize attribute can affect the performance of this operation. An empty list is returned when no rows are available.
 
 ## References
 * [DB Browser for SQLite](https://sqlitebrowser.org/)

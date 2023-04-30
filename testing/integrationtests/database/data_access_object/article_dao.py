@@ -57,6 +57,7 @@ class ArticleDao:
             cur = self.conn.cursor()
             cur.execute(sql, parameters)
             row = cur.fetchone()
+            print(type(row))
             return Article(row[0], row[1], row[2])
         except Warning as ex:
             raise DataAccessError("Can't find Article with given id: " + oid) from ex
@@ -67,9 +68,10 @@ class ArticleDao:
             cur = self.conn.cursor()
             cur.execute(sql)
             rows = cur.fetchall()
+            print(type(rows))
             results = []
             for row in rows:
                 results.append(Article(row[0], row[1], row[2]))
             return results
         except Warning as ex:
-            raise DataAccessError("Can't find Article with given id: " + oid) from ex
+            raise DataAccessError("Can't find any Article!") from ex
