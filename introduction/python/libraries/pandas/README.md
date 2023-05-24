@@ -125,3 +125,10 @@ df = pd.read_excel("file.xlsx")
 * [YouTube (Keith Galli): Complete Python Pandas Data Science Tutorial!](https://youtu.be/vmEHCJofslg)
 
 * [Pandas: User Guide](https://pandas.pydata.org/docs/user_guide/index.html)
+
+* YouTube (Corey Schafer): Python Pandas Tutorial
+    * [Getting Started with Data Analysis - Installation and Loading Data](https://youtu.be/ZyhVh-qRZPA)
+
+    * [DataFrame and Series Basics - Selecting Rows and Columns](https://youtu.be/zmdjNSmRXF4)
+
+
