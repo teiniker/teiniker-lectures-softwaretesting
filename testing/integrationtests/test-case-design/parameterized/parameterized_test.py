@@ -25,31 +25,34 @@ class BinaryNumberTest(unittest.TestCase):
             pass
 
     def test_valid_data1(self):
-        self.parameterized_test(0b0, '0')
+        self.parameterized_test(0b0, '00')
 
     def test_valid_data2(self):
-        self.parameterized_test(0b1, '1')
+        self.parameterized_test(0b11, '11')
 
     def test_valid_data3(self):
-        self.parameterized_test(0b0, '00000000')
+        self.parameterized_test(0b0, '0000')
 
     def test_valid_data4(self):
-        self.parameterized_test(0b11111111, '11111111')
+        self.parameterized_test(0b1111, '1111')
 
-    def test_invalid_data_too_short(self):
-        self.parameterized_test_with_exception(ValidationError, '')
+    def test_invalid_data_too_short0(self):
+        self.parameterized_test_with_exception(ValidationError, '0')
+
+    def test_invalid_data_too_short1(self):
+        self.parameterized_test_with_exception(ValidationError, '1')
 
     def test_invalid_data_too_long1(self):
-        self.parameterized_test_with_exception(ValidationError, '000000000')
+        self.parameterized_test_with_exception(ValidationError, '00000')
 
     def test_invalid_data_too_long2(self):
-        self.parameterized_test_with_exception(ValidationError, '111111111')
+        self.parameterized_test_with_exception(ValidationError, '11111')
 
     def test_invalid_data_too_small_ascii_value(self):
-        self.parameterized_test_with_exception(ValidationError, '/')
+        self.parameterized_test_with_exception(ValidationError, '//')
 
     def test_invalid_data_too_large_ascii_value(self):
-        self.parameterized_test_with_exception(ValidationError, '2')
+        self.parameterized_test_with_exception(ValidationError, '22')
 
 if __name__ == '__main__':
     unittest.main()

@@ -6,7 +6,7 @@ class ValidationError(Exception):
 
 def operation(data):
     print(data)
-    pattern = '^[01]{1,8}$'  # Regular expression
+    pattern = '^[01]{2,4}$'  # Regular expression
     result = re.match(pattern, data)
     if result:
         return int(data, 2)

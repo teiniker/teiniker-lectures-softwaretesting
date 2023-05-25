@@ -13,30 +13,34 @@ class BinaryNumberTest(unittest.TestCase):
             int('012', 2)
 
     def test_valid_data(self):
-        self.assertEqual(0b0, operation('0'))
-        self.assertEqual(0b1, operation('1'))
-        self.assertEqual(0b0, operation('00000000'))
-        self.assertEqual(0b11111111, operation('11111111'))
+        self.assertEqual(0b0, operation('00'))
+        self.assertEqual(0b11, operation('11'))
+        self.assertEqual(0b0, operation('0000'))
+        self.assertEqual(0b1111, operation('1111'))
 
-    def test_invalid_data_too_short(self):
+    def test_invalid_data_too_short0(self):
         with self.assertRaises(ValidationError):
-            operation('')
+            operation('0')
+
+    def test_invalid_data_too_short1(self):
+        with self.assertRaises(ValidationError):
+            operation('1')
 
     def test_invalid_data_too_long1(self):
         with self.assertRaises(ValidationError):
-            operation('000000000')
+            operation('00000')
 
     def test_invalid_data_too_long2(self):
         with self.assertRaises(ValidationError):
-            operation('111111111')
+            operation('11111')
 
     def test_invalid_data_too_small_ascii_value(self):
         with self.assertRaises(ValidationError):
-            operation('/')
+            operation('//')
 
     def test_invalid_data_too_large_ascii_value(self):
         with self.assertRaises(ValidationError):
-            operation('2')
+            operation('22')
 
 
 if __name__ == '__main__':
