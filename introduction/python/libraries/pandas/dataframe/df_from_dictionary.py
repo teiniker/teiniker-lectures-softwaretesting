@@ -8,3 +8,11 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
+
+# Accessing a row by integer location
+row_0 = df.iloc[0]
+print(row_0)
+
+# Accessing an element by integer location
+element = df.iloc[0, 1]  # First row, second column
+print(element)
