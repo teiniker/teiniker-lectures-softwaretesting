@@ -3,7 +3,7 @@
 This repository collects examples, exercises and model solutions needed to understand 
 the concepts of software testing and code inspection in the software development lifycycle. 
 
-![Testing in the SDL](figures/TestingInTheSDLC.png)
+![Testing in the SDL](introduction/figures/TestingInTheSDLC.png)
 
 The following topics will be covered:
 
@@ -28,6 +28,7 @@ The following topics will be covered:
     * [System Tests](testing/systemtests)
 
     * Non-Functional Tests
+        * [Security Tests](https://github.com/teiniker/teiniker-lectures-securitytesting)
 
 
 
@@ -42,4 +43,4 @@ As a development environment, you can use a pre-configured Debian 11 Linux VM im
 * Andreas Zeller. **Why Programs Fail - A Guide to Systematic Debugging**. dpunkt.verlag, 2009
 
  
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2023, GPL v3.0*
