@@ -1,4 +1,5 @@
 import unittest
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -39,6 +40,8 @@ class SeleniumTest(unittest.TestCase):
         login_page.password = 'stm'
         logout_page = login_page.login()
         # ...
+        time.sleep(3)
+
         logout_page.logout()
 
 
