@@ -11,7 +11,7 @@ $ java -jar translator.jar
 A) Selenium IDE 
 Use the Firefox Selenium IDE plugin to record the following test cases:
     word = 'cat', language = 'Deutsch' => 'Translate: cat into Katze'   
-    word = 'cat', language = 'Francais' => 'Translate: horse into Chatte'
+    word = 'cat', language = 'Francais' => 'Translate: cat into Chatte'
 
 B) Selenium WebDriver
 Generate Python code from the recorded tests and implement two test methods
