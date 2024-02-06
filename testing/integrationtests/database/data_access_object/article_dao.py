@@ -24,6 +24,7 @@ class ArticleDao:
         self.conn = dbc
 
     def insert(self, article):
+        """Insert a new Article into the database."""
         sql = "INSERT INTO article (id, description, price) VALUES (?,?,?)"
         parameters = (article.oid, article.description, article.price)
         try:
@@ -51,6 +52,7 @@ class ArticleDao:
             raise DataAccessError("Can't remove Article with id: " + oid) from ex
 
     def find_by_id(self, oid):
+        """Find an Article by its id."""
         sql = "SELECT * FROM article WHERE id=?"
         parameters = (oid,)
         try:
@@ -61,6 +63,18 @@ class ArticleDao:
             return Article(row[0], row[1], row[2])
         except Warning as ex:
             raise DataAccessError("Can't find Article with given id: " + oid) from ex
+
+    # def find_by_id(self, oid):
+    #     """Find an Article by its id."""
+    #     sql = f"SELECT * FROM article WHERE id={oid}"
+    #     try:
+    #         cur = self.conn.cursor()
+    #         cur.execute(sql)
+    #         row = cur.fetchone()
+    #         print(type(row))
+    #         return Article(row[0], row[1], row[2])
+    #     except Warning as ex:
+    #         raise DataAccessError("Can't find Article with given id: " + oid) from ex
 
     def find_all(self):
         sql = "SELECT * FROM article"
