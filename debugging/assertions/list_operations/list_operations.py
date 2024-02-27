@@ -1,17 +1,21 @@
 def list_multiple(k, l):
     result = []
-    for i in range(len(l)):
+    for i, value in enumerate(l):
         # Bug: result.append(k * i)
-        result.append(k * l[i])
+        result.append(k * value)
     return result
 
 
 def list_sum(l1, l2):
     v = []
-    for i in range(len(l1)):
+    for item1, item2 in zip(l1, l2):
         # Bug: v.append(l1 + l2)
-        v.append(l1[i] + l2[i])
+        v.append(item1 + item2)
     return v
+
+# This version uses zip(l1, l2) to iterate over pairs of elements
+# from both l1 and l2 simultaneously, without explicitly using
+# their indices.
 
 
 k = 7
