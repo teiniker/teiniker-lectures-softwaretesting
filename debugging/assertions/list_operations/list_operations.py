@@ -22,7 +22,7 @@ k = 7
 a = [5, 2, 1]
 b = [3, 7, 11]
 
-print(__debug__)    
+print(__debug__)
 
 # Add assert statements to automatically observe values
 list_multiple =  list_multiple(k, a)
