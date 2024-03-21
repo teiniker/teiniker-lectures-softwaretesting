@@ -8,9 +8,7 @@ class UserTest(unittest.TestCase):
         mail = Mail('homer.simpson@springfield.com')
         user = User(7, 'homer', 'Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8=', mail)
 
-        # exercise
-
-        # verify
+        # Exercise + Verify
         self.assertEqual(7, user.oid)
         self.assertEqual('homer', user.username)
         self.assertEqual('Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8=', user.password)
