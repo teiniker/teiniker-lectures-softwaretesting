@@ -31,20 +31,20 @@ class AnalysisServiceTest(unittest.TestCase):
     def test_read_data_file_not_found(self):
         with self.assertRaises(DataAccessError):
             # Setup
-            dao = DataAccessObject('vales.csv')
+            dao = DataAccessObject('values.csv')
             dao.read_data()
 
     def test_mean_value_file_not_found(self):
         with self.assertRaises(ServiceError):
             # Setup
-            dao = DataAccessObject('vales.csv')
+            dao = DataAccessObject('values.csv')
             service = DataAnalysisService(dao)
             service.mean_value()
 
     def test_max_value_file_not_found(self):
         with self.assertRaises(ServiceError):
             # Setup
-            dao = DataAccessObject('vales.csv')
+            dao = DataAccessObject('values.csv')
             service = DataAnalysisService(dao)
             service.max_value()
 

@@ -56,11 +56,12 @@ There are two main ways to use this information:
     ```Python
     self.dao.read_data.assert_called_once()
     ```
-  `assert_called()` ensures we called the mocked method while
-  `assert_called_once()` checks that we called the method exactly one time.
+    * `assert_called()` ensures we called the mocked method while
+    * `assert_called_once()` checks that we called the method exactly one time.
+    * `assert_called_with(parameter)` checks that we called the method with the given parameter.
 
-  To pass these assertions, we must call the mocked method with the same
-  arguments that we pass to the actual method.
+    To pass these assertions, we must call the mocked method with the same
+    arguments that we pass to the actual method.
 
 * We can view special attributes to understand how our application used an object:
     ```Python
