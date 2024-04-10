@@ -1,9 +1,13 @@
 # File Handling
 
-**Text files are widely used for data exchange** due to several inherent advantages
-that make them particularly suited for this purpose. Their simplicity,
-flexibility, and **compatibility across different systems and platforms** are among
-the key reasons for their popularity.
+**Text files are widely used for data exchange** due to several inherent
+advantages that make them particularly suited for this purpose. Their
+simplicity, flexibility, and **compatibility across different systems and platforms** are among the key reasons for their popularity.
+
+Formats like **CSV** and **JSON** are well-documented and widely accepted
+**standards for data exchange**. Using these standardized text formats can
+further ease the integration of systems and ensure consistent data handling
+practices.
 
 ## Comma Separated Values
 
