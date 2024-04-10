@@ -1,6 +1,6 @@
 # Testing with Databases
 
-* [**Introduction to SQLite**](../../../introduction/python/sqlite/README.md)
+* [**Introduction to SQLite**](sqlite)
 
 * **Demo Examples**
     * [data_access_object](data_access_object)
@@ -8,7 +8,7 @@
 * **Exercises**
     * [sqlite_lectures](sqlite_lectures_exercise) - ([Model Solution](sqlite_lectures))
     * [sqlite_in_memory](sqlite_in_memory_exercise) - ([Model Solution](sqlite_in_memory))
-
+    * [sqlite_sql_files](sqlite_sql_files_exercise/) - ([Model Solution](sqlite_sql_files/))
 
 ## References
 
@@ -18,4 +18,4 @@
 
 * Jay A. Kreibich. **Using SQLite: Small. Fast. Reliable. Choose Any Three**. O'Reilly, 2012
 
-*Egon Teiniker, 2020-2023, GPL v3.0*
+*Egon Teiniker, 2020-2024, GPL v3.0*

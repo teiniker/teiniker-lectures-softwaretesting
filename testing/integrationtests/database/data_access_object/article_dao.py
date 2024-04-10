@@ -64,18 +64,6 @@ class ArticleDao:
         except Warning as ex:
             raise DataAccessError("Can't find Article with given id: " + oid) from ex
 
-    # def find_by_id(self, oid):
-    #     """Find an Article by its id."""
-    #     sql = f"SELECT * FROM article WHERE id={oid}"
-    #     try:
-    #         cur = self.conn.cursor()
-    #         cur.execute(sql)
-    #         row = cur.fetchone()
-    #         print(type(row))
-    #         return Article(row[0], row[1], row[2])
-    #     except Warning as ex:
-    #         raise DataAccessError("Can't find Article with given id: " + oid) from ex
-
     def find_all(self):
         sql = "SELECT * FROM article"
         try:
