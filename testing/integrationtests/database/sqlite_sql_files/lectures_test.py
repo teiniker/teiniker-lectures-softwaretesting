@@ -2,7 +2,7 @@ import unittest
 import sqlite3
 
 class LectureTest(unittest.TestCase):
-    DATABASE_NAME = 'test.db'
+    DATABASE_NAME = 'testdb.db'
     SETUP_SQL_FILE = 'sql/setup.sql'
     TEARDOWN_SQL_FILE = 'sql/teardown.sql'
 

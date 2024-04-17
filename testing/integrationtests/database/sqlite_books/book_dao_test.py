@@ -3,27 +3,28 @@ import sqlite3
 
 from book_dao import Book, BookDao
 
-class SQLiteTest(unittest.TestCase):
-    DATABASE_NAME = 'testdb.db'
-
-    # Shared test fixture (database schema and test data)
-    @classmethod
-    def setUpClass(cls):
-        conn = sqlite3.connect(SQLiteTest.DATABASE_NAME)
+def execute_sql_script(filename:str, db_name:str) -> None:
+    """Execute a SQL script from a file and commit the changes to the database."""
+    with open(filename,'r', encoding="utf-8") as sql_file:
+        conn = sqlite3.connect(db_name)
+        sql = sql_file.read()
+        print(sql)
         cursor = conn.cursor()
-        cursor.execute("CREATE TABLE book (isbn TEXT PRIMARY KEY, title TEXT, authors TEXT, publisher TEXT, year INTEGER)")
-        cursor.execute("INSERT INTO book (isbn, title, authors, publisher, year) VALUES ('1449355730', 'Learning Python: Powerful Object-Oriented Programming', 'Mark Lutz', 'OReilly', 2013)")
-        cursor.execute("INSERT INTO book (isbn, title, authors, publisher, year) VALUES ('1593279280', 'Python Crash Course', 'Eric Matthes', 'No Starch Press', 2019)")
+        cursor.executescript(sql)
         conn.commit()
         conn.close()
+
+
+class SQLiteTest(unittest.TestCase):
+    DATABASE_NAME = 'test.db'
+
+    @classmethod
+    def setUpClass(cls):
+        execute_sql_script("sql/setup.sql", SQLiteTest.DATABASE_NAME)
 
     @classmethod
     def tearDownClass(cls):
-        conn = sqlite3.connect(SQLiteTest.DATABASE_NAME)
-        cursor = conn.cursor()
-        cursor.execute("DROP TABLE book")
-        conn.commit()
-        conn.close()
+        execute_sql_script("sql/teardown.sql", SQLiteTest.DATABASE_NAME)
 
     def setUp(self):
         self.conn = sqlite3.connect(SQLiteTest.DATABASE_NAME)
