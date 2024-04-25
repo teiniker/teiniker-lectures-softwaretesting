@@ -4,6 +4,7 @@ from binary_string import operation, ValidationError
 
 class BinaryNumberTest(unittest.TestCase):
 
+    # checking int()
     def test_valid_binary_string(self):
         value = int('11110000', 2)
         self.assertEqual(240, value)
@@ -12,6 +13,7 @@ class BinaryNumberTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             int('012', 2)
 
+    # valid values:
     def test_valid_data(self):
         self.assertEqual(0b0, operation('00'))
         self.assertEqual(0b11, operation('11'))
