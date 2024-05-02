@@ -1,21 +1,22 @@
 Exercise: Selenium Tests - Translator
 -------------------------------------------------------------------------------
 
-Given a web application called Translator, use Selenium IDE to generate 
+Given a web application called Translator, use Selenium IDE to generate
 automated test cases.
 
 To start the web application, open a new terminal and type:
-$ cd translator 
+$ cd translator
 $ java -jar translator.jar
 
-A) Selenium IDE 
+A) Selenium IDE
 Use the Firefox Selenium IDE plugin to record the following test cases:
-    word = 'cat', language = 'Deutsch' => 'Translate: cat into Katze'   
+    URL: http://localhost:8080/index.html
+    word = 'cat', language = 'Deutsch' => 'Translate: cat into Katze'
     word = 'cat', language = 'Francais' => 'Translate: cat into Chatte'
 
 B) Selenium WebDriver
 Generate Python code from the recorded tests and implement two test methods
-in the "translator_test.py" file using Selenium WebDriver: 
+in the "translator_test.py" file using Selenium WebDriver:
     test_cat_german()
     test_cat_french()
 
