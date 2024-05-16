@@ -49,4 +49,9 @@ List Comprehension Syntax:
 * The general syntax is: `[expression for item in iterable]`.
 
 
+## References
+
+* [YouTube (Corey Schafer): Python Tutorial: Working with JSON Data using the json Module](https://youtu.be/9N6a-VLBa2I?si=9ER0IaVaDoQWmVo9)
+
+
 *Egon Teiniker, 2020-2024, GPL v3.0*
