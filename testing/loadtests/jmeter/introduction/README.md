@@ -15,7 +15,7 @@ pages as a browser does.
 
 ## Setup and Start JMeter
 
-[Download}(https://jmeter.apache.org/download_jmeter.cgi): apache-jmeter-5.6.3.zip
+[Download](https://jmeter.apache.org/download_jmeter.cgi): apache-jmeter-5.6.3.zip
 
 ```
 $ unzip apache-jmeter-5.6.3.zip
