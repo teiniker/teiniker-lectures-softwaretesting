@@ -1,7 +1,4 @@
-# Load Testing
-
-Load testing is a type of **performance testing used to evaluate how a web
-service or web application behaves under a specific load**.
+# Introduction to Load Testing
 
 The main objective of load testing is to determine the system's performance
 in terms of responsiveness and stability when subjected to normal and peak load
