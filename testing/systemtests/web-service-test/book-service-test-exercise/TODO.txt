@@ -5,7 +5,7 @@ Given the flask-book-service which can be started with:
 ```
 $ cd flask-book-service
 $ python3 book_service.py
-``
+```
 
 Access the REST service manually using the given curl statements:
 

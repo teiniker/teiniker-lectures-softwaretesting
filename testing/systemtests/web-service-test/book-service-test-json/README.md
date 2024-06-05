@@ -7,7 +7,8 @@ _Example:_ JSON content of a REST response
 ```JSON
 {'data':
     [
-        {'author': 'Eric Matthes', 'id': 1, 'isbn': '978-1718502703', 'title': 'Python Crash Course'}, {'author': 'Brett Slatkin', 'id': 2, 'isbn': '978-0134853987', 'title': 'Effective Python'},
+        {'author': 'Eric Matthes', 'id': 1, 'isbn': '978-1718502703', 'title': 'Python Crash Course'},
+        {'author': 'Brett Slatkin', 'id': 2, 'isbn': '978-0134853987', 'title': 'Effective Python'},
         {'author': 'Luciano Ramalho', 'id': 3, 'isbn': '978-1492056355', 'title': 'Fluent Python'}
     ]
 }
