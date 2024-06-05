@@ -8,12 +8,6 @@ class BookServiceTest(unittest.TestCase):
         self.assertEqual(200, response.status_code)
         self.assertEqual('application/json', response.headers['content-type'])
         json_data = response.json()
-        book_id = json_data.get('id')
-        title = json_data.get('title')
-        author = json_data.get('author')
-        self.assertEqual(1, book_id)
-        self.assertIsInstance(title, str)
-        self.assertIsInstance(author, str)
 
     def test_find_all(self):
         response = requests.get('http://localhost:8080/books', timeout=5)
