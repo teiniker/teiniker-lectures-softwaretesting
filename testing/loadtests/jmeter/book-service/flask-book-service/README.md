@@ -8,7 +8,28 @@ In this example, we can see how simple a RESTful service can be implemented with
 We start the web service from the command line:
 ```
 $ python3 book_service.py
+
 ```
+## Multi-Threading
+
+When we run a Flask application using the `app.run()` method, we can pass
+various configuration options to control the behavior of the development
+server. One of these options is **threaded**.
+
+Setting `threaded=True` instructs Flask's built-in development server
+(powered by Werkzeug) to handle each incoming HTTP request in a separate
+thread. This allows the server to process multiple requests concurrently,
+rather than sequentially.
+
+In recent versions of Flask, **threading is enabled by default**. This
+means that even if you do not explicitly set `threaded=True`, the server
+will still run in multi-threaded mode.
+
+When using threading, it is important to ensure that our application
+**code is thread-safe**. This means that shared resources (such as global
+variables or database connections) must be properly managed to avoid race
+conditions and other concurrency issues.
+
 
 ## Access the REST Service
 
