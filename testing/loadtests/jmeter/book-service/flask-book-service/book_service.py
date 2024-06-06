@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.route('/books', methods = ['GET'])
 def find_all():
-    sleep(0.1)
+    sleep(1.0)
     return jsonify({'data': table}), HTTPStatus.OK
 
 
@@ -67,4 +67,4 @@ def delete(oid):
 
 
 if __name__ == '__main__':
-    app.run(port=8080, debug=True)
+    app.run(port=8080, threaded=False, debug=True)

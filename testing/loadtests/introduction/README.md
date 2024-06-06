@@ -26,6 +26,18 @@ Load testing is a critical practice for web services and web applications,
 ensuring they can handle the expected load while maintaining performance,
 scalability, and reliability.
 
+## Testing Scenarios
+
+* **Load Testing**: Measuring performance under expected user load.
+
+* **Performance Testing**: Determine the responsiveness, stability, and overall
+    performance of a system under various conditions.
+
+* **Stress Testing**: Evaluating system behavior under extreme conditions
+    or beyond maximum capacity.
+
+* **Spike Testing**: Assessing how the system handles sudden increases in load.
+
 
 ## References
 
