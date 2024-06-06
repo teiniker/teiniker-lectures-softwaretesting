@@ -52,6 +52,8 @@ in technological issues).
 
 ## References
 
+* [YouTube: 5 Types of Testing Software Every Developer Needs to Know!](https://youtu.be/YaXJeUkBe4Y?si=DZ1tcQa8HBk-z0-D)
+
 * Lisa Crispin, Janet Gregory. **Agile Testing**. Addison Wesley, 2009
 * [Agile Testing](https://agiletester.ca/)
 * [Agile Testing with Lisa Crispin](https://lisacrispin.com/)
