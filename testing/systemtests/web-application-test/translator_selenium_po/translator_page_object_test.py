@@ -7,7 +7,7 @@ class Language(Enum):
     DEUTSCH = 1
     FRANCAIS = 2
 
-class Translator:
+class TranslatorPO:
     def __init__(self, driver):
         self.driver = driver
         self.driver.get('http://localhost:8080/index.html')
@@ -26,10 +26,10 @@ class Translator:
             self.driver.find_element(By.CSS_SELECTOR, "option:nth-child(2)").click()
         self.driver.find_element(By.CSS_SELECTOR, "th:nth-child(3) > input").click()
         # Return an instance of the TranslatorResult PO
-        return TranslatorResult(self.driver)
+        return TranslatorResultPO(self.driver)
 
 
-class TranslatorResult:
+class TranslatorResultPO:
     def __init__(self, driver):
         self.driver = driver
         self.message = self.driver.find_element(By.CSS_SELECTOR, "p:nth-child(1)").text
@@ -39,7 +39,7 @@ class TranslatorResult:
 class SeleniumTest(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
-        self.translator = Translator(self.driver)
+        self.translator = TranslatorPO(self.driver)
 
     def tearDown(self):
         self.driver.quit()
